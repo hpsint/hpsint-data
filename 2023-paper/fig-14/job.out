@@ -1,0 +1,1666 @@
+Running: /dss/dsshome1/0B/di93net/development/hpsint-release/applications/sintering/sintering-3D-generic-scalar /dss/dsshome1/0B/di93net/development/hpsint-release/applications/sintering/sintering-3D-generic-scalar --cloud /hppfs/work/pn36li/di93net/clouds/332particles_paper_scaled.cloud /hppfs/work/pn36li/di93net/settings/termuhlen_scaled.json
+  - with n MPI processes:1536
+  - deal.II (branch: master; revision: b484371cc4e5a6bf0d7cc9d19b1d5012923b060a; short: b484371cc4)
+  - hpsint (branch: termuhlen_run; revision: 5c6b69d2abaefe28fad59179b605c9bba45aeb65; short: 5c6b69d)
+
+
+Mode:       cloud
+Cloud path: /hppfs/work/pn36li/di93net/clouds/332particles_paper_scaled.cloud
+
+Particles list:
+#x,y,z,r
+10.8148479,4.37566423,5.02578211,1.39999998
+30.5414429,58.6012917,6.13393021,1.39999998
+29.6662178,9.942481040000001,5.86145449,1.39999998
+1.39965141,36.7631607,4.65905142,1.39999998
+8.73407173,50.0425034,4.37906027,1.42033899
+10.4511395,39.3941727,4.6986165,1.42033899
+1.41956937,54.7902527,4.84313726,1.42033899
+19.6509361,26.3004417,8.06119442,1.44067788
+27.9315491,53.8486633,1.43536842,1.44067788
+38.559269,48.6918449,6.38775921,1.44067788
+5.26952267,14.4532824,5.0108223,1.46101689
+38.5401192,15.8161592,6.79768181,1.46101689
+34.8613052,35.9292755,1.47468233,1.48135591
+29.7351418,30.6965561,5.42815018,1.48135591
+20.9282131,13.5366096,7.46974802,1.50169492
+18.0298977,37.9419975,6.22127533,1.52203381
+38.4787102,26.8329906,4.71827698,1.52203381
+4.05475521,24.9002972,6.61896229,1.52203381
+9.224232669999999,19.8355141,1.51739168,1.52203381
+35.0587273,1.54109967,5.00106478,1.54237282
+27.5675392,18.0491276,6.66236687,1.54237282
+21.2715607,49.5448303,6.86116219,1.56271183
+17.3332443,58.3971176,6.03102446,1.60338974
+31.2343616,42.5478439,7.67635107,1.64406776
+38.2554245,58.2545624,1.73883939,1.74576271
+18.6484375,1.76394987,1.76053071,1.7661016
+1.87529385,45.8395958,5.54763937,1.78644061
+9.443054200000001,30.5679607,1.90153849,1.90847456
+30.4135094,6.12720346,1.41774297,1.42033899
+9.526973720000001,1.44080639,4.98929739,1.44067788
+6.3847003,39.0788498,7.67867231,1.44067788
+26.344759,12.801178,6.45180559,1.46101689
+35.0662041,51.5542221,4.85414648,1.46101689
+25.059454,54.2096024,1.47538483,1.48135591
+7.48695278,52.4399185,5.42623281,1.48135591
+36.5058594,32.9684219,6.05231237,1.50169492
+22.2737789,30.0559425,8.05992794,1.50169492
+31.2351246,25.9920464,5.90651989,1.54237282
+16.0648308,32.968235,1.5367347,1.54237282
+19.6443214,7.05544186,4.79410172,1.56271183
+1.56235552,22.9611187,6.04876423,1.56271183
+28.6713753,36.4699745,5.3691721,1.58305085
+22.7468529,44.0583611,7.64840364,1.58305085
+6.2091198,45.1053658,1.61984456,1.62372875
+14.2212887,15.3282175,6.18332767,1.66440678
+14.489316,46.0625114,8.526334759999999,1.68474567
+38.3181496,6.19800901,1.67766941,1.68474567
+34.33284,12.0517168,7.89552402,1.68474567
+29.6300602,46.4671898,1.70075977,1.70508468
+1.72482073,12.1416578,1.71975708,1.72542369
+6.65628529,30.7748795,4.40497541,1.84745753
+19.5492611,22.2633266,1.96327043,1.96949148
+38.0319176,21.7109737,1.96044123,1.96949148
+16.10326,57.6448364,2.34991574,2.35593224
+33.870121,54.0894318,1.45491159,1.46101689
+29.1624584,12.9842196,5.56405973,1.50169492
+5.12401772,44.3668098,4.45671797,1.50169492
+5.18008041,54.9280815,1.51644027,1.52203381
+29.1541595,50.2210999,6.14787436,1.56271183
+7.77517605,8.22070503,3.96053553,1.58305085
+21.7601147,44.4904747,1.57789791,1.58305085
+28.2836475,39.7731857,1.5979774,1.60338974
+22.0212421,18.0922928,7.518332,1.60338974
+17.202301,5.60366631,6.23616076,1.62372875
+27.4071655,28.9510975,6.5449295,1.64406776
+1.6437335,26.7147312,5.63430214,1.64406776
+19.7386551,26.5751839,1.65888822,1.66440678
+34.689827,20.2875614,1.67890203,1.68474567
+10.1344624,36.3434868,5.14016104,1.68474567
+13.8845711,53.1013069,7.62994766,1.70508468
+9.309576030000001,20.8205128,4.58085394,1.70508468
+31.8372135,1.74541008,5.58400488,1.74576271
+35.2029495,37.5510139,7.45460987,1.74576271
+1.88790059,35.0837784,1.88123,1.88813555
+22.1615143,58.0112801,5.58997297,1.98983049
+20.4150429,35.3307037,5.93089485,2.03050852
+37.7467804,10.0418997,2.24522829,2.25423717
+36.2996292,54.655468,6.30982113,1.48135591
+7.67243958,38.4253731,5.0725193,1.54237282
+6.78612947,56.4302139,7.19199276,1.58305085
+24.5335217,46.8144455,6.86690474,1.58305085
+27.1993027,15.2857742,4.88935852,1.60338974
+23.9551983,7.54866552,5.11591196,1.62372875
+33.4917641,7.74689007,7.23476076,1.62372875
+13.2975235,4.89377213,1.6170814,1.62372875
+26.6503849,22.9301682,1.6381942,1.64406776
+24.7941875,32.021347,7.87425184,1.66440678
+11.1034727,28.5838909,6.05636597,1.70508468
+17.8125744,53.9975739,1.71893287,1.72542369
+33.3273964,39.7088089,5.49606514,1.72542369
+5.59255552,47.5656319,4.28873205,1.74576271
+35.0653458,26.7064972,5.87457085,1.7661016
+1.76204455,20.4133034,1.75998962,1.7661016
+14.4186964,43.043251,1.77805912,1.78644061
+7.25847769,15.1166706,7.61586142,1.88813555
+16.9626961,17.7319126,6.20328712,1.98983049
+26.5261002,57.9893723,5.96902323,2.01016951
+2.04230118,8.43507099,2.02247906,2.03050852
+29.9718094,52.8404388,4.38608265,1.56271183
+5.1988492,58.3770142,5.21047783,1.62372875
+11.8759127,52.7232666,4.98427153,1.64406776
+25.7979298,31.2493057,4.80292511,1.66440678
+23.9415588,40.700531,1.65781128,1.66440678
+31.1550255,22.9487381,4.90490389,1.66440678
+1.70438576,41.160244,5.2571969,1.70508468
+20.2569599,52.4835587,5.88397121,1.70508468
+16.8791504,8.78172588,4.58280754,1.70508468
+35.6207695,15.4964542,5.5938077,1.72542369
+26.8962135,8.372828480000001,6.56991196,1.7661016
+4.88996601,27.9919128,5.88411474,1.7661016
+16.8114853,26.5562553,6.56353092,1.78644061
+23.0336685,16.069294,1.80136895,1.80677962
+38.194149,30.1370392,5.8364296,1.80677962
+5.60809994,6.61527061,1.84275448,1.84745753
+38.1091385,3.02593064,6.4134469,1.88813555
+12.1931305,17.9958515,2.00316691,2.01016951
+14.3724403,37.2585068,5.63657522,2.01016951
+2.01015282,16.2609482,7.10876083,2.01016951
+33.856617,43.4326553,5.23722363,2.05084729
+37.8440742,57.8486977,5.56627798,2.15254235
+30.8986912,53.7609634,1.55788839,1.56271183
+27.1121731,47.1499405,4.96666098,1.64406776
+22.9834766,54.4417343,5.53218842,1.68474567
+30.0375156,20.1802387,6.49038744,1.72542369
+16.9100685,44.7684555,6.51220465,1.72542369
+28.3886356,38.7189255,7.77578926,1.72542369
+24.0949917,10.5340672,6.6415,1.74576271
+38.2355309,25.4203835,1.76136553,1.7661016
+9.620888709999999,54.721447,6.60218954,1.78644061
+14.5455084,8.16860962,7.12413168,1.78644061
+34.2235107,12.5048428,1.80161738,1.80677962
+4.93634701,41.7690773,6.52577019,1.82711864
+8.55067348,34.1706352,1.82190228,1.82711864
+38.1537056,51.9245834,5.97208595,1.84745753
+1.85101783,19.6541157,5.28157568,1.84745753
+34.0666847,4.41366053,6.47979975,1.84745753
+22.3665695,31.9981842,5.28630686,1.88813555
+13.351162,19.8013725,5.27258301,1.90847456
+38.0720711,36.0053787,5.76431036,1.92881346
+24.504446,2.091748,2.08503222,2.09152532
+2.31224608,4.11987114,2.30825758,2.31525421
+30.9780865,48.3899574,4.31329966,1.60338974
+31.5345058,37.1183891,6.92646027,1.74576271
+17.1614685,10.518959,7.574687,1.7661016
+33.415947,23.9122581,7.31523466,1.78644061
+24.0744209,22.0070343,5.77971601,1.80677962
+18.2473202,50.7474937,8.17372417,1.80677962
+12.7340155,1.82568693,5.47969198,1.82711864
+27.2054806,10.8244638,3.9725976,1.82711864
+1.87022412,58.106266,6.61411905,1.86779654
+13.2768211,34.1030235,7.59389973,1.86779654
+4.28469753,38.15345,5.29930258,1.86779654
+8.275409700000001,47.9353104,1.87983751,1.88813555
+23.2259598,42.9445343,4.35870743,1.92881346
+33.4258804,1.94567943,1.94355524,1.94915247
+33.8350143,58.026516,6.49755764,1.96949148
+6.04795313,22.1796646,5.64739895,1.98983049
+6.07166576,9.832018850000001,6.65227461,1.98983049
+20.4238281,57.9949112,2.00300455,2.01016951
+24.2349567,33.0914307,2.02407074,2.03050852
+37.7869606,12.2536449,6.1064744,2.21355915
+32.1818161,51.0697823,5.77050924,1.60338974
+23.9983768,51.1878777,1.73985648,1.74576271
+27.6337872,33.5232086,6.62055969,1.78644061
+17.7756119,13.428215,5.60229015,1.80677962
+19.8563881,42.8722763,5.99500227,1.82711864
+29.9300537,24.1049976,1.8406893,1.84745753
+15.0178375,1.86757898,1.86144674,1.86779654
+5.04132175,32.9952965,1.88285637,1.88813555
+1.91046846,53.3214035,1.90269375,1.90847456
+8.740893359999999,41.9842682,5.92284727,1.92881346
+31.253994,42.9477501,1.92233288,1.92881346
+32.5226097,13.5983562,5.15533638,1.94915247
+19.8901348,24.8928814,4.88963127,1.98983049
+5.39294291,18.017704,5.77509451,2.03050852
+11.7358179,57.9515266,2.0439291,2.05084729
+37.6854095,2.31387568,2.30736518,2.31525421
+37.6257668,33.4066315,2.36999917,2.37627101
+3.94446683,2.45532823,6.45766306,2.45762706
+25.8734341,3.97192144,6.10383177,2.55932188
+16.4919224,11.4555244,1.80194938,1.80677962
+24.6955509,35.120945,5.26621771,1.82711864
+29.7738819,55.480072,6.5152874,1.84745753
+21.6895103,6.23256302,7.4135232,1.86779654
+34.4913216,35.31007,4.72087431,1.86779654
+18.9806995,55.6199303,4.71691656,1.88813555
+12.3278685,46.5653152,1.90489578,1.90847456
+22.6902103,24.9266567,7.62378454,1.92881346
+30.3313007,16.9085579,4.90744591,1.92881346
+9.167285919999999,58.0715103,5.06840658,1.92881346
+13.293046,30.4988689,1.94272888,1.94915247
+5.44084024,36.7812576,1.94181168,1.94915247
+11.154664,2.00748897,2.00386572,2.01016951
+30.067524,44.9591827,5.13547659,2.05084729
+5.61492205,20.0411739,2.14459777,2.15254235
+37.545208,7.31869793,6.06731796,2.45762706
+20.2773438,16.046957,5.39227486,1.82711864
+13.9546146,5.26973772,5.00136089,1.86779654
+31.0395775,33.9066124,5.27162361,1.90847456
+17.186985,48.2739258,5.62263727,1.90847456
+34.378933,10.1840611,4.76195765,1.96949148
+9.187563900000001,37.8855629,1.96226406,1.96949148
+4.7915678,54.5368271,4.94868708,1.96949148
+33.1278305,54.4495926,4.84040642,2.03050852
+37.929718,45.2582207,6.70989323,2.0711863
+12.6779633,24.2214069,5.88850451,2.09152532
+22.1530361,29.4724464,2.14507508,2.15254235
+26.4535656,43.5138397,6.92279673,2.23389816
+30.8005867,20.0977249,2.24712825,2.25423717
+2.33375335,12.1600161,5.7228179,2.33559322
+10.0255423,9.918631550000001,1.90371072,1.90847456
+25.9661064,13.7429028,1.9421674,1.94915247
+6.76903868,58.0132103,1.98356473,1.98983049
+23.9529438,28.1027737,5.64726019,2.03050852
+21.3286953,39.2982979,6.02930737,2.05084729
+14.3917723,3.59438205,8.503077510000001,2.05084729
+26.6034756,54.1342049,4.65662432,2.0711863
+8.01164627,23.5373764,2.10644221,2.11186433
+34.6823769,40.8257713,2.10494256,2.11186433
+2.10724068,39.0635414,2.1052177,2.11186433
+15.3872385,49.1759949,2.12607908,2.13220334
+37.8482018,18.4230328,4.39479399,2.15254235
+29.0531235,2.49710727,2.48893404,2.49830508
+19.3762169,9.073921199999999,1.94186687,1.94915247
+27.1492119,20.5304489,4.24805498,1.94915247
+21.3486481,46.3465614,5.19881248,2.05084729
+9.751503939999999,5.82607317,2.06416869,2.0711863
+13.8420324,53.855957,2.06363225,2.0711863
+12.517416,40.690834,7.20595694,2.09152532
+6.8048687,27.564249,2.10577321,2.11186433
+32.8932915,50.7159157,2.1259892,2.13220334
+19.7882099,28.9382915,5.66031647,2.13220334
+26.8107567,36.3768234,2.14518237,2.15254235
+37.8286438,37.9315643,2.16485882,2.17288136
+2.19248223,51.1705742,5.37057638,2.19322038
+24.6358967,57.7880325,2.20750475,2.21355915
+10.5835552,16.6798534,5.70807886,2.25423717
+37.7254333,14.5614996,2.2678113,2.27457619
+20.6360912,20.5433159,5.32525444,1.96949148
+16.5980148,2.05009246,5.41831589,2.05084729
+29.7291241,40.6996727,4.83281755,2.0711863
+21.586586,54.1283722,2.06595373,2.0711863
+11.3610525,50.4320488,2.08371711,2.09152532
+29.9717636,14.0863457,2.08431602,2.09152532
+14.7462397,29.753231,5.66231251,2.13220334
+2.23103452,43.6121178,2.22721004,2.23389816
+11.5810738,13.7806911,2.26480746,2.27457619
+34.2983818,57.70821,2.2867372,2.2949152
+2.41505456,57.5835419,2.40907288,2.41694903
+36.0139923,28.9009724,2.42852879,2.43728805
+2.4969101,7.16958141,6.30859327,2.49830508
+2.55487442,29.4118443,2.5507226,2.55932188
+27.5374489,17.3518982,1.98332775,1.98983049
+11.190464,8.052257539999999,5.23124361,2.0711863
+13.2662611,56.1886101,5.47622538,2.11186433
+24.6050873,50.2373199,5.43323565,2.13220334
+33.1960831,32.5102348,2.14503551,2.15254235
+15.957695,20.2229595,2.16744089,2.17288136
+16.458334,33.667469,5.15290117,2.17288136
+13.2386379,44.4174805,5.27279711,2.17288136
+22.1183472,5.98503447,2.18436313,2.19322038
+2.23192787,48.0651932,2.22694445,2.23389816
+2.35542202,33.2125816,5.63697624,2.35593224
+37.6038666,44.2409439,2.38864493,2.39661002
+34.2135696,6.28897476,2.52910066,2.53898287
+2.60151029,16.2449112,2.57140088,2.57966089
+24.4976025,17.6750717,4.92481518,2.01016951
+7.55814409,5.1767869,5.98612547,2.09152532
+16.513504,52.2346458,4.92174053,2.17288136
+12.067605,22.1713753,2.18668914,2.19322038
+6.62685633,34.7115784,5.30302572,2.19322038
+26.3863449,28.4535961,2.20489478,2.21355915
+33.5236549,46.4157791,2.22464776,2.23389816
+20.0572948,41.0910225,2.287117,2.2949152
+26.7514992,6.99604225,2.347574,2.35593224
+37.4817123,23.1850815,6.12853432,2.51864409
+23.3591747,13.8045835,4.92265368,2.03050852
+13.9166899,8.53112507,2.10596061,2.11186433
+10.3067837,32.3482933,5.46829557,2.19322038
+33.8863678,19.91082,5.46119738,2.21355915
+24.3329487,47.2367821,2.24720001,2.25423717
+9.149082180000001,46.1327133,5.49501514,2.27457619
+28.5967903,32.3513107,2.26723194,2.27457619
+37.5866394,54.2007828,2.41197538,2.41694903
+37.4836121,40.7700043,5.85170364,2.51864409
+20.4244003,10.557456,5.53397369,2.09152532
+23.3139324,20.561533,2.16530561,2.17288136
+13.083374,39.3278885,2.20584702,2.21355915
+8.21923447,25.7923069,5.80888319,2.23389816
+25.5500431,39.4884071,5.04188061,2.2949152
+34.5513382,48.0158463,6.33761692,2.31525421
+5.57961988,51.171093,2.34963989,2.35593224
+33.5025558,30.5231457,6.18708563,2.37627101
+6.75604582,2.45612955,2.44905782,2.45762706
+19.727211,18.1701488,2.12423205,2.13220334
+17.3016949,29.5149899,2.18653679,2.19322038
+10.4538536,42.9088402,2.22786307,2.23389816
+33.6057854,16.5233021,2.28738999,2.2949152
+9.67503262,12.0750294,6.03583527,2.31525421
+26.9867458,43.4431801,2.36673903,2.37627101
+21.1157532,2.51612091,5.16490412,2.51864409
+29.4451828,57.4609375,2.5321064,2.53898287
+3.40564632,24.3466682,2.59211612,2.5999999
+14.2314463,11.6071529,5.11836767,2.21355915
+19.7923431,33.1996307,2.26575422,2.27457619
+30.8544979,9.771660799999999,2.32838964,2.33559322
+27.9454041,50.1342926,2.38732004,2.39661002
+12.9180317,48.9355469,6.03309155,2.43728805
+31.3037052,37.2268257,2.4314115,2.43728805
+34.2015839,24.3327599,2.47167706,2.47796607
+20.0462456,13.3676481,2.24743438,2.25423717
+16.2620792,41.1021919,4.89902258,2.33559322
+23.3687458,25.061779,2.33047676,2.33559322
+7.52403736,15.9868107,2.34890985,2.35593224
+30.2525406,6.20210171,5.43279314,2.39661002
+9.147789960000001,54.3358688,2.43037772,2.43728805
+37.421711,49.2070808,2.57043195,2.57966089
+16.7676315,21.9938259,6.35613394,2.2949152
+17.1247463,5.48719168,2.30751586,2.31525421
+22.3565445,37.0542259,2.36946154,2.37627101
+6.16995239,41.0931015,2.47003937,2.47796607
+5.82534313,11.4594669,2.48835182,2.49830508
+31.104496,28.2700825,2.5317421,2.53898287
+20.001543,49.8542023,2.55136514,2.55932188
+23.4455605,10.3057518,2.3271277,2.33559322
+12.6863251,34.7636566,2.39043355,2.39661002
+27.3035259,24.9260826,5.29046583,2.57966089
+17.3882751,37.2185135,2.40922332,2.41694903
+11.2365427,26.687973,2.40901518,2.41694903
+15.9294357,15.6157761,2.44984412,2.45762706
+17.8970261,45.3231544,2.47086191,2.47796607
+15.9234858,24.9643784,2.59045625,2.5999999
+
+Input parameters file:
+{
+    "MatrixBased": "false",
+    "GrainCutOffTolerance0": "0.00001",
+    "GrainCutOffTolerance": "0.0",
+    "Adaptivity": {
+        "BottomFractionOfCells": "0.1",
+        "InterfaceValueMin": "0.01",
+        "InterfaceValueMax": "0.99",
+        "MaxRefinementDepth": "2",
+        "MinRefinementDepth": "3",
+        "RefinementFrequency": "1",
+        "TopFractionOfCells": "0.3"
+    },
+    "Advection": {
+        "Ceq": "1",
+        "Cgb": "0.14",
+        "Enable": "false",
+        "K": "20",
+        "Mr": "0",
+        "Mt": "1"
+    },
+    "Approximation": {
+        "FEDegree": "1",
+        "NPoints1D": "2",
+        "NSubdivisions": "1"
+    },
+    "Geometry": {
+        "BoundaryFactor": "0.5",
+        "DivisionsPerInterface": "1.5",
+        "GlobalRefinement": "Base",
+        "InterfaceBufferRatio": "7",
+        "RadiusBufferRatio00": "0.0",
+        "RadiusBufferRatio": "0.25",
+        "InterfaceWidth04": "0.4",
+        "InterfaceWidth": "0.1",
+        "MinimizeOrderParameters": "true",
+        "MaxLevel0DivisionsPerInterface": "0.99999",
+        "CustomBoundingBox" : "true",
+        "CustomDivisions" : "true",
+        "BoundingBox": {
+            "Xmin": "-1.5",
+            "Xmax": "41.5",
+            "Ymin": "-1.5",
+            "Ymax": "61.5",
+            "Zmin": "-1.5",
+            "Zmax": "13.0"
+        },
+        "Divisions": {
+            "Nx": "86",
+            "Ny": "126",
+            "Nz": "29"
+        }
+    },
+    "GrainTracker": {
+        "BufferDistanceRatio": "0.01",
+        "GrainTrackerFrequency50": "50",
+        "GrainTrackerFrequency": "0",
+        "ThresholdLower": "0.01",
+        "ThresholdUpper": "1.01"
+    },
+    "Material": {
+        "EnergyAbstract": {
+            "A": "32",
+            "B": "8",
+            "KappaC": "0.4",
+            "KappaP": "0.2"
+        },
+        "MobilityAbstract": {
+            "L": "100",
+            "Mgb": "1",
+            "Msurf": "10",
+            "Mvap": "0.001",
+            "Mvol": "0.01"
+        },
+        "Type": "Abstract"
+    },
+    "NonLinearData": {
+        "LinearRelativeTolerance" : 1e-2,
+        "JacobiFree": "true",
+        "LinearMaxIterations": 1000,
+        "NewtonUseDamping" : "false",
+        "NewtonReusePreconditioner": "true",
+        "NewtonThresholdNewtonIterations" : 100,
+        "NewtonThresholdLinearIterations" : 50,
+        "NonLinearSolverType" : "NOX",
+        "NonLinearMaxIterations" : 20,
+        "NOXData": {
+            "DirectionMethod": "Newton",
+            "LineSearchMethod": "Full Step",
+            "LineSearchInterpolationType": "Cubic"
+        }
+    },
+    "Output": {
+        "ConcentrationContour": "true",
+        "Contour": "true",
+        "ContourNCoarseningSteps": "0",
+        "Debug": "false",
+        "DomainIntegrals": "gb_area,solid_vol,surf_area,avg_grain_size,surf_area_nrm,free_energy",
+        "Fields": "CH,bnds",
+        "GrainBoundaries": "true",
+        "GrainBoundariesThreshold": "0.14",
+        "HigherOrderCells": "false",
+        "IsoSurfaceArea": "true",
+        "IsoGrainBoundariesArea": "true",
+        "MCASubdivisions": "3",
+        "OutputTimeInterval": "1e-3",
+        "Regular": "true",
+        "Shrinkage": "false",
+        "Table": "true",
+        "UseControlBox": "true",
+        "VtkPath": ".",
+        "ControlBox": {
+            "Xmin": "1",
+            "Xmax": "39",
+            "Ymin": "1",
+            "Ymax": "59",
+            "Zmin": "0.5",
+            "Zmax": "7"
+        }
+    },
+    "Preconditioners": {
+        "OuterPreconditioner": "BlockPreconditioner2",
+        "BlockPreconditioner2": {
+            "Block0Preconditioner": "ILU",
+            "Block1Approximation": "avg",
+            "Block1Preconditioner": "BlockILU"
+        }
+    },
+    "Profiling": {
+        "OutputTimeInterval": "900",
+        "RunVmults": "false",
+        "OutputMemoryConsumption" : "false"
+    },
+    "Restart": {
+        "Interval": "1680",
+        "MaximalOutput": "1",
+        "Prefix": "./restart_332p",
+        "Type": "real_time"
+    },
+    "TimeIntegration": {
+        "IntegrationScheme" : "BDF2",
+        "DesirableLinearIterations": "500",
+        "DesirableNewtonIterations": "10",
+        "GrowthFactor": "1.2",
+        "TimeEnd": "0.05",
+        "TimeStart": "0",
+        "TimeStepInit": "1e-3",
+        "TimeStepMax": "100",
+        "TimeStepMin": "1e-4"
+    }
+}
+
+Parameters in JSON format:
+{
+    "GrainCutOffTolerance": "0",
+    "MatrixBased": "false",
+    "TensorialMobilityGradientOnTheFly": "false",
+    "Adaptivity": {
+        "BottomFractionOfCells": "0.1",
+        "ExtraCoarsening": "false",
+        "InterfaceValueMax": "0.99",
+        "InterfaceValueMin": "0.01",
+        "MaxRefinementDepth": "2",
+        "MinRefinementDepth": "3",
+        "QualityControl": "false",
+        "QualityMin": "0.5",
+        "RefinementFrequency": "1",
+        "TopFractionOfCells": "0.3"
+    },
+    "Advection": {
+        "Ceq": "1",
+        "Cgb": "0.14",
+        "Enable": "false",
+        "K": "20",
+        "Mr": "0",
+        "Mt": "1"
+    },
+    "Approximation": {
+        "FEDegree": "1",
+        "NPoints1D": "2",
+        "NSubdivisions": "1"
+    },
+    "BoundaryConditions": {
+        "Direction": "0",
+        "Type": "Domain"
+    },
+    "Geometry": {
+        "BoundaryFactor": "0.5",
+        "CustomBoundingBox": "true",
+        "CustomDivisions": "true",
+        "DivisionsPerInterface": "1.5",
+        "GlobalRefinement": "Base",
+        "HangingNodeWeight": "1",
+        "InterfaceBufferRatio": "7",
+        "InterfaceWidth": "0.1",
+        "MaxLevel0DivisionsPerInterface": "0.99999",
+        "MaxPrime": "20",
+        "MinimizeOrderParameters": "true",
+        "Periodic": "false",
+        "RadiusBufferRatio": "0.25",
+        "BoundingBox": {
+            "Xmax": "41.5",
+            "Xmin": "-1.5",
+            "Ymax": "61.5",
+            "Ymin": "-1.5",
+            "Zmax": "13",
+            "Zmin": "-1.5"
+        },
+        "Divisions": {
+            "Nx": "86",
+            "Ny": "126",
+            "Nz": "29"
+        }
+    },
+    "GrainTracker": {
+        "BufferDistanceFixed": "0",
+        "BufferDistanceRatio": "0.01",
+        "FastReassignment": "false",
+        "GrainTrackerFrequency": "0",
+        "ThresholdLower": "0.01",
+        "ThresholdNewGrains": "0.02",
+        "TrackWithQuality": "false",
+        "UseOldRemap": "false"
+    },
+    "Material": {
+        "EnergyScale": "1",
+        "LengthScale": "1",
+        "Temperature": "0:1573, 100:1573",
+        "TimeScale": "1",
+        "Type": "Abstract",
+        "EnergyAbstract": {
+            "A": "32",
+            "B": "8",
+            "KappaC": "0.4",
+            "KappaP": "0.2"
+        },
+        "EnergyRealistic": {
+            "GrainBoundaryEnergy": "0",
+            "SurfaceEnergy": "0"
+        },
+        "Mechanics": {
+            "E": "1",
+            "Type": "None",
+            "nu": "0.25"
+        },
+        "MobilityAbstract": {
+            "L": "100",
+            "Mgb": "1",
+            "Msurf": "10",
+            "Mvap": "0.001",
+            "Mvol": "0.01"
+        },
+        "MobilityRealistic": {
+            "DGb0": "0",
+            "DGbMob0": "0",
+            "DSurf0": "0",
+            "DVap0": "0",
+            "DVol0": "0",
+            "Omega": "0",
+            "QGb": "0",
+            "QGbMob": "0",
+            "QSurf": "0",
+            "QVap": "0",
+            "QVol": "0"
+        }
+    },
+    "NonLinearData": {
+        "FDMJacobianApproximation": "false",
+        "JacobiFree": "true",
+        "LinearAbsoluteTolerance": "1e-10",
+        "LinearMaxIterations": "1000",
+        "LinearRelativeTolerance": "0.01",
+        "LinearSolver": "GMRES",
+        "LinearSolverBicgstabTries": "30",
+        "NewtonDoUpdate": "true",
+        "NewtonReusePreconditioner": "true",
+        "NewtonThresholdLinearIterations": "50",
+        "NewtonThresholdNewtonIterations": "100",
+        "NewtonUseDamping": "false",
+        "NonLinearAbsoluteTolerance": "1e-20",
+        "NonLinearMaxIterations": "20",
+        "NonLinearRelativeTolerance": "1e-05",
+        "NonLinearSolverType": "NOX",
+        "Verbosity": "1",
+        "GMRESData": {
+            "OrthogonalizationStrategy": "classical gram schmidt"
+        },
+        "NOXData": {
+            "DirectionMethod": "Newton",
+            "LineSearchInterpolationType": "Cubic",
+            "LineSearchMethod": "Full Step",
+            "OutputInformation": "0"
+        },
+        "SNESData": {
+            "LineSearchName": "bt",
+            "SolverName": "newtonls"
+        }
+    },
+    "Output": {
+        "ConcentrationContour": "true",
+        "Contour": "true",
+        "ContourNCoarseningSteps": "0",
+        "ContourTex": "false",
+        "Debug": "false",
+        "DomainIntegrals": "avg_grain_size, free_energy, gb_area, solid_vol, surf_area, surf_area_nrm",
+        "Fields": "CH, bnds",
+        "FluxesDivergences": "false",
+        "GrainBoundaries": "true",
+        "GrainBoundariesThreshold": "0.14",
+        "GrainsStats": "false",
+        "HigherOrderCells": "false",
+        "IsoGrainBoundariesArea": "true",
+        "IsoSurfaceArea": "true",
+        "MCASubdivisions": "3",
+        "MeshOverheadEstimate": "false",
+        "OutputTimeInterval": "0.001",
+        "Porosity": "false",
+        "PorosityContours": "false",
+        "PorosityMaxValue": "0.8",
+        "PorosityStats": "false",
+        "Quality": "false",
+        "Regular": "true",
+        "Shrinkage": "false",
+        "Table": "true",
+        "UseControlBox": "true",
+        "VtkPath": ".",
+        "ControlBox": {
+            "Xmax": "39",
+            "Xmin": "1",
+            "Ymax": "59",
+            "Ymin": "1",
+            "Zmax": "7",
+            "Zmin": "0.5"
+        }
+    },
+    "Preconditioners": {
+        "OuterPreconditioner": "BlockPreconditioner2",
+        "BlockPreconditioner2": {
+            "Block0Preconditioner": "ILU",
+            "Block1Approximation": "avg",
+            "Block1Preconditioner": "BlockILU",
+            "Block2Preconditioner": "AMG",
+            "Block2AMG": {
+                "NCycles": "5",
+                "SmootherSweeps": "4"
+            }
+        }
+    },
+    "Profiling": {
+        "OutputMemoryConsumption": "false",
+        "OutputTimeInterval": "900",
+        "RunVmults": "false"
+    },
+    "Restart": {
+        "FlexibleOutput": "false",
+        "FullHistory": "true",
+        "Interval": "1680",
+        "MaximalOutput": "1",
+        "Prefix": ".\/restart_332p",
+        "Type": "real_time"
+    },
+    "TimeIntegration": {
+        "DesirableLinearIterations": "500",
+        "DesirableNewtonIterations": "10",
+        "GrowthFactor": "1.2",
+        "IntegrationScheme": "BDF2",
+        "Predictor": "None",
+        "SanityCheckPredictor": "false",
+        "SanityCheckSolution": "false",
+        "TimeEnd": "0.05",
+        "TimeStart": "0",
+        "TimeStepInit": "0.001",
+        "TimeStepMax": "100",
+        "TimeStepMin": "0.0001"
+    }
+}
+
+Parameters in JSON format:
+{
+    "GrainCutOffTolerance": "0",
+    "MatrixBased": "false",
+    "TensorialMobilityGradientOnTheFly": "false",
+    "Adaptivity": {
+        "BottomFractionOfCells": "0.1",
+        "ExtraCoarsening": "false",
+        "InterfaceValueMax": "0.99",
+        "InterfaceValueMin": "0.01",
+        "MaxRefinementDepth": "2",
+        "MinRefinementDepth": "3",
+        "QualityControl": "false",
+        "QualityMin": "0.5",
+        "RefinementFrequency": "1",
+        "TopFractionOfCells": "0.3"
+    },
+    "Advection": {
+        "Ceq": "1",
+        "Cgb": "0.14",
+        "Enable": "false",
+        "K": "20",
+        "Mr": "0",
+        "Mt": "1"
+    },
+    "Approximation": {
+        "FEDegree": "1",
+        "NPoints1D": "2",
+        "NSubdivisions": "1"
+    },
+    "BoundaryConditions": {
+        "Direction": "0",
+        "Type": "Domain"
+    },
+    "Geometry": {
+        "BoundaryFactor": "0.5",
+        "CustomBoundingBox": "true",
+        "CustomDivisions": "true",
+        "DivisionsPerInterface": "1.5",
+        "GlobalRefinement": "Base",
+        "HangingNodeWeight": "1",
+        "InterfaceBufferRatio": "7",
+        "InterfaceWidth": "0.1",
+        "MaxLevel0DivisionsPerInterface": "0.99999",
+        "MaxPrime": "20",
+        "MinimizeOrderParameters": "true",
+        "Periodic": "false",
+        "RadiusBufferRatio": "0.25",
+        "BoundingBox": {
+            "Xmax": "41.5",
+            "Xmin": "-1.5",
+            "Ymax": "61.5",
+            "Ymin": "-1.5",
+            "Zmax": "13",
+            "Zmin": "-1.5"
+        },
+        "Divisions": {
+            "Nx": "86",
+            "Ny": "126",
+            "Nz": "29"
+        }
+    },
+    "GrainTracker": {
+        "BufferDistanceFixed": "0",
+        "BufferDistanceRatio": "0.01",
+        "FastReassignment": "false",
+        "GrainTrackerFrequency": "0",
+        "ThresholdLower": "0.01",
+        "ThresholdNewGrains": "0.02",
+        "TrackWithQuality": "false",
+        "UseOldRemap": "false"
+    },
+    "Material": {
+        "EnergyScale": "1",
+        "LengthScale": "1",
+        "Temperature": "0:1573, 100:1573",
+        "TimeScale": "1",
+        "Type": "Abstract",
+        "EnergyAbstract": {
+            "A": "32",
+            "B": "8",
+            "KappaC": "0.4",
+            "KappaP": "0.2"
+        },
+        "EnergyRealistic": {
+            "GrainBoundaryEnergy": "0",
+            "SurfaceEnergy": "0"
+        },
+        "Mechanics": {
+            "E": "1",
+            "Type": "None",
+            "nu": "0.25"
+        },
+        "MobilityAbstract": {
+            "L": "100",
+            "Mgb": "1",
+            "Msurf": "10",
+            "Mvap": "0.001",
+            "Mvol": "0.01"
+        },
+        "MobilityRealistic": {
+            "DGb0": "0",
+            "DGbMob0": "0",
+            "DSurf0": "0",
+            "DVap0": "0",
+            "DVol0": "0",
+            "Omega": "0",
+            "QGb": "0",
+            "QGbMob": "0",
+            "QSurf": "0",
+            "QVap": "0",
+            "QVol": "0"
+        }
+    },
+    "NonLinearData": {
+        "FDMJacobianApproximation": "false",
+        "JacobiFree": "true",
+        "LinearAbsoluteTolerance": "1e-10",
+        "LinearMaxIterations": "1000",
+        "LinearRelativeTolerance": "0.01",
+        "LinearSolver": "GMRES",
+        "LinearSolverBicgstabTries": "30",
+        "NewtonDoUpdate": "true",
+        "NewtonReusePreconditioner": "true",
+        "NewtonThresholdLinearIterations": "50",
+        "NewtonThresholdNewtonIterations": "100",
+        "NewtonUseDamping": "false",
+        "NonLinearAbsoluteTolerance": "1e-20",
+        "NonLinearMaxIterations": "20",
+        "NonLinearRelativeTolerance": "1e-05",
+        "NonLinearSolverType": "NOX",
+        "Verbosity": "1",
+        "GMRESData": {
+            "OrthogonalizationStrategy": "classical gram schmidt"
+        },
+        "NOXData": {
+            "DirectionMethod": "Newton",
+            "LineSearchInterpolationType": "Cubic",
+            "LineSearchMethod": "Full Step",
+            "OutputInformation": "0"
+        },
+        "SNESData": {
+            "LineSearchName": "bt",
+            "SolverName": "newtonls"
+        }
+    },
+    "Output": {
+        "ConcentrationContour": "true",
+        "Contour": "true",
+        "ContourNCoarseningSteps": "0",
+        "ContourTex": "false",
+        "Debug": "false",
+        "DomainIntegrals": "avg_grain_size, free_energy, gb_area, solid_vol, surf_area, surf_area_nrm",
+        "Fields": "CH, bnds",
+        "FluxesDivergences": "false",
+        "GrainBoundaries": "true",
+        "GrainBoundariesThreshold": "0.14",
+        "GrainsStats": "false",
+        "HigherOrderCells": "false",
+        "IsoGrainBoundariesArea": "true",
+        "IsoSurfaceArea": "true",
+        "MCASubdivisions": "3",
+        "MeshOverheadEstimate": "false",
+        "OutputTimeInterval": "0.001",
+        "Porosity": "false",
+        "PorosityContours": "false",
+        "PorosityMaxValue": "0.8",
+        "PorosityStats": "false",
+        "Quality": "false",
+        "Regular": "true",
+        "Shrinkage": "false",
+        "Table": "true",
+        "UseControlBox": "true",
+        "VtkPath": ".",
+        "ControlBox": {
+            "Xmax": "39",
+            "Xmin": "1",
+            "Ymax": "59",
+            "Ymin": "1",
+            "Zmax": "7",
+            "Zmin": "0.5"
+        }
+    },
+    "Preconditioners": {
+        "OuterPreconditioner": "BlockPreconditioner2",
+        "BlockPreconditioner2": {
+            "Block0Preconditioner": "ILU",
+            "Block1Approximation": "avg",
+            "Block1Preconditioner": "BlockILU",
+            "Block2Preconditioner": "AMG",
+            "Block2AMG": {
+                "NCycles": "5",
+                "SmootherSweeps": "4"
+            }
+        }
+    },
+    "Profiling": {
+        "OutputMemoryConsumption": "false",
+        "OutputTimeInterval": "900",
+        "RunVmults": "false"
+    },
+    "Restart": {
+        "FlexibleOutput": "false",
+        "FullHistory": "true",
+        "Interval": "1680",
+        "MaximalOutput": "1",
+        "Prefix": ".\/restart_332p",
+        "Type": "real_time"
+    },
+    "TimeIntegration": {
+        "DesirableLinearIterations": "500",
+        "DesirableNewtonIterations": "10",
+        "GrowthFactor": "1.2",
+        "IntegrationScheme": "BDF2",
+        "Predictor": "None",
+        "SanityCheckPredictor": "false",
+        "SanityCheckSolution": "false",
+        "TimeEnd": "0.05",
+        "TimeStart": "0",
+        "TimeStepInit": "0.001",
+        "TimeStepMax": "100",
+        "TimeStepMin": "0.0001"
+    }
+}
+
+Finite element: FE_Q<3>, n_subdivisions = 1
+Create subdivided hyperrectangle [43.000000 x 63.000000 x 14.500000] = [-1.500000...41.500000 x -1.500000...61.500000 x -1.500000...13.000000] 
+with 0 refinements (global = 0, delayed = 0) and 86x126x29 subdivisions
+
+System statistics:
+  - n cell:                    314244 (min: 204, max: 205)
+  - n cell w hanging nodes:    0 (min: 0, max: 0)
+  - n cell wo hanging nodes:   314244 (min: 204, max: 205)
+  - n cell fine batch:         0 (min: 0, max: 0)
+  - n levels:                  1
+  - n coarse cells:            314244
+  - n theoretical fine cells:  314244
+  - n dofs:                    331470
+
+Mobility type: scalar
+
+Number of local refinements to be performed: 2
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    1048992 (min: 675, max: 690)
+  - n cell w hanging nodes:    438565 (min: 0, max: 456)
+  - n cell wo hanging nodes:   610427 (min: 224, max: 683)
+  - n cell fine batch:         839712 (min: 0, max: 680)
+  - n levels:                  2
+  - n coarse cells:            314244
+  - n theoretical fine cells:  1885464
+  - n dofs:                    1212104
+  - n components:              10
+
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    4948517 (min: 3214, max: 3229)
+  - n cell w hanging nodes:    2658270 (min: 778, max: 2141)
+  - n cell wo hanging nodes:   2290247 (min: 1082, max: 2444)
+  - n cell fine batch:         4524592 (min: 1160, max: 3152)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    5916839
+  - n components:              10
+
+Outputing data at t = 0 (./solution.0.vtu)
+Outputing data at t = 0 (./contour_solution.0.vtu)
+Outputing data at t = 0 (./surface_solution.0.vtu)
+Outputing data at t = 0 (./gb_solution.0.vtu)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.868262e+03 ------------ 8.362125e-14 ------------ 1.867634e+03 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 658563004
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              164640751
+
+ 1 6.712384e+02 3.592850e-01 8.218979e+02 9.828817e+15 3.358173e+02 1.798090e-01 0.000000e+00 0.000000e+00            7
+ 2 1.872696e+03 1.002373e+00 2.637293e+03 3.153855e+16 1.712532e+02 9.169528e-02 0.000000e+00 0.000000e+00           30
+ 3 4.121448e+02 2.206033e-01 5.343634e+02 6.390282e+15 1.645844e+02 8.812455e-02 0.000000e+00 0.000000e+00           23
+ 4 1.691094e+02 9.051695e-02 1.033431e+02 1.235847e+15 1.524982e+02 8.165317e-02 0.000000e+00 0.000000e+00           19
+ 5 1.313900e+02 7.032739e-02 2.648318e+01 3.167040e+14 1.300441e+02 6.963043e-02 0.000000e+00 0.000000e+00           23
+ 6 7.684678e+01 4.113277e-02 1.049025e+02 1.254495e+15 2.007869e+01 1.075087e-02 0.000000e+00 0.000000e+00          124
+ 7 1.203957e+02 6.444260e-02 1.702558e+02 2.036035e+15 1.253677e+00 6.712649e-04 0.000000e+00 0.000000e+00           19
+ 8 2.407379e+01 1.288566e-02 3.400429e+01 4.066466e+14 1.183109e+00 6.334801e-04 0.000000e+00 0.000000e+00            4
+ 9 6.297995e+00 3.371045e-03 8.804664e+00 1.052922e+14 9.505581e-01 5.089639e-04 0.000000e+00 0.000000e+00            7
+10 1.757777e+00 9.408624e-04 2.251295e+00 2.692252e+13 7.453698e-01 3.990985e-04 0.000000e+00 0.000000e+00            6
+11 4.075087e-01 2.181218e-04 5.374201e-01 6.426837e+12 1.471435e-01 7.878608e-05 0.000000e+00 0.000000e+00            7
+12 1.157275e-01 6.194392e-05 1.362182e-01 1.628991e+12 6.414663e-02 3.434647e-05 0.000000e+00 0.000000e+00            8
+13 1.304516e-02 6.982509e-06 1.751087e-02 2.094069e+11 4.105779e-03 2.198386e-06 0.000000e+00 0.000000e+00           16
+
+t = 0, t_n = 0, dt = 0.001: solved in 13 Newton iterations and 293 linear iterations
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5698168 (min: 3702, max: 3717)
+  - n cell w hanging nodes:    2539888 (min: 975, max: 2052)
+  - n cell wo hanging nodes:   3158280 (min: 1659, max: 2734)
+  - n cell fine batch:         5281912 (min: 1464, max: 3656)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6621114
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 7.045237e+02 ------------ 8.272056e+02 ------------ 3.926856e+02 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 733506312
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              183376578
+
+ 1 8.393259e+01 1.191338e-01 7.926953e+01 9.582809e-02 6.246871e+01 1.590807e-01 0.000000e+00 0.000000e+00            7
+ 2 6.123992e+00 8.692386e-03 5.880526e+00 7.108906e-03 4.495826e+00 1.144892e-02 0.000000e+00 0.000000e+00           11
+ 3 3.025751e+00 4.294747e-03 1.472608e+00 1.780220e-03 2.840912e+00 7.234573e-03 0.000000e+00 0.000000e+00            9
+ 4 5.269870e-01 7.480047e-04 3.266412e-01 3.948731e-04 4.736714e-01 1.206236e-03 0.000000e+00 0.000000e+00           11
+ 5 1.004638e-01 1.425981e-04 3.230141e-02 3.904883e-05 9.783270e-02 2.491375e-04 0.000000e+00 0.000000e+00           12
+ 6 1.474701e-02 2.093189e-05 2.261803e-03 2.734270e-06 1.466002e-02 3.733272e-05 0.000000e+00 0.000000e+00           15
+ 7 5.674604e-04 8.054526e-07 3.689801e-05 4.460561e-08 5.668601e-04 1.443547e-06 0.000000e+00 0.000000e+00           21
+
+t = 0.001, t_n = 1, dt = 0.001: solved in 7 Newton iterations and 86 linear iterations
+[32mIncreasing timestep, dt = 0.0012[0m
+Outputing data at t = 0.002 (./solution.1.vtu)
+Outputing data at t = 0.002 (./contour_solution.1.vtu)
+Outputing data at t = 0.002 (./surface_solution.1.vtu)
+Outputing data at t = 0.002 (./gb_solution.1.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5858559 (min: 3807, max: 3822)
+  - n cell w hanging nodes:    2500674 (min: 895, max: 2013)
+  - n cell wo hanging nodes:   3357885 (min: 1802, max: 2920)
+  - n cell fine batch:         5448000 (min: 1960, max: 3744)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6766155
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.470298e+02 ------------ 2.520670e+02 ------------ 1.710369e+02 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 749017852
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              187254463
+
+ 1 4.203993e+01 1.701816e-01 2.951678e+01 1.170989e-01 3.649112e+01 2.133523e-01 0.000000e+00 0.000000e+00           21
+ 2 2.292431e+00 9.279976e-03 1.713931e+00 6.799505e-03 1.945825e+00 1.137664e-02 0.000000e+00 0.000000e+00           18
+ 3 3.253922e-01 1.317219e-03 9.447680e-02 3.748082e-04 3.184588e-01 1.861930e-03 0.000000e+00 0.000000e+00           18
+ 4 5.894235e-02 2.386042e-04 1.449195e-02 5.749246e-05 5.804464e-02 3.393690e-04 0.000000e+00 0.000000e+00           17
+ 5 4.840876e-03 1.959633e-05 3.408017e-04 1.352028e-06 4.834872e-03 2.826800e-05 0.000000e+00 0.000000e+00           24
+ 6 7.033140e-05 2.847081e-07 4.584882e-06 1.818914e-08 7.025662e-05 4.107687e-07 0.000000e+00 0.000000e+00           42
+
+t = 0.002, t_n = 2, dt = 0.0012: solved in 6 Newton iterations and 140 linear iterations
+[32mIncreasing timestep, dt = 0.00144[0m
+Outputing data at t = 0.0032 (./solution.2.vtu)
+Outputing data at t = 0.0032 (./contour_solution.2.vtu)
+Outputing data at t = 0.0032 (./surface_solution.2.vtu)
+Outputing data at t = 0.0032 (./gb_solution.2.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5881638 (min: 3822, max: 3837)
+  - n cell w hanging nodes:    2499011 (min: 894, max: 1996)
+  - n cell wo hanging nodes:   3382627 (min: 1839, max: 2938)
+  - n cell fine batch:         5470688 (min: 1624, max: 3760)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6788470
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.409535e+02 ------------ 1.410516e+02 ------------ 9.959823e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 751422384
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              187855596
+
+ 1 2.529283e+01 1.794409e-01 1.004265e+01 7.119845e-02 2.427439e+01 2.437231e-01 0.000000e+00 0.000000e+00           26
+ 2 1.394602e+00 9.894057e-03 4.993867e-01 3.540455e-03 1.349133e+00 1.354575e-02 0.000000e+00 0.000000e+00           23
+ 3 9.683727e-02 6.870155e-04 1.092964e-02 7.748682e-05 9.652829e-02 9.691768e-04 0.000000e+00 0.000000e+00           37
+ 4 5.921316e-03 4.200899e-05 4.043609e-04 2.866759e-06 5.914408e-03 5.938266e-05 0.000000e+00 0.000000e+00           45
+ 5 7.624769e-05 5.409419e-07 3.667190e-06 2.599893e-08 7.620357e-05 7.651097e-07 0.000000e+00 0.000000e+00           75
+
+t = 0.0032, t_n = 3, dt = 0.00144: solved in 5 Newton iterations and 206 linear iterations
+[32mIncreasing timestep, dt = 0.001728[0m
+Outputing data at t = 0.00464 (./solution.3.vtu)
+Outputing data at t = 0.00464 (./contour_solution.3.vtu)
+Outputing data at t = 0.00464 (./surface_solution.3.vtu)
+Outputing data at t = 0.00464 (./gb_solution.3.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5864593 (min: 3811, max: 3826)
+  - n cell w hanging nodes:    2509903 (min: 892, max: 1988)
+  - n cell wo hanging nodes:   3354690 (min: 1831, max: 2925)
+  - n cell fine batch:         5453264 (min: 1544, max: 3744)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6775630
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 9.852719e+01 ------------ 1.016999e+02 ------------ 6.734889e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 750107544
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              187526886
+
+ 1 2.075340e+01 2.106363e-01 5.409730e+00 5.319305e-02 2.039697e+01 3.028553e-01 0.000000e+00 0.000000e+00           13
+ 2 1.484663e+00 1.506856e-02 3.524545e-01 3.465631e-03 1.463572e+00 2.173119e-02 0.000000e+00 0.000000e+00           10
+ 3 9.063998e-02 9.199489e-04 7.401475e-03 7.277758e-05 9.048858e-02 1.343579e-03 0.000000e+00 0.000000e+00           15
+ 4 6.040004e-04 6.130292e-06 7.388563e-05 7.265061e-07 6.017359e-04 8.934608e-06 0.000000e+00 0.000000e+00           19
+
+t = 0.00464, t_n = 4, dt = 0.001728: solved in 4 Newton iterations and 57 linear iterations
+[32mIncreasing timestep, dt = 0.0020736[0m
+Outputing data at t = 0.006368 (./solution.4.vtu)
+Outputing data at t = 0.006368 (./contour_solution.4.vtu)
+Outputing data at t = 0.006368 (./surface_solution.4.vtu)
+Outputing data at t = 0.006368 (./gb_solution.4.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5846281 (min: 3799, max: 3814)
+  - n cell w hanging nodes:    2513121 (min: 852, max: 2000)
+  - n cell wo hanging nodes:   3333160 (min: 1805, max: 2956)
+  - n cell fine batch:         5433616 (min: 1536, max: 3736)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6759030
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 7.674390e+01 ------------ 7.878557e+01 ------------ 5.278068e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 748279768
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              187069942
+
+ 1 1.737892e+01 2.264535e-01 3.495957e+00 4.437307e-02 1.720160e+01 3.259072e-01 0.000000e+00 0.000000e+00           11
+ 2 1.076409e+00 1.402599e-02 1.552007e-01 1.969913e-03 1.070796e+00 2.028766e-02 0.000000e+00 0.000000e+00           10
+ 3 5.209411e-02 6.788046e-04 3.136612e-03 3.981201e-05 5.204685e-02 9.860968e-04 0.000000e+00 0.000000e+00           15
+ 4 2.733342e-04 3.561642e-06 4.494428e-05 5.704634e-07 2.714767e-04 5.143487e-06 0.000000e+00 0.000000e+00           18
+
+t = 0.006368, t_n = 5, dt = 0.0020736: solved in 4 Newton iterations and 54 linear iterations
+[32mIncreasing timestep, dt = 0.00248832[0m
+Outputing data at t = 0.0084416 (./solution.5.vtu)
+Outputing data at t = 0.0084416 (./contour_solution.5.vtu)
+Outputing data at t = 0.0084416 (./surface_solution.5.vtu)
+Outputing data at t = 0.0084416 (./gb_solution.5.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5831546 (min: 3789, max: 3804)
+  - n cell w hanging nodes:    2513361 (min: 782, max: 2001)
+  - n cell wo hanging nodes:   3318185 (min: 1792, max: 3021)
+  - n cell fine batch:         5418936 (min: 1608, max: 3728)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6744827
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 6.260548e+01 ------------ 6.331581e+01 ------------ 4.375808e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 746689412
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              186672353
+
+ 1 1.665811e+01 2.660806e-01 2.393135e+00 3.779679e-02 1.657137e+01 3.787043e-01 0.000000e+00 0.000000e+00           13
+ 2 1.031950e+00 1.648338e-02 1.465788e-01 2.315042e-03 1.026721e+00 2.346358e-02 0.000000e+00 0.000000e+00           13
+ 3 3.835852e-02 6.127023e-04 6.490202e-03 1.025052e-04 3.808271e-02 8.703013e-04 0.000000e+00 0.000000e+00           18
+ 4 2.997305e-04 4.787607e-06 5.059769e-05 7.991320e-07 2.975864e-04 6.800719e-06 0.000000e+00 0.000000e+00           20
+
+t = 0.0084416, t_n = 6, dt = 0.00248832: solved in 4 Newton iterations and 64 linear iterations
+[32mIncreasing timestep, dt = 0.00298598[0m
+Outputing data at t = 0.0109299 (./solution.6.vtu)
+Outputing data at t = 0.0109299 (./contour_solution.6.vtu)
+Outputing data at t = 0.0109299 (./surface_solution.6.vtu)
+Outputing data at t = 0.0109299 (./gb_solution.6.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5814851 (min: 3778, max: 3793)
+  - n cell w hanging nodes:    2512620 (min: 885, max: 2002)
+  - n cell wo hanging nodes:   3302231 (min: 1787, max: 2904)
+  - n cell fine batch:         5401760 (min: 1568, max: 3728)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6728276
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 5.282689e+01 ------------ 5.259259e+01 ------------ 3.751612e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 744834272
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              186208568
+
+ 1 1.774609e+01 3.359291e-01 1.833124e+00 3.485519e-02 1.769812e+01 4.717472e-01 0.000000e+00 0.000000e+00           14
+ 2 1.069152e+00 2.023878e-02 1.536153e-01 2.920854e-03 1.063605e+00 2.835062e-02 0.000000e+00 0.000000e+00           16
+ 3 3.655384e-02 6.919551e-04 8.416153e-03 1.600255e-04 3.606569e-02 9.613387e-04 0.000000e+00 0.000000e+00           21
+ 4 5.524406e-04 1.045756e-05 5.936320e-05 1.128737e-06 5.508392e-04 1.468274e-05 0.000000e+00 0.000000e+00           23
+ 5 5.338813e-06 1.010624e-07 4.509092e-07 8.573626e-09 5.329276e-06 1.420530e-07 0.000000e+00 0.000000e+00           24
+
+t = 0.0109299, t_n = 7, dt = 0.00298598: solved in 5 Newton iterations and 98 linear iterations
+[32mIncreasing timestep, dt = 0.00358318[0m
+Outputing data at t = 0.0139159 (./solution.7.vtu)
+Outputing data at t = 0.0139159 (./contour_solution.7.vtu)
+Outputing data at t = 0.0139159 (./surface_solution.7.vtu)
+Outputing data at t = 0.0139159 (./gb_solution.7.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5798471 (min: 3768, max: 3783)
+  - n cell w hanging nodes:    2509462 (min: 886, max: 1955)
+  - n cell wo hanging nodes:   3289009 (min: 1820, max: 2888)
+  - n cell fine batch:         5385944 (min: 1536, max: 3728)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6711313
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.578439e+01 ------------ 4.495082e+01 ------------ 3.294970e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 742907596
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              185726899
+
+ 1 2.031640e+01 4.437408e-01 1.609776e+00 3.581194e-02 2.028368e+01 6.155952e-01 0.000000e+00 0.000000e+00           14
+ 2 1.610863e+00 3.518368e-02 3.766631e-01 8.379449e-03 1.588625e+00 4.821364e-02 0.000000e+00 0.000000e+00           17
+ 3 1.047604e-01 2.288125e-03 5.535054e-02 1.231358e-03 9.717080e-02 2.949065e-03 0.000000e+00 0.000000e+00           23
+ 4 4.660646e-03 1.017955e-04 5.810411e-04 1.292615e-05 4.642489e-03 1.408962e-04 0.000000e+00 0.000000e+00           20
+ 5 6.974461e-05 1.523327e-06 2.382087e-06 5.299317e-08 6.972423e-05 2.116081e-06 0.000000e+00 0.000000e+00           31
+
+t = 0.0139159, t_n = 8, dt = 0.00358318: solved in 5 Newton iterations and 105 linear iterations
+[32mIncreasing timestep, dt = 0.00429982[0m
+Outputing data at t = 0.0174991 (./solution.8.vtu)
+Outputing data at t = 0.0174991 (./contour_solution.8.vtu)
+Outputing data at t = 0.0174991 (./surface_solution.8.vtu)
+Outputing data at t = 0.0174991 (./gb_solution.8.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5781496 (min: 3757, max: 3771)
+  - n cell w hanging nodes:    2505473 (min: 922, max: 2014)
+  - n cell wo hanging nodes:   3276023 (min: 1750, max: 2842)
+  - n cell fine batch:         5369008 (min: 1560, max: 3696)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6693282
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.076672e+01 ------------ 3.943068e+01 ------------ 2.973680e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 740868392
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              185217098
+
+ 1 3.344277e+01 8.203450e-01 2.393410e+00 6.069918e-02 3.339804e+01 1.123122e+00 0.000000e+00 0.000000e+00           16
+ 2 4.678777e+00 1.147695e-01 1.578104e+00 4.002223e-02 4.543436e+00 1.527884e-01 0.000000e+00 0.000000e+00           20
+ 3 7.548492e-01 1.851631e-02 6.820866e-01 1.729837e-02 5.806442e-01 1.952612e-02 0.000000e+00 0.000000e+00           20
+ 4 4.768506e-02 1.169706e-03 3.326405e-02 8.436085e-04 4.147946e-02 1.394886e-03 0.000000e+00 0.000000e+00           16
+ 5 1.398667e-03 3.430904e-05 1.424242e-04 3.612015e-06 1.395034e-03 4.691271e-05 0.000000e+00 0.000000e+00           20
+ 6 2.078939e-05 5.099599e-07 7.601626e-07 1.927846e-08 2.078243e-05 6.988791e-07 0.000000e+00 0.000000e+00           34
+
+t = 0.0174991, t_n = 9, dt = 0.00429982: solved in 6 Newton iterations and 126 linear iterations
+[32mIncreasing timestep, dt = 0.00515978[0m
+Outputing data at t = 0.0217989 (./solution.9.vtu)
+Outputing data at t = 0.0217989 (./contour_solution.9.vtu)
+Outputing data at t = 0.0217989 (./surface_solution.9.vtu)
+Outputing data at t = 0.0217989 (./gb_solution.9.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5762491 (min: 3744, max: 3759)
+  - n cell w hanging nodes:    2501135 (min: 993, max: 1993)
+  - n cell wo hanging nodes:   3261356 (min: 1752, max: 2764)
+  - n cell fine batch:         5349872 (min: 1552, max: 3680)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6673132
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.730225e+01 ------------ 3.557549e+01 ------------ 2.753883e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 738599368
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              184649842
+
+ 1 7.383111e+01 1.979267e+00 4.453816e+00 1.251934e-01 7.375892e+01 2.678361e+00 0.000000e+00 0.000000e+00           19
+ 2 1.456817e+01 3.905440e-01 3.751160e+00 1.054423e-01 1.432350e+01 5.201203e-01 0.000000e+00 0.000000e+00           22
+ 3 3.593593e+00 9.633715e-02 3.598522e+00 1.011517e-01 2.537454e+00 9.214096e-02 0.000000e+00 0.000000e+00           20
+ 4 5.881793e-01 1.576793e-02 6.826699e-01 1.918933e-02 3.360434e-01 1.220253e-02 0.000000e+00 0.000000e+00           17
+ 5 4.213455e-02 1.129544e-03 8.319336e-03 2.338502e-04 4.172180e-02 1.515017e-03 0.000000e+00 0.000000e+00           18
+ 6 7.606724e-04 2.039213e-05 2.601359e-05 7.312221e-07 7.604495e-04 2.761372e-05 0.000000e+00 0.000000e+00           31
+ 7 6.900705e-06 1.849943e-07 2.206941e-07 6.203544e-09 6.898936e-06 2.505167e-07 0.000000e+00 0.000000e+00           42
+
+t = 0.0217989, t_n = 10, dt = 0.00515978: solved in 7 Newton iterations and 169 linear iterations
+[32mIncreasing timestep, dt = 0.00619174[0m
+Outputing data at t = 0.0269587 (./solution.10.vtu)
+Outputing data at t = 0.0269587 (./contour_solution.10.vtu)
+Outputing data at t = 0.0269587 (./surface_solution.10.vtu)
+Outputing data at t = 0.0269587 (./gb_solution.10.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5741995 (min: 3731, max: 3746)
+  - n cell w hanging nodes:    2496446 (min: 1002, max: 1966)
+  - n cell wo hanging nodes:   3245549 (min: 1766, max: 2733)
+  - n cell fine batch:         5329112 (min: 1496, max: 3688)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6651382
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.513919e+01 ------------ 3.298395e+01 ------------ 2.627760e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 736157552
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              184039388
+
+ 1 1.238396e+02 3.524257e+00 5.381515e+00 1.631556e-01 1.237729e+02 4.710204e+00 0.000000e+00 0.000000e+00           20
+ 2 2.699797e+01 7.683151e-01 4.447555e+00 1.348400e-01 2.681221e+01 1.020345e+00 0.000000e+00 0.000000e+00           24
+ 3 6.244866e+00 1.777180e-01 4.882593e+00 1.480294e-01 5.203468e+00 1.980191e-01 0.000000e+00 0.000000e+00           23
+ 4 1.184300e+00 3.370312e-02 1.272587e+00 3.858201e-02 7.699143e-01 2.929926e-02 0.000000e+00 0.000000e+00           21
+ 5 6.265735e-02 1.783119e-03 3.088767e-02 9.364455e-04 5.872690e-02 2.234865e-03 0.000000e+00 0.000000e+00           19
+ 6 1.679740e-03 4.780246e-05 1.269370e-04 3.848448e-06 1.677326e-03 6.383099e-05 0.000000e+00 0.000000e+00           34
+ 7 2.369191e-05 6.742304e-07 9.190808e-07 2.786449e-08 2.368298e-05 9.012611e-07 0.000000e+00 0.000000e+00           44
+
+t = 0.0269587, t_n = 11, dt = 0.00619174: solved in 7 Newton iterations and 185 linear iterations
+[32mIncreasing timestep, dt = 0.00743008[0m
+Outputing data at t = 0.0331504 (./solution.11.vtu)
+Outputing data at t = 0.0331504 (./contour_solution.11.vtu)
+Found an overlap between grain 200 and grain 201 with order parameter 3
+Outputing data at t = 0.0331504 (./surface_solution.11.vtu)
+Outputing data at t = 0.0331504 (./gb_solution.11.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5720533 (min: 3717, max: 3732)
+  - n cell w hanging nodes:    2491973 (min: 988, max: 1989)
+  - n cell wo hanging nodes:   3228560 (min: 1731, max: 2732)
+  - n cell fine batch:         5307624 (min: 1440, max: 3672)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6628808
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.355982e+01 ------------ 3.092126e+01 ------------ 2.545381e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 733629560
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              183407390
+
+ 1 4.684637e+02 1.395906e+01 8.675215e+00 2.805583e-01 4.683999e+02 1.840196e+01 0.000000e+00 0.000000e+00           25
+ 2 1.292726e+02 3.852004e+00 5.927388e+00 1.916930e-01 1.291977e+02 5.075770e+00 0.000000e+00 0.000000e+00           27
+ 3 3.448155e+01 1.027465e+00 9.426513e+00 3.048554e-01 3.382965e+01 1.329061e+00 0.000000e+00 0.000000e+00           30
+ 4 1.425448e+01 4.247483e-01 1.662850e+01 5.377692e-01 8.058050e+00 3.165754e-01 0.000000e+00 0.000000e+00           42
+ 5 2.391147e+01 7.125028e-01 3.369570e+01 1.089726e+00 2.014368e+00 7.913817e-02 0.000000e+00 0.000000e+00           19
+ 6 7.873050e+00 2.345975e-01 1.111610e+01 3.594969e-01 4.484557e-01 1.761841e-02 0.000000e+00 0.000000e+00           14
+ 7 3.921325e-01 1.168458e-02 5.165261e-01 1.670456e-02 1.427167e-01 5.606890e-03 0.000000e+00 0.000000e+00            9
+ 8 2.268166e-02 6.758575e-04 1.294474e-03 4.186355e-05 2.266316e-02 8.903642e-04 0.000000e+00 0.000000e+00           30
+ 9 6.717445e-04 2.001633e-05 7.797097e-06 2.521598e-07 6.717215e-04 2.638982e-05 0.000000e+00 0.000000e+00           70
+10 1.419839e-05 4.230770e-07 1.373851e-07 4.443065e-09 1.419806e-05 5.577969e-07 0.000000e+00 0.000000e+00           44
+
+t = 0.0331504, t_n = 12, dt = 0.00743008: solved in 10 Newton iterations and 310 linear iterations
+Outputing data at t = 0.0405805 (./solution.12.vtu)
+Outputing data at t = 0.0405805 (./contour_solution.12.vtu)
+Found an overlap between grain 167 and grain 168 with order parameter 2
+Found an overlap between grain 200 and grain 201 with order parameter 3
+Outputing data at t = 0.0405805 (./surface_solution.12.vtu)
+Outputing data at t = 0.0405805 (./gb_solution.12.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5696803 (min: 3702, max: 3716)
+  - n cell w hanging nodes:    2485708 (min: 958, max: 2000)
+  - n cell wo hanging nodes:   3211095 (min: 1707, max: 2751)
+  - n cell fine batch:         5284056 (min: 1408, max: 3656)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6603290
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.196294e+01 ------------ 2.878364e+01 ------------ 2.463840e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 730782784
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              182695696
+
+ 1 3.521917e+02 1.101875e+01 9.114199e+00 3.166452e-01 3.521085e+02 1.429105e+01 0.000000e+00 0.000000e+00           25
+ 2 9.272712e+01 2.901082e+00 5.969277e+00 2.073844e-01 9.262422e+01 3.759344e+00 0.000000e+00 0.000000e+00           27
+ 3 2.362162e+01 7.390316e-01 8.371092e+00 2.908282e-01 2.286668e+01 9.280909e-01 0.000000e+00 0.000000e+00           28
+ 4 6.479925e+00 2.027324e-01 5.796337e+00 2.013761e-01 5.018809e+00 2.036986e-01 0.000000e+00 0.000000e+00           29
+ 5 1.375276e+00 4.302721e-02 1.302772e+00 4.526084e-02 1.021134e+00 4.144482e-02 0.000000e+00 0.000000e+00           40
+ 6 7.952518e-01 2.488043e-02 1.116851e-01 3.880159e-03 7.913016e-01 3.211660e-02 0.000000e+00 0.000000e+00           60
+ 7 3.973269e-02 1.243086e-03 1.409712e-03 4.897617e-05 3.972000e-02 1.612117e-03 0.000000e+00 0.000000e+00           22
+ 8 1.209234e-03 3.783236e-05 6.107503e-05 2.121867e-06 1.208455e-03 4.904763e-05 0.000000e+00 0.000000e+00           50
+ 9 9.450139e-06 2.956592e-07 2.530234e-07 8.790531e-09 9.448425e-06 3.834837e-07 0.000000e+00 0.000000e+00           35
+
+t = 0.0405805, t_n = 13, dt = 0.00743008: solved in 9 Newton iterations and 316 linear iterations
+[32mIncreasing timestep, dt = 0.0089161[0m
+Outputing data at t = 0.0480106 (./solution.13.vtu)
+Outputing data at t = 0.0480106 (./contour_solution.13.vtu)
+Found an overlap between grain 120 and grain 121 with order parameter 1
+Found an overlap between grain 167 and grain 168 with order parameter 2
+Found an overlap between grain 200 and grain 201 with order parameter 3
+Found an overlap between grain 22 and grain 23 with order parameter 0
+Found an overlap between grain 227 and grain 232 with order parameter 3
+Outputing data at t = 0.0480106 (./surface_solution.13.vtu)
+Outputing data at t = 0.0480106 (./gb_solution.13.vtu)
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    5675418 (min: 3687, max: 3702)
+  - n cell w hanging nodes:    2479938 (min: 969, max: 2003)
+  - n cell wo hanging nodes:   3195480 (min: 1691, max: 2721)
+  - n cell fine batch:         5262704 (min: 1464, max: 3640)
+  - n levels:                  3
+  - n coarse cells:            314244
+  - n theoretical fine cells:  11312784
+  - n dofs:                    6580212
+  - n components:              10
+
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.631278e+01 ------------ 2.254832e+01 ------------ 2.092446e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 728218808
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              182054702
+
+ 1 8.557171e+00 3.252098e-01 1.051032e+00 4.661244e-02 8.524240e+00 4.073816e-01 0.000000e+00 0.000000e+00           13
+ 2 9.444557e-01 3.589343e-02 2.267140e-01 1.005459e-02 9.306784e-01 4.447801e-02 0.000000e+00 0.000000e+00           14
+ 3 9.219181e-02 3.503690e-03 1.230268e-02 5.456139e-04 9.177710e-02 4.386115e-03 0.000000e+00 0.000000e+00           14
+ 4 2.300668e-03 8.743539e-05 1.843195e-04 8.174419e-06 2.296957e-03 1.097738e-04 0.000000e+00 0.000000e+00           16
+ 5 2.467603e-05 9.377965e-07 1.569286e-06 6.959658e-08 2.465104e-05 1.178097e-06 0.000000e+00 0.000000e+00           22
+
+t = 0.0480106, t_n = 14, dt = 0.00198941: solved in 5 Newton iterations and 79 linear iterations
+Outputing data at t = 0.05 (./solution.14.vtu)
+Outputing data at t = 0.05 (./contour_solution.14.vtu)
+Found an overlap between grain 117 and grain 120 with order parameter 1
+Found an overlap between grain 167 and grain 168 with order parameter 2
+Found an overlap between grain 200 and grain 201 with order parameter 3
+Found an overlap between grain 22 and grain 23 with order parameter 0
+Found an overlap between grain 221 and grain 239 with order parameter 3
+Found an overlap between grain 227 and grain 232 with order parameter 3
+Outputing data at t = 0.05 (./surface_solution.14.vtu)
+Outputing data at t = 0.05 (./gb_solution.14.vtu)
+
+Final statistics:
+  - n timesteps:               15
+  - n non-linear iterations:   97
+  - n linear iterations:       2288
+  - n residual evaluations:    112
+  - avg non-linear iterations: 6.46667
+  - avg linear iterations:     23.5876
+  - max dt:                    0.00743008
+
+  - n failed tries:                   0
+  - n failed non-linear iterations:   0
+  - n failed linear iterations:       0
+  - n failed residual evaluations:    0
+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     553.3s   449 |     553.3s |     553.3s     0 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| tracker::clone   |        15 | 0.0002137s   138 | 0.0002651s | 0.0005268s  1245 |
++------------------------------+------------------+------------+------------------+
+
++----------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                 |     553.3s   463 |     553.3s |     553.3s  1408 |
+|                                              |                  |                               |
+| Section                          | no. calls |   min time  rank |   avg time |   max time  rank |
++----------------------------------------------+------------------+------------+------------------+
+| sintering_op::nonlinear_residual |      2525 |     25.65s  1535 |     35.41s |     42.77s     3 |
++----------------------------------------------+------------------+------------+------------------+
+
++---------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed    |     553.3s   389 |     553.3s |     553.3s  1408 |
+|                                 |                  |                               |
+| Section             | no. calls |   min time  rank |   avg time |   max time  rank |
++---------------------------------+------------------+------------+------------------+
+| jacobi_free::reinit |        97 |     1.907s  1533 |     2.389s |     2.847s     0 |
+| jacobi_free::vmult  |      2413 |     26.49s  1535 |     36.22s |     43.05s     0 |
++---------------------------------+------------------+------------+------------------+
+
++--------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed         |     553.3s   388 |     553.3s |     553.3s  1408 |
+|                                      |                  |                               |
+| Section                  | no. calls |   min time  rank |   avg time |   max time  rank |
++--------------------------------------+------------------+------------+------------------+
+| precon::update           |        18 |     25.21s   273 |     25.25s |      25.3s  1535 |
+| precon::update::precon_0 |        18 |      19.6s     0 |     19.63s |     19.69s  1535 |
+| precon::update::precon_1 |        18 |      5.59s   547 |     5.615s |     5.631s    97 |
+| precon::vmult            |      2413 |     12.12s  1534 |     13.93s |     16.05s     0 |
+| precon::vmult::precon_0  |      2413 |     5.073s  1535 |      7.13s |      8.26s     0 |
+| precon::vmult::precon_1  |      2413 |     5.937s   683 |     6.745s |      7.74s     0 |
++--------------------------------------+------------------+------------+------------------+
+
++----------------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                       |     553.3s   388 |     553.3s |     553.3s  1408 |
+|                                                    |                  |                               |
+| Section                                | no. calls |   min time  rank |   avg time |   max time  rank |
++----------------------------------------------------+------------------+------------+------------------+
+| cahn_hilliard_op::matrix::compute      |        18 |     4.379s  1535 |     4.445s |     4.513s   789 |
+| cahn_hilliard_op::matrix::post_compute |        18 | 4.845e-05s     0 | 5.693e-05s | 0.0002409s  1095 |
+| cahn_hilliard_op::matrix::sp           |        15 |     11.71s   273 |     11.74s |      11.8s  1535 |
++----------------------------------------------------+------------------+------------+------------------+
+
++--------------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                     |     553.3s   388 |     553.3s |     553.3s  1408 |
+|                                                  |                  |                               |
+| Section                              | no. calls |   min time  rank |   avg time |   max time  rank |
++--------------------------------------------------+------------------+------------+------------------+
+| allen_cahn_op::block_matrix::compute |        18 |    0.7396s   594 |    0.8052s |    0.9201s  1059 |
+| allen_cahn_op::block_matrix::sp      |        15 |     3.004s   146 |     3.027s |     3.058s     0 |
++--------------------------------------------------+------------------+------------+------------------+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     553.3s   388 |     553.3s |     553.3s   852 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| ilu::setup       |        18 |      19.6s     0 |     19.63s |     19.69s  1535 |
+| ilu::vmult       |      2413 |     4.951s  1535 |     7.041s |     8.195s     0 |
++------------------------------+------------------+------------+------------------+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     553.3s   388 |     553.3s |     553.3s   852 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| block_ilu::setup |        18 |     5.589s  1059 |     5.614s |     5.631s    97 |
+| block_ilu::vmult |      2413 |     5.863s   683 |     6.677s |     7.684s     0 |
++------------------------------+------------------+------------+------------------+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     553.3s   388 |     553.3s |     553.3s   102 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| gmres::solve     |        97 |     111.8s    97 |       112s |     112.3s  1535 |
++------------------------------+------------------+------------+------------------+
+
++----------------------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                             |     553.3s   388 |     553.3s |     553.3s   102 |
+|                                                          |                  |                               |
+| Section                                      | no. calls |   min time  rank |   avg time |   max time  rank |
++----------------------------------------------------------+------------------+------------+------------------+
+| execute_coarsening_and_refinement            |         2 |     15.74s  1059 |     15.75s |     15.75s   507 |
+| initialize_solution                          |         3 |     1.377s   409 |     1.391s |     1.395s     0 |
+| output_result                                |         1 |     10.16s     3 |     10.18s |      10.2s  1507 |
+| time_loop                                    |        15 |       526s  1520 |       526s |       526s     3 |
+| time_loop::execute_coarsening_and_refinement |        14 |       157s    53 |       157s |       157s  1222 |
+| time_loop::newton                            |        15 |     149.6s  1519 |     149.6s |     149.7s     0 |
+| time_loop::newton::residual                  |       112 |     1.768s  1535 |     2.295s |     2.684s     1 |
+| time_loop::newton::setup_jacobian            |        97 |     3.172s  1535 |     3.513s |     3.723s     0 |
+| time_loop::newton::setup_preconditioner      |        18 |     25.21s   273 |     25.25s |      25.3s  1535 |
+| time_loop::newton::solve_with_jacobian       |        97 |       116s     0 |     116.2s |     116.5s  1535 |
+| time_loop::output_result                     |        14 |     164.7s     2 |     164.9s |     165.1s   309 |
+| time_loop::restart                           |         1 |     39.64s  1366 |      50.6s |     53.82s   425 |
++----------------------------------------------------------+------------------+------------+------------------+
