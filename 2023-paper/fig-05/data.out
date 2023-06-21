@@ -1,0 +1,2175 @@
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+Running: ./applications/sintering/sintering-3D-generic-scalar ./applications/sintering/sintering-3D-generic-scalar --cloud ../applications/sintering/sintering_cloud_examples/49particles.cloud ../applications/sintering/analysis_examples/49particles_delta_min_40.json
+  - deal.II (branch: nox_snes; revision: 95bc7dee0c40197da08a757d881c20ef4f291bad; short: 95bc7de)
+  - deal.II (branch: ; revision: 55c16e0ca83ee5995f3fe1c8d1c1582031c45bfb; short: 55c16e0)
+
+
+Mode:       cloud
+Cloud path: ../applications/sintering/sintering_cloud_examples/49particles.cloud
+
+Particles list:
+# x,y,z,r
+58.2563,154.421,75.7669,30.0706
+81.464,179.847,28.7446,29.7148
+159.432,25.3744,194.656,26.593
+192.036,177.48,170.475,33.1861
+32.2738,31.4569,160.865,32.6901
+89.3769,117.331,189.648,32.0622
+144.81,82.9425,180.128,37.1034
+144.073,218.21,175.455,33.3289
+134.074,110.981,124.964,27.9853
+137.591,228.091,109.48,30.1948
+83.481,119.674,32.2967,33.2146
+81.4323,87.1428,112.893,32.9174
+193.655,204.128,113.118,33.0868
+79.7952,60.1535,28.0399,29.8488
+31.982,99.4293,205.227,33.4579
+30.7587,215.337,176.454,32.2024
+129.432,84.4641,71.519,34.3942
+31.0773,30.2414,42.7334,32.1297
+133.416,32.3855,32.5046,34.2001
+192.967,78.6902,74.1482,31.5544
+192.619,27.6157,42.2808,28.9488
+174.049,71.8166,23.8376,25.3546
+184.45,139.715,83.6054,34.2268
+137.541,152.537,184.3,30.4074
+88.4387,32.3085,80.5788,33.5813
+29.6362,89.1056,30.5426,31.2213
+87.3973,208.727,83.4405,31.5881
+116.631,34.3488,139.759,35.1711
+86.9647,151.091,132.53,36.7651
+31.0005,47.6509,101.225,31.4522
+84.3831,176.343,191.164,30.2966
+26.9585,147.052,148.24,28.3574
+149.52,165.339,128.458,30.5268
+28.748,146.845,28.0466,29.9776
+155.412,121.786,29.3432,31.2601
+29.4622,105.53,86.9761,29.746
+131.032,210.486,30.5807,31.5099
+158.359,30.9643,90.6079,32.2136
+121.457,156.059,71.751,35.8295
+187.387,120.282,145.039,32.1011
+180.498,175.505,31.3782,31.8404
+101.657,33.3105,204.739,34.5475
+187.368,32.2181,145.744,33.0669
+86.7117,219.441,145.819,35.1044
+29.4669,160.781,203.193,31.2088
+30.7679,201.98,49.6653,32.6516
+32.9807,196.591,114.136,34.9635
+75.3358,68.296,166.209,26.3547
+29.4939,90.4352,144.052,31.4879
+
+Input parameters file:
+{
+    "MatrixBased": "false",
+    "GrainCutOffTolerance": "0.00001",
+    "Adaptivity": {
+        "BottomFractionOfCells": "0.1",
+        "MaxRefinementDepth": "1",
+        "MinRefinementDepth": "3",
+        "RefinementFrequency": "10",
+        "TopFractionOfCells": "0.3"
+    },
+    "Approximation": {
+        "FEDegree": "1",
+        "NPoints1D": "2",
+        "NSubdivisions": "1"
+    },
+    "Geometry": {
+        "BoundaryFactor": "0.5",
+        "CustomBoundingBox": "false",
+        "DivisionsPerInterface": "3",
+        "HangingNodeWeight": "1",
+        "InterfaceBufferRatio": "1",
+        "InterfaceWidth": "8",
+        "MinimizeOrderParameters": "true",
+        "Periodic": "false",
+        "BoundingBox": {
+            "Xmax": "0",
+            "Xmin": "0",
+            "Ymax": "0",
+            "Ymin": "0",
+            "Zmax": "0",
+            "Zmin": "0"
+        }
+    },
+    "GrainTracker": {
+        "BufferDistanceRatio": "0.05",
+        "GrainTrackerFrequency": "25",
+        "ThresholdLower": "0.01",
+        "ThresholdUpper": "1.01"
+    },
+    "Material": {
+        "EnergyAbstract": {
+            "A": "4.35",
+            "B": "0.15",
+            "KappaC": "9.0",
+            "KappaP": "1.79"
+        },
+        "MobilityAbstract": {
+            "L": "1",
+            "Mgb": "0.4",
+            "Msurf": "4",
+            "Mvap": "1e-10",
+            "Mvol": "0.01"
+        },
+        "Type": "Abstract"
+    },
+    "NonLinearData": {
+        "LinearRelativeTolerance": 0.01,
+        "NewtonUseDamping": true,
+        "NonLinearSolverType": "NOX",
+        "JacobiFree": false,
+        "LinearMaxIterations": 100,
+        "NewtonThresholdNewtonIterations": 100,
+        "NewtonThresholdLinearIterations": 50,
+        "NewtonReusePreconditioner": false
+    },
+    "Output": {
+        "Contour": "true",
+        "ContourNCoarseningSteps": "0",
+        "Debug": "false",
+        "Fields": "bnds",
+        "HigherOrderCells": "false",
+        "OutputTimeInterval": "500",
+        "Regular": "false",
+        "VtkPath": ".",
+        "MeshOverheadEstimate": false
+    },
+    "Preconditioners": {
+        "OuterPreconditioner": "BlockPreconditioner2",
+        "BlockPreconditioner2": {
+            "Block0Preconditioner": "ILU",
+            "Block1Approximation": "avg",
+            "Block1Preconditioner": "BlockILU"
+        }
+    },
+    "Profiling": {
+        "OutputTimeInterval": "900",
+        "RunVmults": "false",
+        "OutputMemoryConsumption": "false"
+    },
+    "Restart": {
+        "Interval": "20000",
+        "MaximalOutput": "1",
+        "Prefix": "./restart",
+        "Type": "simulation_time"
+    },
+    "TimeIntegration": {
+        "IntegrationScheme": "BDF2",
+        "DesirableLinearIterations": "100",
+        "DesirableNewtonIterations": "5",
+        "GrowthFactor": "1.2",
+        "TimeEnd": "550",
+        "TimeStart": "0",
+        "TimeStepInit": "0.1",
+        "TimeStepMax": "100",
+        "TimeStepMin": "1e-05"
+    }
+}
+
+Parameters in JSON format:
+{
+    "GrainCutOffTolerance": "1e-05",
+    "MatrixBased": "false",
+    "TensorialMobilityGradientOnTheFly": "false",
+    "Adaptivity": {
+        "BottomFractionOfCells": "0.1",
+        "ExtraCoarsening": "false",
+        "MaxRefinementDepth": "1",
+        "MinRefinementDepth": "3",
+        "QualityControl": "false",
+        "QualityMin": "0.5",
+        "RefinementFrequency": "10",
+        "TopFractionOfCells": "0.3"
+    },
+    "Advection": {
+        "Ceq": "1",
+        "Cgb": "0.1",
+        "Enable": "false",
+        "K": "100",
+        "Mr": "1",
+        "Mt": "1"
+    },
+    "Approximation": {
+        "FEDegree": "1",
+        "NPoints1D": "2",
+        "NSubdivisions": "1"
+    },
+    "BoundaryConditions": {
+        "Direction": "0",
+        "Type": "Domain"
+    },
+    "Geometry": {
+        "BoundaryFactor": "0.5",
+        "CustomBoundingBox": "false",
+        "DivisionsPerInterface": "3",
+        "GlobalRefinement": "None",
+        "HangingNodeWeight": "1",
+        "InterfaceBufferRatio": "1",
+        "InterfaceWidth": "8",
+        "MaxLevel0DivisionsPerInterface": "1",
+        "MaxPrime": "20",
+        "MinimizeOrderParameters": "true",
+        "Periodic": "false",
+        "BoundingBox": {
+            "Xmax": "0",
+            "Xmin": "0",
+            "Ymax": "0",
+            "Ymin": "0",
+            "Zmax": "0",
+            "Zmin": "0"
+        }
+    },
+    "GrainTracker": {
+        "BufferDistanceFixed": "0",
+        "BufferDistanceRatio": "0.05",
+        "FastReassignment": "false",
+        "GrainTrackerFrequency": "25",
+        "ThresholdLower": "0.01",
+        "ThresholdUpper": "1.01",
+        "TrackWithQuality": "false"
+    },
+    "Material": {
+        "EnergyScale": "1",
+        "LengthScale": "1",
+        "Temperature": "0:1573, 100:1573",
+        "TimeScale": "1",
+        "Type": "Abstract",
+        "EnergyAbstract": {
+            "A": "4.35",
+            "B": "0.15",
+            "KappaC": "9",
+            "KappaP": "1.79"
+        },
+        "EnergyRealistic": {
+            "GrainBoundaryEnergy": "0",
+            "SurfaceEnergy": "0"
+        },
+        "Mechanics": {
+            "E": "1",
+            "nu": "0.25"
+        },
+        "MobilityAbstract": {
+            "L": "1",
+            "Mgb": "0.4",
+            "Msurf": "4",
+            "Mvap": "1e-10",
+            "Mvol": "0.01"
+        },
+        "MobilityRealistic": {
+            "DGb0": "0",
+            "DGbMob0": "0",
+            "DSurf0": "0",
+            "DVap0": "0",
+            "DVol0": "0",
+            "Omega": "0",
+            "QGb": "0",
+            "QGbMob": "0",
+            "QSurf": "0",
+            "QVap": "0",
+            "QVol": "0"
+        }
+    },
+    "NonLinearData": {
+        "FDMJacobianApproximation": "false",
+        "JacobiFree": "false",
+        "LinearAbsoluteTolerance": "1e-10",
+        "LinearMaxIterations": "100",
+        "LinearRelativeTolerance": "0.01",
+        "LinearSolver": "GMRES",
+        "LinearSolverBicgstabTries": "30",
+        "NewtonDoUpdate": "true",
+        "NewtonReusePreconditioner": "false",
+        "NewtonThresholdLinearIterations": "50",
+        "NewtonThresholdNewtonIterations": "100",
+        "NewtonUseDamping": "true",
+        "NonLinearAbsoluteTolerance": "1e-20",
+        "NonLinearMaxIterations": "10",
+        "NonLinearRelativeTolerance": "1e-05",
+        "NonLinearSolverType": "NOX",
+        "Verbosity": "1",
+        "GMRESData": {
+            "OrthogonalizationStrategy": "classical gram schmidt"
+        },
+        "NOXData": {
+            "DirectionMethod": "Newton",
+            "LineSearchInterpolationType": "Cubic",
+            "LineSearchMethod": "Full Step",
+            "OutputInformation": "0"
+        },
+        "SNESData": {
+            "LineSearchName": "bt",
+            "SolverName": "newtonls"
+        }
+    },
+    "Output": {
+        "Contour": "true",
+        "ContourNCoarseningSteps": "0",
+        "ContourTex": "false",
+        "Debug": "false",
+        "DomainIntegrals": "gb_area, solid_vol, surf_area",
+        "Fields": "bnds",
+        "FluxesDivergences": "false",
+        "GrainBoundaries": "false",
+        "HigherOrderCells": "false",
+        "IsoGrainBoundariesArea": "false",
+        "IsoSurfaceArea": "false",
+        "MeshOverheadEstimate": "false",
+        "OutputTimeInterval": "500",
+        "Porosity": "false",
+        "Quality": "false",
+        "Regular": "false",
+        "Shrinkage": "false",
+        "Table": "false",
+        "UseControlBox": "false",
+        "VtkPath": ".",
+        "ControlBox": {
+            "Xmax": "0",
+            "Xmin": "0",
+            "Ymax": "0",
+            "Ymin": "0",
+            "Zmax": "0",
+            "Zmin": "0"
+        }
+    },
+    "Preconditioners": {
+        "OuterPreconditioner": "BlockPreconditioner2",
+        "BlockPreconditioner2": {
+            "Block0Preconditioner": "ILU",
+            "Block1Approximation": "avg",
+            "Block1Preconditioner": "BlockILU",
+            "Block2Preconditioner": "AMG",
+            "Block2AMG": {
+                "NCycles": "5",
+                "SmootherSweeps": "4"
+            }
+        }
+    },
+    "Profiling": {
+        "OutputMemoryConsumption": "false",
+        "OutputTimeInterval": "900",
+        "RunVmults": "false"
+    },
+    "Restart": {
+        "FlexibleOutput": "false",
+        "FullHistory": "true",
+        "Interval": "20000",
+        "MaximalOutput": "1",
+        "Prefix": ".\/restart",
+        "Type": "simulation_time"
+    },
+    "TimeIntegration": {
+        "DesirableLinearIterations": "100",
+        "DesirableNewtonIterations": "5",
+        "GrowthFactor": "1.2",
+        "IntegrationScheme": "BDF2",
+        "Predictor": "None",
+        "SanityCheckPredictor": "true",
+        "SanityCheckSolution": "true",
+        "TimeEnd": "550",
+        "TimeStart": "0",
+        "TimeStepInit": "0.1",
+        "TimeStepMax": "100",
+        "TimeStepMin": "1e-05"
+    }
+}
+
+Finite element: FE_Q<3>, n_subdivisions = 1
+Create subdivided hyperrectangle [265.839200 x 297.277500 x 278.320900] = [-20.545700...245.293500 x -20.440000...276.837500 x -20.482700...257.838200] 
+with 5 refinements (global = 0, delayed = 5) and 3x4x4 subdivisions
+
+System statistics:
+  - n cell:                    48 (min: 0, max: 1)
+  - n cell w hanging nodes:    0 (min: 0, max: 0)
+  - n cell wo hanging nodes:   48 (min: 0, max: 1)
+  - n cell fine batch:         0 (min: 0, max: 0)
+  - n levels:                  1
+  - n coarse cells:            48
+  - n theoretical fine cells:  48
+  - n dofs:                    100
+
+Mobility type: scalar
+
+Number of local refinements to be performed: 6
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    377 (min: 0, max: 8)
+  - n cell w hanging nodes:    18 (min: 0, max: 4)
+  - n cell wo hanging nodes:   359 (min: 0, max: 8)
+  - n cell fine batch:         376 (min: 0, max: 8)
+  - n levels:                  2
+  - n coarse cells:            48
+  - n theoretical fine cells:  288
+  - n dofs:                    560
+  - n components:              9
+
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    2568 (min: 5, max: 17)
+  - n cell w hanging nodes:    488 (min: 0, max: 12)
+  - n cell wo hanging nodes:   2080 (min: 2, max: 16)
+  - n cell fine batch:         2504 (min: 0, max: 16)
+  - n levels:                  3
+  - n coarse cells:            48
+  - n theoretical fine cells:  1728
+  - n dofs:                    3238
+  - n components:              9
+
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    16533 (min: 62, max: 76)
+  - n cell w hanging nodes:    4586 (min: 0, max: 53)
+  - n cell wo hanging nodes:   11947 (min: 21, max: 72)
+  - n cell fine batch:         15960 (min: 48, max: 72)
+  - n levels:                  4
+  - n coarse cells:            48
+  - n theoretical fine cells:  10368
+  - n dofs:                    19296
+  - n components:              9
+
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    101793 (min: 417, max: 431)
+  - n cell w hanging nodes:    38401 (min: 45, max: 275)
+  - n cell wo hanging nodes:   63392 (min: 153, max: 379)
+  - n cell fine batch:         98032 (min: 368, max: 424)
+  - n levels:                  5
+  - n coarse cells:            48
+  - n theoretical fine cells:  62208
+  - n dofs:                    116721
+  - n components:              9
+
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    567832 (min: 2359, max: 2373)
+  - n cell w hanging nodes:    228306 (min: 446, max: 1306)
+  - n cell wo hanging nodes:   339526 (min: 1057, max: 1919)
+  - n cell fine batch:         542136 (min: 2128, max: 2344)
+  - n levels:                  6
+  - n coarse cells:            48
+  - n theoretical fine cells:  373248
+  - n dofs:                    651601
+  - n components:              9
+
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3372487 (min: 14045, max: 14059)
+  - n cell w hanging nodes:    1086391 (min: 2541, max: 6201)
+  - n cell wo hanging nodes:   2286096 (min: 7851, max: 11511)
+  - n cell fine batch:         3244000 (min: 13112, max: 13888)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3777762
+  - n components:              9
+
+Execute grain tracker:
+Found an overlap between grain 2 and grain 8 with order parameter 0
+Found an overlap between grain 30 and grain 32 with order parameter 3
+Found an overlap between grain 31 and grain 33 with order parameter 3
+Found an overlap between grain 32 and grain 30 with order parameter 3
+Found an overlap between grain 33 and grain 31 with order parameter 3
+Found an overlap between grain 4 and grain 5 with order parameter 0
+Found an overlap between grain 5 and grain 4 with order parameter 0
+Found an overlap between grain 8 and grain 2 with order parameter 0
+has_reassigned_grains = true | has_op_number_changed = false
+Grain tracker CPU time = 0.343176 sec
+Number of order parameters: 7
+Number of grains: 49
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 0
+    segment: center = 79.8068 60.2022 27.7904 | radius = 37.5029
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 1
+    segment: center = 58.2254 154.378 75.7929 | radius = 37.7343
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 2
+    segment: center = 134.107 110.988 124.957 | radius = 35.6449
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 3
+    segment: center = 193.134 78.7076 74.1678 | radius = 39.319
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 4
+    segment: center = 131.045 210.833 30.4818 | radius = 39.3475
+op_index_current = 1 | op_index_old = 0 | segments = 1 | grain_index = 5
+    segment: center = 137.645 228.228 109.393 | radius = 37.8967
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 6
+    segment: center = 32.2287 31.3036 160.946 | radius = 40.4777
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 7
+    segment: center = 159.48 25.2349 194.874 | radius = 34.4618
+op_index_current = 1 | op_index_old = 0 | segments = 1 | grain_index = 8
+    segment: center = 89.3213 117.347 189.818 | radius = 39.8535
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 9
+    segment: center = 30.654 215.474 176.513 | radius = 39.9423
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 10
+    segment: center = 192.254 177.457 170.63 | radius = 41.0784
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 11
+    segment: center = 30.9626 30.0823 42.6883 | radius = 39.9397
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 12
+    segment: center = 133.42 32.1961 32.3223 | radius = 42.0474
+op_index_current = 2 | op_index_old = 1 | segments = 1 | grain_index = 13
+    segment: center = 81.4138 87.2047 112.914 | radius = 40.5898
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 14
+    segment: center = 184.623 139.663 83.6352 | radius = 41.9362
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 15
+    segment: center = 81.4555 179.907 28.5331 | radius = 37.8446
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 16
+    segment: center = 32.7683 196.667 114.105 | radius = 42.6263
+op_index_current = 2 | op_index_old = 1 | segments = 1 | grain_index = 17
+    segment: center = 144.861 82.9564 180.246 | radius = 44.7766
+op_index_current = 2 | op_index_old = 1 | segments = 1 | grain_index = 18
+    segment: center = 31.8785 99.3747 205.41 | radius = 41.1871
+op_index_current = 2 | op_index_old = 1 | segments = 1 | grain_index = 19
+    segment: center = 144.094 218.257 175.588 | radius = 41.115
+op_index_current = 3 | op_index_old = 2 | segments = 1 | grain_index = 20
+    segment: center = 88.3842 32.1333 80.5755 | radius = 41.3846
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 21
+    segment: center = 83.5128 119.668 32.1063 | radius = 40.9707
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 22
+    segment: center = 192.847 27.5045 42.2793 | radius = 36.6822
+op_index_current = 1 | op_index_old = 2 | segments = 1 | grain_index = 23
+    segment: center = 187.509 32.1759 145.721 | radius = 40.8041
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 24
+    segment: center = 180.677 175.646 31.2963 | radius = 39.6069
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 25
+    segment: center = 87.4264 208.98 83.389 | radius = 39.3315
+op_index_current = 3 | op_index_old = 2 | segments = 1 | grain_index = 26
+    segment: center = 26.8358 146.977 148.318 | radius = 36.091
+op_index_current = 3 | op_index_old = 2 | segments = 1 | grain_index = 27
+    segment: center = 193.782 204.251 113.028 | radius = 40.8737
+op_index_current = 1 | op_index_old = 2 | segments = 1 | grain_index = 28
+    segment: center = 101.618 33.224 204.877 | radius = 42.2578
+op_index_current = 3 | op_index_old = 2 | segments = 1 | grain_index = 29
+    segment: center = 137.63 152.495 184.411 | radius = 38.0816
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 30
+    segment: center = 29.4948 89.0441 30.4488 | radius = 38.8999
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 31
+    segment: center = 129.485 84.5033 71.5781 | radius = 42.1303
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 32
+    segment: center = 30.8328 47.5583 101.19 | radius = 39.2315
+op_index_current = 5 | op_index_old = 3 | segments = 1 | grain_index = 33
+    segment: center = 116.636 34.1904 139.776 | radius = 42.928
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 34
+    segment: center = 86.9761 151.083 132.545 | radius = 44.4457
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 35
+    segment: center = 187.547 120.218 144.976 | radius = 39.8917
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 36
+    segment: center = 30.6455 202.367 49.4048 | radius = 40.6167
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 37
+    segment: center = 29.4027 160.771 203.295 | radius = 38.9911
+op_index_current = 3 | op_index_old = 4 | segments = 1 | grain_index = 38
+    segment: center = 174.151 71.8846 23.5812 | radius = 33.0445
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 39
+    segment: center = 28.5538 146.83 27.9022 | radius = 37.7409
+op_index_current = 6 | op_index_old = 4 | segments = 1 | grain_index = 40
+    segment: center = 158.364 30.7849 90.6541 | radius = 39.8775
+op_index_current = 5 | op_index_old = 4 | segments = 1 | grain_index = 41
+    segment: center = 149.469 165.404 128.445 | radius = 38.1359
+op_index_current = 3 | op_index_old = 4 | segments = 1 | grain_index = 42
+    segment: center = 75.3405 68.2924 166.212 | radius = 34.0395
+op_index_current = 5 | op_index_old = 4 | segments = 1 | grain_index = 43
+    segment: center = 84.425 176.465 191.424 | radius = 38.1331
+op_index_current = 5 | op_index_old = 5 | segments = 1 | grain_index = 44
+    segment: center = 155.392 121.743 29.1628 | radius = 39.0009
+op_index_current = 1 | op_index_old = 5 | segments = 1 | grain_index = 45
+    segment: center = 29.3753 105.571 86.9468 | radius = 37.4655
+op_index_current = 3 | op_index_old = 5 | segments = 1 | grain_index = 46
+    segment: center = 86.7175 219.621 145.817 | radius = 42.8987
+op_index_current = 3 | op_index_old = 6 | segments = 1 | grain_index = 47
+    segment: center = 121.498 156.095 71.7776 | radius = 43.4661
+op_index_current = 5 | op_index_old = 6 | segments = 1 | grain_index = 48
+    segment: center = 29.3356 90.5301 144.066 | radius = 39.2287
+Remap order parameter for grain id = 13: from 1 to 2
+Remap order parameter for grain id = 17: from 1 to 2
+Remap order parameter for grain id = 18: from 1 to 2
+Remap order parameter for grain id = 19: from 1 to 2
+Remap order parameter for grain id = 20: from 2 to 3
+Remap order parameter for grain id = 23: from 2 to temp
+Remap order parameter for grain id = 23: from temp to 1
+Remap order parameter for grain id = 26: from 2 to 3
+Remap order parameter for grain id = 27: from 2 to 3
+Remap order parameter for grain id = 28: from 2 to temp
+Remap order parameter for grain id = 28: from temp to 1
+Remap order parameter for grain id = 29: from 2 to 3
+Remap order parameter for grain id = 31: from 3 to 4
+Remap order parameter for grain id = 32: from 3 to 4
+Remap order parameter for grain id = 33: from 3 to 5
+Remap order parameter for grain id = 34: from 3 to 4
+Remap order parameter for grain id = 35: from 3 to 4
+Remap order parameter for grain id = 37: from 3 to 4
+Remap order parameter for grain id = 38: from 4 to temp
+Remap order parameter for grain id = 38: from temp to 3
+Remap order parameter for grain id = 40: from 4 to 6
+Remap order parameter for grain id = 41: from 4 to 5
+Remap order parameter for grain id = 42: from 4 to temp
+Remap order parameter for grain id = 42: from temp to 3
+Remap order parameter for grain id = 43: from 4 to 5
+Remap order parameter for grain id = 45: from 5 to temp
+Remap order parameter for grain id = 45: from temp to 1
+Remap order parameter for grain id = 46: from 5 to temp
+Remap order parameter for grain id = 46: from temp to 3
+Remap order parameter for grain id = 47: from 6 to temp
+Remap order parameter for grain id = 47: from temp to 3
+Remap order parameter for grain id = 48: from 6 to 5
+Remap order parameter for grain id = 5: from 0 to 1
+Remap order parameter for grain id = 8: from 0 to 1
+Remapping dependencies have been detected and resolved.
+Remappings: 
+5 (0 -> 1)
+19 (1 -> 2)
+8 (0 -> 1)
+13 (1 -> 2)
+17 (1 -> 2)
+18 (1 -> 2)
+20 (2 -> 3)
+23 (2 -> 1)
+28 (2 -> 1)
+29 (2 -> 3)
+26 (2 -> 3)
+27 (2 -> 3)
+31 (3 -> 4)
+32 (3 -> 4)
+33 (3 -> 5)
+34 (3 -> 4)
+37 (3 -> 4)
+35 (3 -> 4)
+38 (4 -> 3)
+40 (4 -> 6)
+42 (4 -> 3)
+41 (4 -> 5)
+43 (4 -> 5)
+46 (5 -> 3)
+45 (5 -> 1)
+47 (6 -> 3)
+48 (6 -> 5)
+
+Outputing data at t = 0 (./contour_solution.0.vtu)
+Cut-off statistic: 
+  - 4 (0: 3.39249, 1: 73.0932, 2: 23.1292, 3: 0.381581, 4: 0.00355731)
+  - 3 (0: 3.39249, 1: 73.6223, 2: 22.7303, 3: 0.254941)
+  - 3 (0: 6.14262, 1: 76.2502, 2: 17.5153, 3: 0.0919146)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.256343e+03 ------------ 1.419481e-12 ------------ 2.546390e+02 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 415369544
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              103842386
+
+ 1 3.260017e+01 2.594847e-02 4.166660e+01 2.935340e+13 1.456768e+00 5.720915e-03 0.000000e+00 0.000000e+00            5
+ 2 7.948996e-01 6.327092e-04 8.587460e-01 6.049717e+11 1.573719e-01 6.180196e-04 0.000000e+00 0.000000e+00            5
+ 3 6.491584e-02 5.167049e-05 5.954652e-03 4.194949e+09 6.427025e-02 2.523975e-04 0.000000e+00 0.000000e+00            7
+ 4 6.805724e-03 5.417093e-06 2.119234e-05 1.492963e+07 6.805592e-03 2.672643e-05 0.000000e+00 0.000000e+00           22
+
+t = 0, t_n = 0, dt = 0.1: solved in 4 Newton iterations and 39 linear iterations
+[32mIncreasing timestep, dt = 0.12[0m
+Cut-off statistic: 
+  - 6 (0: 0.137549, 1: 51.8841, 2: 40.8483, 3: 6.66806, 4: 0.446798, 5: 0.0144664, 6: 0.000711462)
+  - 5 (0: 0.137549, 1: 51.955, 2: 41.2321, 3: 6.34339, 4: 0.32917, 5: 0.00284585)
+  - 5 (0: 0.504403, 1: 58.9019, 2: 37.0882, 3: 3.40084, 4: 0.104219, 5: 0.000504048)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 5.431454e+02 ------------ 6.514283e+02 ------------ 2.825769e+02 ------------ 0.000000e+00 ------------            0
+ 1 1.551143e+01 2.855852e-02 2.001496e+01 3.072474e-02 8.328729e-01 2.947420e-03 0.000000e+00 0.000000e+00            4
+ 2 2.840024e-01 5.228847e-04 2.900825e-01 4.453023e-04 1.386708e-02 4.907365e-05 0.000000e+00 0.000000e+00            5
+ 3 3.431602e-03 6.318017e-06 2.248932e-03 3.452310e-06 1.876454e-03 6.640508e-06 0.000000e+00 0.000000e+00            8
+
+t = 0.1, t_n = 1, dt = 0.12: solved in 3 Newton iterations and 17 linear iterations
+[32mIncreasing timestep, dt = 0.144[0m
+Cut-off statistic: 
+  - 6 (0: 0.108142, 1: 49.6954, 2: 41.6224, 3: 8.01296, 4: 0.542371, 5: 0.0175494, 6: 0.00118577)
+  - 5 (0: 0.108142, 1: 49.7535, 2: 41.9938, 3: 7.72078, 4: 0.420237, 5: 0.00355731)
+  - 5 (0: 0.41913, 1: 56.1124, 2: 38.815, 3: 4.50791, 4: 0.14481, 5: 0.000770896)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.046721e+02 ------------ 3.012104e+02 ------------ 2.134472e+02 ------------ 0.000000e+00 ------------            0
+ 1 7.217945e+00 2.369086e-02 7.949915e+00 2.639323e-02 5.907867e-01 2.767835e-03 0.000000e+00 0.000000e+00            4
+ 2 2.443967e-01 8.021629e-04 2.435065e-01 8.084268e-04 9.627014e-03 4.510256e-05 0.000000e+00 0.000000e+00            5
+ 3 1.983608e-03 6.510633e-06 1.092389e-03 3.626665e-06 1.260059e-03 5.903376e-06 0.000000e+00 0.000000e+00            9
+
+t = 0.22, t_n = 2, dt = 0.144: solved in 3 Newton iterations and 18 linear iterations
+[32mIncreasing timestep, dt = 0.1728[0m
+Cut-off statistic: 
+  - 6 (0: 0.106719, 1: 48.8343, 2: 41.8833, 3: 8.60134, 4: 0.552094, 5: 0.0211067, 6: 0.00118577)
+  - 5 (0: 0.106719, 1: 48.8886, 2: 42.2485, 3: 8.3324, 4: 0.41834, 5: 0.00545454)
+  - 5 (0: 0.408249, 1: 54.9852, 2: 39.4094, 3: 5.0438, 4: 0.1524, 5: 0.000948796)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.132934e+02 ------------ 1.919826e+02 ------------ 1.594784e+02 ------------ 0.000000e+00 ------------            0
+ 1 3.993113e+00 1.872122e-02 3.602614e+00 1.876532e-02 3.379738e-01 2.119246e-03 0.000000e+00 0.000000e+00            5
+ 2 1.502447e-01 7.044042e-04 1.214928e-01 6.328326e-04 6.030121e-03 3.781153e-05 0.000000e+00 0.000000e+00            5
+ 3 1.972480e-03 9.247732e-06 1.121490e-03 5.841625e-06 1.114270e-03 6.986966e-06 0.000000e+00 0.000000e+00            8
+
+t = 0.364, t_n = 3, dt = 0.1728: solved in 3 Newton iterations and 18 linear iterations
+[32mIncreasing timestep, dt = 0.20736[0m
+Cut-off statistic: 
+  - 6 (0: 0.119763, 1: 48.0185, 2: 42.083, 3: 9.24236, 4: 0.519604, 5: 0.0161265, 6: 0.000711462)
+  - 5 (0: 0.119763, 1: 48.0749, 2: 42.4586, 3: 8.95493, 4: 0.388932, 5: 0.00284585)
+  - 5 (0: 0.446349, 1: 53.8339, 2: 39.9597, 3: 5.60646, 4: 0.153112, 5: 0.000504048)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.607032e+02 ------------ 1.435215e+02 ------------ 1.189789e+02 ------------ 0.000000e+00 ------------            0
+ 1 3.364237e+00 2.093447e-02 2.622441e+00 1.827211e-02 3.138567e-01 2.637918e-03 0.000000e+00 0.000000e+00            5
+ 2 1.401246e-01 8.719465e-04 1.135184e-01 7.909506e-04 5.687695e-03 4.780422e-05 0.000000e+00 0.000000e+00            5
+ 3 1.953384e-03 1.215523e-05 1.049869e-03 7.315060e-06 8.763216e-04 7.365352e-06 0.000000e+00 0.000000e+00            8
+ 4 4.017844e-04 2.500165e-06 2.580064e-05 1.797684e-07 3.969599e-04 3.336389e-06 0.000000e+00 0.000000e+00            8
+
+t = 0.5368, t_n = 4, dt = 0.20736: solved in 4 Newton iterations and 26 linear iterations
+[32mIncreasing timestep, dt = 0.248832[0m
+Cut-off statistic: 
+  - 6 (0: 0.147035, 1: 47.2207, 2: 42.2502, 3: 9.83359, 4: 0.535731, 5: 0.0120949, 6: 0.000711462)
+  - 5 (0: 0.147035, 1: 47.2828, 2: 42.6156, 3: 9.54734, 4: 0.40411, 5: 0.003083)
+  - 5 (0: 0.537641, 1: 52.583, 2: 40.4172, 3: 6.29398, 4: 0.1677, 5: 0.000533698)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.265481e+02 ------------ 1.160877e+02 ------------ 8.989921e+01 ------------ 0.000000e+00 ------------            0
+ 1 2.435731e+00 1.924747e-02 1.318658e+00 1.135916e-02 2.329310e-01 2.591024e-03 0.000000e+00 0.000000e+00            6
+ 2 5.661874e-02 4.474089e-04 3.658364e-02 3.151380e-04 2.998436e-03 3.335331e-05 0.000000e+00 0.000000e+00            6
+ 3 1.192347e-03 9.422089e-06 5.596495e-04 4.820921e-06 7.403786e-04 8.235652e-06 0.000000e+00 0.000000e+00            8
+
+t = 0.74416, t_n = 5, dt = 0.248832: solved in 3 Newton iterations and 20 linear iterations
+[32mIncreasing timestep, dt = 0.298598[0m
+Cut-off statistic: 
+  - 6 (0: 0.184506, 1: 46.1134, 2: 42.2509, 3: 10.8353, 4: 0.603794, 5: 0.0111462, 6: 0.000948616)
+  - 5 (0: 0.184506, 1: 46.1883, 2: 42.6042, 3: 10.5581, 4: 0.462925, 5: 0.00189723)
+  - 5 (0: 0.649658, 1: 51.2426, 2: 40.7101, 3: 7.20195, 4: 0.195333, 5: 0.000355798)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.038998e+02 ------------ 9.763238e+01 ------------ 6.993890e+01 ------------ 0.000000e+00 ------------            0
+ 1 2.455816e+00 2.363640e-02 1.170524e+00 1.198910e-02 2.870867e-01 4.104821e-03 0.000000e+00 0.000000e+00            6
+ 2 6.139327e-02 5.908894e-04 4.459206e-02 4.567344e-04 4.453538e-03 6.367755e-05 0.000000e+00 0.000000e+00            6
+ 3 1.341145e-03 1.290807e-05 5.838105e-04 5.979681e-06 7.189253e-04 1.027933e-05 0.000000e+00 0.000000e+00            8
+ 4 4.446109e-04 4.279230e-06 2.431230e-05 2.490188e-07 4.343988e-04 6.211119e-06 0.000000e+00 0.000000e+00            7
+
+t = 0.992992, t_n = 6, dt = 0.298598: solved in 4 Newton iterations and 27 linear iterations
+[32mIncreasing timestep, dt = 0.358318[0m
+Cut-off statistic: 
+  - 6 (0: 0.218656, 1: 45.0261, 2: 42.2495, 3: 11.829, 4: 0.666403, 5: 0.00948616, 6: 0.000948616)
+  - 5 (0: 0.218656, 1: 45.1041, 2: 42.6291, 3: 11.5207, 4: 0.526719, 5: 0.000711462)
+  - 5 (0: 0.760638, 1: 49.9932, 2: 40.8608, 3: 8.14921, 4: 0.236043, 5: 0.000118599)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 8.888101e+01 ------------ 8.388110e+01 ------------ 5.662471e+01 ------------ 0.000000e+00 ------------            0
+ 1 2.606311e+00 2.932359e-02 1.188789e+00 1.417232e-02 3.836915e-01 6.776044e-03 0.000000e+00 0.000000e+00            6
+ 2 4.477742e-02 5.037906e-04 2.789474e-02 3.325509e-04 4.206326e-03 7.428428e-05 0.000000e+00 0.000000e+00            7
+ 3 1.038950e-03 1.168922e-05 4.290149e-04 5.114559e-06 5.960149e-04 1.052570e-05 0.000000e+00 0.000000e+00            8
+ 4 3.698616e-04 4.161312e-06 1.936965e-05 2.309179e-07 3.647720e-04 6.441923e-06 0.000000e+00 0.000000e+00            7
+
+t = 1.29159, t_n = 7, dt = 0.358318: solved in 4 Newton iterations and 28 linear iterations
+[32mIncreasing timestep, dt = 0.429982[0m
+Cut-off statistic: 
+  - 6 (0: 0.240948, 1: 44.182, 2: 42.1083, 3: 12.7181, 4: 0.741343, 5: 0.00853754, 6: 0.000711462)
+  - 5 (0: 0.240948, 1: 44.2622, 2: 42.4693, 3: 12.4271, 4: 0.599762, 5: 0.000711462)
+  - 5 (0: 0.791711, 1: 48.8809, 2: 40.8999, 3: 9.12679, 4: 0.30062, 5: 8.89496e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 7.890688e+01 ------------ 7.294601e+01 ------------ 4.770173e+01 ------------ 0.000000e+00 ------------            0
+ 1 2.393538e+00 3.033370e-02 7.223685e-01 9.902783e-03 3.631831e-01 7.613626e-03 0.000000e+00 0.000000e+00            7
+ 2 4.201098e-02 5.324121e-04 2.429238e-02 3.330186e-04 5.269128e-03 1.104599e-04 0.000000e+00 0.000000e+00            7
+ 3 7.456771e-04 9.450089e-06 3.181825e-04 4.361890e-06 4.004143e-04 8.394127e-06 0.000000e+00 0.000000e+00            9
+
+t = 1.64991, t_n = 8, dt = 0.429982: solved in 3 Newton iterations and 23 linear iterations
+[32mIncreasing timestep, dt = 0.515978[0m
+Cut-off statistic: 
+  - 6 (0: 0.268933, 1: 43.0913, 2: 41.9084, 3: 13.8223, 4: 0.899762, 5: 0.00853754, 6: 0.000711462)
+  - 5 (0: 0.268933, 1: 43.167, 2: 42.2585, 3: 13.5543, 4: 0.750118, 5: 0.00118577)
+  - 5 (0: 0.795713, 1: 47.5951, 2: 41.0061, 3: 10.2053, 4: 0.397753, 5: 0.000148249)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 7.216570e+01 ------------ 6.385727e+01 ------------ 4.136750e+01 ------------ 0.000000e+00 ------------            0
+ 1 2.599623e+00 3.602297e-02 7.880179e-01 1.234030e-02 4.980891e-01 1.204059e-02 0.000000e+00 0.000000e+00            7
+ 2 3.326254e-02 4.609190e-04 1.780399e-02 2.788091e-04 5.476323e-03 1.323823e-04 0.000000e+00 0.000000e+00            8
+ 3 8.349880e-04 1.157043e-05 3.114042e-04 4.876566e-06 2.706813e-04 6.543332e-06 0.000000e+00 0.000000e+00            9
+ 4 1.695312e-04 2.349194e-06 2.067758e-05 3.238093e-07 1.645924e-04 3.978787e-06 0.000000e+00 0.000000e+00            7
+
+t = 2.07989, t_n = 9, dt = 0.515978: solved in 4 Newton iterations and 31 linear iterations
+[32mIncreasing timestep, dt = 0.619174[0m
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3228840 (min: 13447, max: 13461)
+  - n cell w hanging nodes:    1123679 (min: 3087, max: 6114)
+  - n cell wo hanging nodes:   2105161 (min: 7340, max: 10367)
+  - n cell fine batch:         3093328 (min: 12488, max: 13232)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3647433
+  - n components:              9
+
+Cut-off statistic: 
+  - 6 (0: 0.293277, 1: 41.9076, 2: 41.658, 3: 15.0441, 4: 1.08616, 5: 0.0101557, 6: 0.0007431)
+  - 5 (0: 0.293277, 1: 41.9755, 2: 41.9725, 3: 14.8402, 4: 0.91649, 5: 0.0019816)
+  - 5 (0: 0.719158, 1: 46.0464, 2: 41.2818, 3: 11.4423, 4: 0.509994, 5: 0.000278719)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 1.480898e+02 ------------ 5.746268e+01 ------------ 4.320199e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 401504324
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              100376081
+
+ 1 3.154958e+00 2.130435e-02 1.115440e+00 1.941156e-02 5.137625e-01 1.189210e-02 0.000000e+00 0.000000e+00            7
+ 2 7.988808e-02 5.394569e-04 2.503925e-02 4.357480e-04 7.500009e-03 1.736033e-04 0.000000e+00 0.000000e+00            8
+ 3 6.182465e-04 4.174807e-06 1.508514e-04 2.625206e-06 4.145867e-04 9.596472e-06 0.000000e+00 0.000000e+00           11
+
+t = 2.59587, t_n = 10, dt = 0.619174: solved in 3 Newton iterations and 26 linear iterations
+[32mIncreasing timestep, dt = 0.743008[0m
+Cut-off statistic: 
+  - 6 (0: 0.319533, 1: 41.1039, 2: 41.3476, 3: 15.9588, 4: 1.25708, 5: 0.0121373, 6: 0.0009908)
+  - 5 (0: 0.319533, 1: 41.168, 2: 41.649, 3: 15.7797, 4: 1.08146, 5: 0.0022293)
+  - 5 (0: 0.746255, 1: 45.1499, 2: 41.2423, 3: 12.2516, 4: 0.609683, 5: 0.000309688)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 5.249875e+01 ------------ 5.192282e+01 ------------ 3.256453e+01 ------------ 0.000000e+00 ------------            0
+ 1 2.931743e+00 5.584405e-02 7.118551e-01 1.370987e-02 4.536074e-01 1.392949e-02 0.000000e+00 0.000000e+00            8
+ 2 7.031724e-02 1.339408e-03 2.444548e-02 4.708043e-04 8.438164e-03 2.591213e-04 0.000000e+00 0.000000e+00            8
+ 3 8.276773e-04 1.576566e-05 2.064969e-04 3.976998e-06 3.006244e-04 9.231651e-06 0.000000e+00 0.000000e+00           11
+ 4 1.542721e-04 2.938586e-06 1.342669e-06 2.585893e-08 1.542076e-04 4.735446e-06 0.000000e+00 0.000000e+00           12
+
+t = 3.21504, t_n = 11, dt = 0.743008: solved in 4 Newton iterations and 39 linear iterations
+[32mIncreasing timestep, dt = 0.89161[0m
+Cut-off statistic: 
+  - 6 (0: 0.310864, 1: 40.8371, 2: 41.2549, 3: 16.2761, 4: 1.30711, 5: 0.0128804, 6: 0.0009908)
+  - 5 (0: 0.310864, 1: 40.9064, 2: 41.5589, 3: 16.0946, 4: 1.12679, 5: 0.002477)
+  - 5 (0: 0.747835, 1: 44.8676, 2: 41.1775, 3: 12.5605, 4: 0.646288, 5: 0.000340657)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.533947e+01 ------------ 4.464984e+01 ------------ 2.734149e+01 ------------ 0.000000e+00 ------------            0
+ 1 3.126023e+00 6.894707e-02 6.695305e-01 1.499514e-02 5.892443e-01 2.155129e-02 0.000000e+00 0.000000e+00            8
+ 2 4.877229e-02 1.075714e-03 1.940982e-02 4.347120e-04 9.847599e-03 3.601706e-04 0.000000e+00 0.000000e+00            9
+ 3 7.398394e-04 1.631778e-05 2.035474e-04 4.558747e-06 3.117188e-04 1.140095e-05 0.000000e+00 0.000000e+00           11
+ 4 1.600343e-04 3.529691e-06 1.814630e-06 4.064134e-08 1.598916e-04 5.847949e-06 0.000000e+00 0.000000e+00           12
+
+t = 3.95805, t_n = 12, dt = 0.89161: solved in 4 Newton iterations and 40 linear iterations
+[32mIncreasing timestep, dt = 1.06993[0m
+Cut-off statistic: 
+  - 6 (0: 0.323744, 1: 41.2431, 2: 41.298, 3: 15.884, 4: 1.239, 5: 0.0113942, 6: 0.0007431)
+  - 5 (0: 0.323744, 1: 41.3174, 2: 41.5713, 3: 15.7111, 4: 1.07477, 5: 0.0017339)
+  - 5 (0: 0.773477, 1: 45.0781, 2: 41.1125, 3: 12.4067, 4: 0.628976, 5: 0.00024775)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.044090e+01 ------------ 3.900393e+01 ------------ 2.323215e+01 ------------ 0.000000e+00 ------------            0
+ 1 3.353044e+00 8.291221e-02 7.094523e-01 1.818925e-02 6.963236e-01 2.997241e-02 0.000000e+00 0.000000e+00            8
+ 2 5.503050e-02 1.360764e-03 1.575659e-02 4.039743e-04 1.029605e-02 4.431810e-04 0.000000e+00 0.000000e+00           10
+ 3 5.161546e-04 1.276318e-05 1.404378e-04 3.600606e-06 2.712000e-04 1.167348e-05 0.000000e+00 0.000000e+00           12
+ 4 1.194491e-04 2.953671e-06 1.828158e-06 4.687113e-08 1.192417e-04 5.132614e-06 0.000000e+00 0.000000e+00           12
+
+t = 4.84966, t_n = 13, dt = 1.06993: solved in 4 Newton iterations and 42 linear iterations
+[32mIncreasing timestep, dt = 1.28392[0m
+Cut-off statistic: 
+  - 6 (0: 0.341083, 1: 41.5455, 2: 41.4088, 3: 15.5405, 4: 1.1523, 5: 0.0108988, 6: 0.0009908)
+  - 5 (0: 0.341083, 1: 41.6248, 2: 41.682, 3: 15.3564, 4: 0.994516, 5: 0.0012385)
+  - 5 (0: 0.802092, 1: 45.4325, 2: 41.1069, 3: 12.0847, 4: 0.573635, 5: 0.000154844)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.675020e+01 ------------ 3.403306e+01 ------------ 1.951921e+01 ------------ 0.000000e+00 ------------            0
+ 1 3.537504e+00 9.625810e-02 5.422496e-01 1.593302e-02 5.687608e-01 2.913851e-02 0.000000e+00 0.000000e+00            9
+ 2 4.352119e-02 1.184244e-03 1.726214e-02 5.072168e-04 1.116184e-02 5.718385e-04 0.000000e+00 0.000000e+00           10
+ 3 5.488216e-04 1.493384e-05 1.395666e-04 4.100912e-06 2.403425e-04 1.231312e-05 0.000000e+00 0.000000e+00           13
+ 4 1.065237e-04 2.898588e-06 2.575274e-06 7.566975e-08 1.056312e-04 5.411654e-06 0.000000e+00 0.000000e+00           12
+
+t = 5.91959, t_n = 14, dt = 1.28392: solved in 4 Newton iterations and 44 linear iterations
+[32mIncreasing timestep, dt = 1.5407[0m
+Cut-off statistic: 
+  - 6 (0: 0.34034, 1: 41.7394, 2: 41.523, 3: 15.2999, 4: 1.08616, 5: 0.0106511, 6: 0.0004954)
+  - 5 (0: 0.34034, 1: 41.8162, 2: 41.8242, 3: 15.0934, 4: 0.92516, 5: 0.0007431)
+  - 5 (0: 0.819311, 1: 45.6948, 2: 41.1721, 3: 11.7891, 4: 0.524519, 5: 9.29064e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.437407e+01 ------------ 2.967328e+01 ------------ 1.628310e+01 ------------ 0.000000e+00 ------------            0
+ 1 3.817269e+00 1.110508e-01 5.905720e-01 1.990249e-02 6.499296e-01 3.991436e-02 0.000000e+00 0.000000e+00            9
+ 2 4.331779e-02 1.260188e-03 1.404817e-02 4.734284e-04 1.108882e-02 6.810015e-04 0.000000e+00 0.000000e+00           11
+ 3 7.738472e-04 2.251253e-05 1.529930e-04 5.155917e-06 2.952250e-04 1.813076e-05 0.000000e+00 0.000000e+00           13
+ 4 9.631328e-05 2.801916e-06 3.765519e-06 1.268993e-07 9.490153e-05 5.828222e-06 0.000000e+00 0.000000e+00           12
+
+t = 7.20351, t_n = 15, dt = 1.5407: solved in 4 Newton iterations and 45 linear iterations
+[32mIncreasing timestep, dt = 1.84884[0m
+Cut-off statistic: 
+  - 6 (0: 0.354707, 1: 41.6349, 2: 41.6448, 3: 15.2705, 4: 1.08443, 5: 0.0096603, 6: 0.0009908)
+  - 5 (0: 0.354707, 1: 41.7181, 2: 41.9619, 3: 15.0577, 4: 0.906582, 5: 0.0009908)
+  - 5 (0: 0.848607, 1: 45.7175, 2: 41.2486, 3: 11.6834, 4: 0.501726, 5: 0.000123875)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.338837e+01 ------------ 2.586955e+01 ------------ 1.360233e+01 ------------ 0.000000e+00 ------------            0
+ 1 3.954626e+00 1.184432e-01 4.759489e-01 1.839803e-02 5.772116e-01 4.243476e-02 0.000000e+00 0.000000e+00           10
+ 2 5.779205e-02 1.730904e-03 1.476701e-02 5.708261e-04 1.273364e-02 9.361366e-04 0.000000e+00 0.000000e+00           11
+ 3 8.455626e-04 2.532506e-05 1.580501e-04 6.109503e-06 3.295689e-04 2.422885e-05 0.000000e+00 0.000000e+00           14
+ 4 9.462842e-05 2.834173e-06 5.747488e-06 2.221719e-07 8.971132e-05 6.595290e-06 0.000000e+00 0.000000e+00           12
+
+t = 8.74421, t_n = 16, dt = 1.84884: solved in 4 Newton iterations and 47 linear iterations
+[32mIncreasing timestep, dt = 2.21861[0m
+Cut-off statistic: 
+  - 6 (0: 0.344799, 1: 41.6374, 2: 41.6203, 3: 15.3128, 4: 1.07477, 5: 0.0094126, 6: 0.0004954)
+  - 5 (0: 0.344799, 1: 41.7149, 2: 41.9398, 3: 15.0961, 4: 0.90361, 5: 0.0007431)
+  - 5 (0: 0.856071, 1: 45.677, 2: 41.2885, 3: 11.6838, 4: 0.494448, 5: 9.29064e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.351516e+01 ------------ 2.255775e+01 ------------ 1.146843e+01 ------------ 0.000000e+00 ------------            0
+ 1 4.231331e+00 1.262513e-01 5.227713e-01 2.317480e-02 6.734416e-01 5.872134e-02 0.000000e+00 0.000000e+00           10
+ 2 6.472616e-02 1.931250e-03 1.469598e-02 6.514826e-04 1.496328e-02 1.304737e-03 0.000000e+00 0.000000e+00           12
+ 3 8.894546e-04 2.653887e-05 1.491071e-04 6.610018e-06 3.865998e-04 3.370992e-05 0.000000e+00 0.000000e+00           16
+ 4 7.921539e-05 2.363569e-06 7.820336e-06 3.466807e-07 7.045294e-05 6.143207e-06 0.000000e+00 0.000000e+00           12
+
+t = 10.5931, t_n = 17, dt = 2.21861: solved in 4 Newton iterations and 50 linear iterations
+[32mIncreasing timestep, dt = 2.66233[0m
+Cut-off statistic: 
+  - 6 (0: 0.358422, 1: 41.4714, 2: 41.7387, 3: 15.35, 4: 1.07155, 5: 0.0094126, 6: 0.0004954)
+  - 5 (0: 0.358422, 1: 41.5579, 2: 42.0592, 3: 15.1337, 4: 0.890482, 5: 0.0002477)
+  - 5 (0: 0.880474, 1: 45.5418, 2: 41.3752, 3: 11.7168, 4: 0.485715, 5: 3.09688e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.425174e+01 ------------ 1.967938e+01 ------------ 9.802967e+00 ------------ 0.000000e+00 ------------            0
+ 1 4.557713e+00 1.330651e-01 4.496622e-01 2.284941e-02 6.600570e-01 6.733237e-02 0.000000e+00 0.000000e+00           11
+ 2 5.435461e-02 1.586915e-03 1.123446e-02 5.708745e-04 1.426449e-02 1.455120e-03 0.000000e+00 0.000000e+00           14
+ 3 7.705876e-04 2.249776e-05 1.401402e-04 7.121169e-06 3.692119e-04 3.766328e-05 0.000000e+00 0.000000e+00           17
+ 4 9.862902e-05 2.879533e-06 7.734529e-06 3.930270e-07 7.457647e-05 7.607541e-06 0.000000e+00 0.000000e+00           12
+
+t = 12.8117, t_n = 18, dt = 2.66233: solved in 4 Newton iterations and 54 linear iterations
+[32mIncreasing timestep, dt = 3.1948[0m
+Cut-off statistic: 
+  - 6 (0: 0.360651, 1: 41.3951, 2: 41.7456, 3: 15.4233, 4: 1.06585, 5: 0.0089172, 6: 0.0004954)
+  - 5 (0: 0.360651, 1: 41.4756, 2: 42.0756, 3: 15.2006, 4: 0.887262, 5: 0.0002477)
+  - 5 (0: 0.895463, 1: 45.4245, 2: 41.4325, 3: 11.7657, 4: 0.481751, 5: 3.09688e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.522221e+01 ------------ 1.717806e+01 ------------ 8.503904e+00 ------------ 0.000000e+00 ------------            0
+ 1 5.020528e+00 1.425387e-01 3.916473e-01 2.279927e-02 6.863088e-01 8.070515e-02 0.000000e+00 0.000000e+00           12
+ 2 5.296478e-02 1.503733e-03 1.004939e-02 5.850128e-04 1.644790e-02 1.934159e-03 0.000000e+00 0.000000e+00           16
+ 3 1.882156e-03 5.343663e-05 1.429137e-04 8.319544e-06 3.236836e-04 3.806294e-05 0.000000e+00 0.000000e+00           19
+ 4 2.698051e-04 7.660086e-06 1.074137e-05 6.252956e-07 5.537145e-05 6.511297e-06 0.000000e+00 0.000000e+00           12
+
+t = 15.474, t_n = 19, dt = 3.1948: solved in 4 Newton iterations and 59 linear iterations
+[32mIncreasing timestep, dt = 3.83376[0m
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3190011 (min: 13285, max: 13299)
+  - n cell w hanging nodes:    1133487 (min: 3481, max: 6094)
+  - n cell wo hanging nodes:   2056524 (min: 7197, max: 9812)
+  - n cell fine batch:         3053768 (min: 12368, max: 12992)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3612216
+  - n components:              9
+
+Cut-off statistic: 
+  - 5 (0: 0.342728, 1: 41.3169, 2: 41.8489, 3: 15.4716, 4: 1.00838, 5: 0.0115329)
+  - 5 (0: 0.342728, 1: 41.3978, 2: 42.162, 3: 15.2643, 4: 0.832876, 5: 0.000250715)
+  - 5 (0: 0.806588, 1: 45.2495, 2: 41.5881, 3: 11.9016, 4: 0.454231, 5: 3.13457e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 9.366917e+01 ------------ 1.515832e+01 ------------ 1.702578e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 397776048
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              99444012
+
+ 1 5.825871e+00 6.219625e-02 3.860044e-01 2.546486e-02 7.429318e-01 4.363571e-02 0.000000e+00 0.000000e+00           13
+ 2 8.432899e-01 9.002854e-03 4.154649e-02 2.740838e-03 2.268564e-02 1.332429e-03 0.000000e+00 0.000000e+00           16
+ 3 1.376148e-03 1.469158e-05 1.153734e-04 7.611228e-06 3.328622e-04 1.955049e-05 0.000000e+00 0.000000e+00           21
+ 4 1.345624e-04 1.436571e-06 3.256644e-06 2.148420e-07 1.155195e-04 6.784975e-06 0.000000e+00 0.000000e+00           23
+
+t = 18.6688, t_n = 20, dt = 3.83376: solved in 4 Newton iterations and 73 linear iterations
+[32mIncreasing timestep, dt = 4.60051[0m
+Cut-off statistic: 
+  - 6 (0: 0.325679, 1: 40.9864, 2: 41.8674, 3: 15.7685, 4: 1.03696, 5: 0.0147922, 6: 0.000250715)
+  - 5 (0: 0.325679, 1: 41.0571, 2: 42.2071, 3: 15.5611, 4: 0.84842, 5: 0.00050143)
+  - 5 (0: 0.784803, 1: 45.0483, 2: 41.7215, 3: 11.999, 4: 0.446426, 5: 6.26915e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.549834e+01 ------------ 1.340029e+01 ------------ 6.857441e+00 ------------ 0.000000e+00 ------------            0
+ 1 6.851606e+00 2.687080e-01 3.453135e-01 2.576911e-02 7.240764e-01 1.055899e-01 0.000000e+00 0.000000e+00           14
+ 2 7.429293e-01 2.913638e-02 3.225120e-02 2.406754e-03 2.636875e-02 3.845275e-03 0.000000e+00 0.000000e+00           16
+ 3 6.390440e-04 2.506218e-05 1.187413e-04 8.861103e-06 2.428026e-04 3.540718e-05 0.000000e+00 0.000000e+00           23
+ 4 6.840422e-05 2.682694e-06 2.575964e-06 1.922320e-07 3.138115e-05 4.576218e-06 0.000000e+00 0.000000e+00           24
+
+t = 22.5026, t_n = 21, dt = 4.60051: solved in 4 Newton iterations and 77 linear iterations
+[32mIncreasing timestep, dt = 5.52061[0m
+Cut-off statistic: 
+  - 6 (0: 0.31916, 1: 40.9097, 2: 42.077, 3: 15.6792, 4: 1.00261, 5: 0.0120343, 6: 0.000250715)
+  - 4 (0: 0.31916, 1: 40.9824, 2: 42.4203, 3: 15.4631, 4: 0.815075)
+  - 4 (0: 0.789724, 1: 44.9948, 2: 41.8271, 3: 11.9639, 4: 0.424547)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.766367e+01 ------------ 1.167953e+01 ------------ 5.985129e+00 ------------ 0.000000e+00 ------------            0
+ 1 6.665776e+00 2.409577e-01 2.924573e-01 2.504016e-02 7.697916e-01 1.286174e-01 0.000000e+00 0.000000e+00           15
+ 2 2.377825e-01 8.595479e-03 1.255480e-02 1.074940e-03 2.458839e-02 4.108248e-03 0.000000e+00 0.000000e+00           18
+ 3 1.996757e-03 7.217973e-05 1.100824e-04 9.425245e-06 2.315902e-04 3.869427e-05 0.000000e+00 0.000000e+00           23
+ 4 3.665601e-05 1.325059e-06 1.465459e-06 1.254725e-07 3.029274e-05 5.061335e-06 0.000000e+00 0.000000e+00           26
+
+t = 27.1031, t_n = 22, dt = 5.52061: solved in 4 Newton iterations and 82 linear iterations
+[32mIncreasing timestep, dt = 6.62474[0m
+Cut-off statistic: 
+  - 6 (0: 0.332699, 1: 40.7269, 2: 42.0081, 3: 15.9199, 4: 1.00111, 5: 0.0110315, 6: 0.000250715)
+  - 4 (0: 0.332699, 1: 40.7996, 2: 42.3623, 3: 15.7005, 4: 0.804796)
+  - 4 (0: 0.808156, 1: 44.8131, 2: 41.8861, 3: 12.0788, 4: 0.413732)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.068486e+01 ------------ 1.020983e+01 ------------ 5.354464e+00 ------------ 0.000000e+00 ------------            0
+ 1 7.338108e+00 2.391443e-01 2.592709e-01 2.539424e-02 8.384489e-01 1.565888e-01 0.000000e+00 0.000000e+00           16
+ 2 1.437538e-01 4.684844e-03 1.399128e-02 1.370373e-03 2.449884e-02 4.575404e-03 0.000000e+00 0.000000e+00           21
+ 3 4.159141e-03 1.355438e-04 2.061464e-04 2.019097e-05 3.217057e-04 6.008176e-05 0.000000e+00 0.000000e+00           26
+ 4 5.761849e-05 1.877750e-06 1.598412e-06 1.565562e-07 3.757041e-05 7.016650e-06 0.000000e+00 0.000000e+00           28
+
+t = 32.6237, t_n = 23, dt = 6.62474: solved in 4 Newton iterations and 91 linear iterations
+[32mIncreasing timestep, dt = 7.94968[0m
+Cut-off statistic: 
+  - 6 (0: 0.32593, 1: 40.5344, 2: 42.157, 3: 15.9879, 4: 0.983556, 5: 0.0110315, 6: 0.000250715)
+  - 5 (0: 0.32593, 1: 40.6081, 2: 42.508, 3: 15.7632, 4: 0.794516, 5: 0.000250715)
+  - 5 (0: 0.817936, 1: 44.6259, 2: 41.9678, 3: 12.1804, 4: 0.407933, 5: 3.13457e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.395871e+01 ------------ 8.987201e+00 ------------ 4.808865e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.117945e+01 3.292072e-01 3.704525e-01 4.122001e-02 1.041982e+00 2.166794e-01 0.000000e+00 0.000000e+00           21
+ 2 6.492709e-01 1.911942e-02 3.103916e-02 3.453707e-03 3.651868e-02 7.594032e-03 0.000000e+00 0.000000e+00           23
+ 3 2.989334e-02 8.802849e-04 2.127441e-03 2.367190e-04 2.338352e-03 4.862586e-04 0.000000e+00 0.000000e+00           27
+ 4 2.220510e-04 6.538853e-06 1.325425e-05 1.474792e-06 5.025030e-05 1.044951e-05 0.000000e+00 0.000000e+00           31
+
+t = 39.2484, t_n = 24, dt = 7.94968: solved in 4 Newton iterations and 102 linear iterations
+Execute grain tracker:
+Found an overlap between grain 13 and grain 17 with order parameter 2
+Found an overlap between grain 13 and grain 21 with order parameter 2
+Found an overlap between grain 17 and grain 13 with order parameter 2
+Found an overlap between grain 21 and grain 13 with order parameter 2
+Found an overlap between grain 28 and grain 8 with order parameter 1
+Found an overlap between grain 8 and grain 28 with order parameter 1
+has_reassigned_grains = true | has_op_number_changed = true
+Grain tracker CPU time = 0.324565 sec
+Number of order parameters: 8
+Number of grains: 49
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 0
+    segment: center = 79.7468 60.123 27.8737 | radius = 37.7993
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 1
+    segment: center = 58.107 154.372 75.6963 | radius = 38.9925
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 2
+    segment: center = 134.161 110.974 124.947 | radius = 35.944
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 3
+    segment: center = 193.068 78.6087 74.0555 | radius = 39.8354
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 4
+    segment: center = 131 210.551 30.5524 | radius = 40.4108
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 5
+    segment: center = 137.642 228.179 109.467 | radius = 39.1741
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 6
+    segment: center = 32.3218 31.4168 160.922 | radius = 41.6454
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 7
+    segment: center = 159.502 25.168 194.76 | radius = 34.6337
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 8
+    segment: center = 89.3118 117.29 189.693 | radius = 40.4983
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 9
+    segment: center = 30.6323 215.399 176.54 | radius = 40.3779
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 10
+    segment: center = 192.113 177.414 170.528 | radius = 41.7926
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 11
+    segment: center = 31.0549 30.1766 42.7141 | radius = 40.4451
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 12
+    segment: center = 133.473 32.3353 32.3989 | radius = 42.9695
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 13
+    segment: center = 81.4124 87.0957 112.959 | radius = 42.1258
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 14
+    segment: center = 184.539 139.72 83.6549 | radius = 43.3934
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 15
+    segment: center = 81.4063 179.93 28.6251 | radius = 38.277
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 16
+    segment: center = 32.9282 196.507 114.156 | radius = 44.2091
+op_index_current = 3 | op_index_old = 2 | segments = 1 | grain_index = 17
+    segment: center = 144.802 82.9515 180.098 | radius = 46.3257
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 18
+    segment: center = 31.9486 99.3679 205.254 | radius = 42.0486
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 19
+    segment: center = 144.088 218.198 175.518 | radius = 42.6455
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 20
+    segment: center = 88.3855 32.2401 80.5265 | radius = 42.7212
+op_index_current = 3 | op_index_old = 2 | segments = 1 | grain_index = 21
+    segment: center = 83.4278 119.674 32.2835 | radius = 42.7736
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 22
+    segment: center = 192.79 27.6214 42.2509 | radius = 37.3038
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 23
+    segment: center = 187.386 32.1985 145.797 | radius = 41.4474
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 24
+    segment: center = 180.58 175.562 31.3423 | radius = 40.4646
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 25
+    segment: center = 87.3469 208.789 83.2619 | radius = 40.553
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 26
+    segment: center = 26.7434 146.986 148.325 | radius = 36.4143
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 27
+    segment: center = 193.669 204.184 113.083 | radius = 41.5279
+op_index_current = 2 | op_index_old = 1 | segments = 1 | grain_index = 28
+    segment: center = 101.647 33.3038 204.784 | radius = 43.4233
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 29
+    segment: center = 137.607 152.551 184.336 | radius = 39.5314
+op_index_current = 2 | op_index_old = 3 | segments = 1 | grain_index = 30
+    segment: center = 29.5029 89.0453 30.5144 | radius = 39.4394
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 31
+    segment: center = 129.479 84.5972 71.5659 | radius = 43.934
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 32
+    segment: center = 30.9503 47.6919 101.237 | radius = 40.2802
+op_index_current = 5 | op_index_old = 5 | segments = 1 | grain_index = 33
+    segment: center = 116.572 34.3583 139.708 | radius = 44.3651
+op_index_current = 5 | op_index_old = 4 | segments = 1 | grain_index = 34
+    segment: center = 86.934 151.05 132.531 | radius = 46.098
+op_index_current = 2 | op_index_old = 4 | segments = 1 | grain_index = 35
+    segment: center = 187.429 120.301 145.023 | radius = 41.0386
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 36
+    segment: center = 30.7771 202.032 49.5844 | radius = 42.0807
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 37
+    segment: center = 29.4111 160.856 203.221 | radius = 39.5543
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 38
+    segment: center = 174.157 71.8405 23.6344 | radius = 33.2893
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 39
+    segment: center = 28.6653 146.849 27.9405 | radius = 39.0771
+op_index_current = 6 | op_index_old = 6 | segments = 1 | grain_index = 40
+    segment: center = 158.465 30.8966 90.5888 | radius = 40.6196
+op_index_current = 6 | op_index_old = 5 | segments = 1 | grain_index = 41
+    segment: center = 149.556 165.335 128.525 | radius = 38.8763
+op_index_current = 4 | op_index_old = 3 | segments = 1 | grain_index = 42
+    segment: center = 75.3624 68.3589 166.27 | radius = 34.4392
+op_index_current = 6 | op_index_old = 5 | segments = 1 | grain_index = 43
+    segment: center = 84.4013 176.484 191.35 | radius = 38.4701
+op_index_current = 5 | op_index_old = 5 | segments = 1 | grain_index = 44
+    segment: center = 155.487 121.649 29.2158 | radius = 39.8889
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 45
+    segment: center = 29.4426 105.589 86.9096 | radius = 38.1308
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 46
+    segment: center = 86.7626 219.523 145.843 | radius = 43.9931
+op_index_current = 7 | op_index_old = 3 | segments = 1 | grain_index = 47
+    segment: center = 121.45 156.108 71.7017 | radius = 45.0789
+op_index_current = 6 | op_index_old = 5 | segments = 1 | grain_index = 48
+    segment: center = 29.4528 90.497 144.025 | radius = 40.2097
+[34mChanging number of components from 9 to 10[0m
+Remap order parameter for grain id = 17: from 2 to 3
+Remap order parameter for grain id = 21: from 2 to 3
+Remap order parameter for grain id = 28: from 1 to 2
+Remap order parameter for grain id = 29: from 3 to 4
+Remap order parameter for grain id = 30: from 3 to temp
+Remap order parameter for grain id = 30: from temp to 2
+Remap order parameter for grain id = 34: from 4 to 5
+Remap order parameter for grain id = 35: from 4 to temp
+Remap order parameter for grain id = 35: from temp to 2
+Remap order parameter for grain id = 41: from 5 to 6
+Remap order parameter for grain id = 42: from 3 to 4
+Remap order parameter for grain id = 43: from 5 to 6
+Remap order parameter for grain id = 47: from 3 to 7
+Remap order parameter for grain id = 48: from 5 to 6
+Remapping dependencies have been detected and resolved.
+Remappings: 
+17 (2 -> 3)
+29 (3 -> 4)
+42 (3 -> 4)
+21 (2 -> 3)
+30 (3 -> 2)
+47 (3 -> 7)
+28 (1 -> 2)
+34 (4 -> 5)
+35 (4 -> 2)
+41 (5 -> 6)
+43 (5 -> 6)
+48 (5 -> 6)
+
+Cut-off statistic: 
+  - 6 (0: 0.337463, 1: 40.311, 2: 41.6245, 3: 16.3539, 4: 1.32779, 5: 0.0451287, 6: 0.000250715)
+  - 5 (0: 0.337463, 1: 40.3897, 2: 41.9875, 3: 16.1601, 4: 1.10315, 5: 0.0220629)
+  - 5 (0: 0.834981, 1: 44.3997, 2: 41.8085, 3: 12.4233, 4: 0.527867, 5: 0.00561127)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.755598e+01 ------------ 7.804500e+00 ------------ 4.239728e+00 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 397776048
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              99444012
+
+ 1 1.842647e+01 4.906403e-01 5.527810e-01 7.082850e-02 1.116895e+00 2.634355e-01 0.000000e+00 0.000000e+00           23
+ 2 1.126975e+00 3.000786e-02 5.624794e-02 7.207117e-03 3.788304e-02 8.935253e-03 0.000000e+00 0.000000e+00           22
+ 3 4.963700e-02 1.321681e-03 3.733892e-03 4.784281e-04 4.192608e-03 9.888860e-04 0.000000e+00 0.000000e+00           25
+ 4 7.602136e-04 2.024215e-05 2.991004e-05 3.832410e-06 1.464714e-04 3.454737e-05 0.000000e+00 0.000000e+00           33
+ 5 1.439274e-05 3.832343e-07 4.313076e-07 5.526397e-08 1.345383e-05 3.173278e-06 0.000000e+00 0.000000e+00           32
+
+t = 47.1981, t_n = 25, dt = 7.94968: solved in 5 Newton iterations and 135 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.330192, 1: 40.1099, 2: 42.057, 3: 16.4404, 4: 1.04849, 5: 0.01404)
+  - 5 (0: 0.330192, 1: 40.1881, 2: 42.4268, 3: 16.2223, 4: 0.831622, 5: 0.00100286)
+  - 5 (0: 0.839213, 1: 44.1875, 2: 42.0297, 3: 12.5303, 4: 0.413102, 5: 0.000188087)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.876916e+01 ------------ 7.182821e+00 ------------ 3.947349e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.088203e+01 5.386247e-01 5.015079e-01 6.982045e-02 9.847380e-01 2.494682e-01 0.000000e+00 0.000000e+00           24
+ 2 1.593672e+00 4.110670e-02 6.890170e-02 9.592568e-03 3.999610e-02 1.013239e-02 0.000000e+00 0.000000e+00           22
+ 3 6.896881e-02 1.778961e-03 2.988674e-03 4.160864e-04 4.401295e-03 1.115000e-03 0.000000e+00 0.000000e+00           25
+ 4 3.904168e-04 1.007029e-05 3.223181e-05 4.487346e-06 1.276126e-04 3.232867e-05 0.000000e+00 0.000000e+00           34
+ 5 3.092902e-05 7.977739e-07 4.501543e-07 6.267096e-08 2.762558e-05 6.998516e-06 0.000000e+00 0.000000e+00           41
+
+t = 55.1478, t_n = 26, dt = 7.94968: solved in 5 Newton iterations and 146 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.344232, 1: 40.0237, 2: 41.9592, 3: 16.6184, 4: 1.04047, 5: 0.0137893, 6: 0.000250715)
+  - 5 (0: 0.344232, 1: 40.1014, 2: 42.3232, 3: 16.4078, 4: 0.822095, 5: 0.00125358)
+  - 5 (0: 0.865828, 1: 44.0405, 2: 42.0079, 3: 12.677, 4: 0.408463, 5: 0.000250783)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.920867e+01 ------------ 6.725403e+00 ------------ 3.724814e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.471806e+01 3.753778e-01 4.650565e-01 6.914923e-02 1.087892e+00 2.920661e-01 0.000000e+00 0.000000e+00           23
+ 2 1.122027e+00 2.861681e-02 5.836132e-02 8.677743e-03 4.084860e-02 1.096661e-02 0.000000e+00 0.000000e+00           22
+ 3 3.052773e-02 7.785965e-04 2.820797e-03 4.194242e-04 5.104114e-03 1.370300e-03 0.000000e+00 0.000000e+00           25
+ 4 3.617331e-04 9.225846e-06 2.958829e-05 4.399481e-06 1.485217e-04 3.987359e-05 0.000000e+00 0.000000e+00           38
+
+t = 63.0975, t_n = 27, dt = 7.94968: solved in 4 Newton iterations and 108 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.335457, 1: 39.8592, 2: 42.0076, 3: 16.7375, 4: 1.04699, 5: 0.0132879)
+  - 5 (0: 0.335457, 1: 39.9402, 2: 42.3706, 3: 16.5259, 4: 0.826859, 5: 0.00100286)
+  - 5 (0: 0.869151, 1: 43.9082, 2: 42.0055, 3: 12.8084, 4: 0.408588, 5: 0.000219435)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.948497e+01 ------------ 6.514658e+00 ------------ 3.592198e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.425688e+01 3.610712e-01 3.896373e-01 5.980932e-02 1.144098e+00 3.184953e-01 0.000000e+00 0.000000e+00           24
+ 2 1.249764e+00 3.165164e-02 7.255224e-02 1.113677e-02 4.516236e-02 1.257235e-02 0.000000e+00 0.000000e+00           24
+ 3 3.515265e-02 8.902793e-04 3.104515e-03 4.765431e-04 4.886353e-03 1.360268e-03 0.000000e+00 0.000000e+00           25
+ 4 2.145737e-04 5.434314e-06 1.870130e-05 2.870649e-06 1.424004e-04 3.964158e-05 0.000000e+00 0.000000e+00           40
+
+t = 71.0472, t_n = 28, dt = 7.94968: solved in 4 Newton iterations and 113 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.347491, 1: 39.775, 2: 41.8973, 3: 16.9331, 4: 1.03395, 5: 0.0132879)
+  - 5 (0: 0.347491, 1: 39.8542, 2: 42.2513, 3: 16.7275, 4: 0.818334, 5: 0.00125358)
+  - 5 (0: 0.886768, 1: 43.7869, 2: 41.9411, 3: 12.9785, 4: 0.406519, 5: 0.000250783)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.972386e+01 ------------ 6.553708e+00 ------------ 3.558952e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.309581e+01 5.814089e-01 7.816815e-01 1.192732e-01 1.540395e+00 4.328226e-01 0.000000e+00 0.000000e+00           24
+ 2 2.859642e+00 7.198802e-02 1.103988e-01 1.684524e-02 6.278771e-02 1.764219e-02 0.000000e+00 0.000000e+00           20
+ 3 1.075004e-01 2.706192e-03 1.165512e-02 1.778400e-03 7.605577e-03 2.137027e-03 0.000000e+00 0.000000e+00           22
+ 4 8.460651e-04 2.129866e-05 1.212475e-04 1.850059e-05 5.042592e-04 1.416875e-04 0.000000e+00 0.000000e+00           33
+ 5 3.027288e-05 7.620831e-07 1.816132e-06 2.771151e-07 2.661792e-05 7.479146e-06 0.000000e+00 0.000000e+00           39
+
+t = 78.9968, t_n = 29, dt = 7.94968: solved in 5 Newton iterations and 138 linear iterations
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3151805 (min: 13125, max: 13140)
+  - n cell w hanging nodes:    1134260 (min: 3480, max: 6014)
+  - n cell wo hanging nodes:   2017545 (min: 7116, max: 9657)
+  - n cell fine batch:         3014512 (min: 12232, max: 12832)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3574823
+  - n components:              10
+
+Cut-off statistic: 
+  - 5 (0: 0.341042, 1: 40.0859, 2: 41.698, 3: 16.8839, 4: 0.981004, 5: 0.0101501)
+  - 4 (0: 0.341042, 1: 40.1623, 2: 42.0076, 3: 16.7258, 4: 0.763285)
+  - 4 (0: 0.814359, 1: 43.8731, 2: 41.8068, 3: 13.1162, 4: 0.389586)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 9.164520e+01 ------------ 6.459523e+00 ------------ 1.658681e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 393630796
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              98407699
+
+ 1 1.637079e+01 1.786323e-01 4.710962e-01 7.293049e-02 1.251979e+00 7.548041e-02 0.000000e+00 0.000000e+00           24
+ 2 1.340645e+00 1.462865e-02 7.604623e-02 1.177273e-02 4.268409e-02 2.573375e-03 0.000000e+00 0.000000e+00           22
+ 3 3.464869e-02 3.780742e-04 3.118761e-03 4.828160e-04 5.780218e-03 3.484827e-04 0.000000e+00 0.000000e+00           25
+ 4 2.586609e-04 2.822417e-06 2.145957e-05 3.322160e-06 1.888868e-04 1.138777e-05 0.000000e+00 0.000000e+00           41
+
+t = 86.9465, t_n = 30, dt = 7.94968: solved in 4 Newton iterations and 112 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.339774, 1: 39.6989, 2: 41.6419, 3: 17.2884, 4: 1.01957, 5: 0.0114188)
+  - 4 (0: 0.339774, 1: 39.7664, 2: 42.0094, 3: 17.0996, 4: 0.784854)
+  - 4 (0: 0.799986, 1: 43.717, 2: 41.7901, 3: 13.3085, 4: 0.384446)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.950460e+01 ------------ 6.268007e+00 ------------ 3.554014e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.322788e+01 4.483329e-01 3.699208e-01 5.901729e-02 1.052651e+00 2.961864e-01 0.000000e+00 0.000000e+00           25
+ 2 1.043434e+00 3.536513e-02 5.555357e-02 8.863036e-03 3.769329e-02 1.060584e-02 0.000000e+00 0.000000e+00           22
+ 3 3.164463e-02 1.072532e-03 3.195785e-03 5.098567e-04 5.308762e-03 1.493737e-03 0.000000e+00 0.000000e+00           23
+ 4 2.855596e-04 9.678475e-06 2.631749e-05 4.198701e-06 1.963455e-04 5.524612e-05 0.000000e+00 0.000000e+00           35
+
+t = 94.8962, t_n = 31, dt = 7.94968: solved in 4 Newton iterations and 105 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.33952, 1: 39.7852, 2: 41.5491, 3: 17.3132, 4: 1.00283, 5: 0.0101501)
+  - 4 (0: 0.33952, 1: 39.8591, 2: 41.899, 3: 17.129, 4: 0.773435)
+  - 4 (0: 0.813439, 1: 43.7545, 2: 41.6501, 3: 13.402, 4: 0.380004)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.097641e+01 ------------ 6.041009e+00 ------------ 3.328992e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.356457e+01 4.379001e-01 4.058188e-01 6.717731e-02 1.110149e+00 3.334790e-01 0.000000e+00 0.000000e+00           24
+ 2 1.083485e+00 3.497775e-02 5.855088e-02 9.692234e-03 4.602910e-02 1.382674e-02 0.000000e+00 0.000000e+00           20
+ 3 3.085067e-02 9.959410e-04 2.213462e-03 3.664059e-04 7.284055e-03 2.188066e-03 0.000000e+00 0.000000e+00           21
+ 4 1.968307e-04 6.354213e-06 3.694475e-05 6.115659e-06 1.080430e-04 3.245518e-05 0.000000e+00 0.000000e+00           34
+
+t = 102.846, t_n = 32, dt = 7.94968: solved in 4 Newton iterations and 99 linear iterations
+[32mIncreasing timestep, dt = 9.53962[0m
+Cut-off statistic: 
+  - 5 (0: 0.348401, 1: 39.5934, 2: 41.4488, 3: 17.5728, 4: 1.02617, 5: 0.0104038)
+  - 4 (0: 0.348401, 1: 39.6667, 2: 41.8175, 3: 17.3853, 4: 0.782063)
+  - 4 (0: 0.828414, 1: 43.6444, 2: 41.565, 3: 13.5771, 4: 0.385017)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.252936e+01 ------------ 6.192284e+00 ------------ 3.375559e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.676232e+01 8.227129e-01 7.264970e-01 1.173229e-01 1.793608e+00 5.313513e-01 0.000000e+00 0.000000e+00           24
+ 2 3.690934e+00 1.134647e-01 1.435327e-01 2.317928e-02 9.134820e-02 2.706165e-02 0.000000e+00 0.000000e+00           23
+ 3 1.969968e-01 6.055969e-03 2.918364e-02 4.712904e-03 1.400259e-02 4.148228e-03 0.000000e+00 0.000000e+00           25
+ 4 1.846647e-03 5.676864e-05 3.413607e-04 5.512678e-05 1.198310e-03 3.549959e-04 0.000000e+00 0.000000e+00           37
+ 5 4.405582e-05 1.354340e-06 3.915597e-06 6.323348e-07 4.108175e-05 1.217035e-05 0.000000e+00 0.000000e+00           39
+
+t = 110.796, t_n = 33, dt = 9.53962: solved in 5 Newton iterations and 148 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.348655, 1: 39.6112, 2: 41.3204, 3: 17.6817, 4: 1.02795, 5: 0.0101501)
+  - 4 (0: 0.348655, 1: 39.6898, 2: 41.6615, 3: 17.5084, 4: 0.791705)
+  - 4 (0: 0.843263, 1: 43.6148, 2: 41.3954, 3: 13.755, 4: 0.391617)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.632644e+01 ------------ 5.828663e+00 ------------ 3.224584e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.097752e+01 5.774724e-01 6.367791e-01 1.092496e-01 1.619836e+00 5.023396e-01 0.000000e+00 0.000000e+00           27
+ 2 2.256695e+00 6.212267e-02 9.564245e-02 1.640899e-02 6.928527e-02 2.148658e-02 0.000000e+00 0.000000e+00           19
+ 3 1.037086e-01 2.854906e-03 1.513104e-02 2.595971e-03 1.178706e-02 3.655374e-03 0.000000e+00 0.000000e+00           23
+ 4 1.326818e-03 3.652485e-05 1.952601e-04 3.349999e-05 5.220222e-04 1.618882e-04 0.000000e+00 0.000000e+00           33
+ 5 2.407138e-05 6.626409e-07 4.469847e-06 7.668734e-07 1.633219e-05 5.064898e-06 0.000000e+00 0.000000e+00           33
+
+t = 120.335, t_n = 34, dt = 9.53962: solved in 5 Newton iterations and 135 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.3517, 1: 39.4526, 2: 41.1943, 3: 17.9314, 4: 1.05891, 5: 0.0111651)
+  - 4 (0: 0.3517, 1: 39.5274, 2: 41.5534, 3: 17.7565, 4: 0.81099)
+  - 4 (0: 0.85808, 1: 43.5086, 2: 41.2798, 3: 13.9511, 4: 0.402436)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.830020e+01 ------------ 5.542122e+00 ------------ 3.107164e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.528582e+01 3.991056e-01 2.689161e-01 4.852222e-02 1.150871e+00 3.703927e-01 0.000000e+00 0.000000e+00           21
+ 2 1.225428e+00 3.199533e-02 8.060837e-02 1.454468e-02 5.738003e-02 1.846701e-02 0.000000e+00 0.000000e+00           22
+ 3 3.016422e-02 7.875734e-04 2.637876e-03 4.759686e-04 1.073378e-02 3.454526e-03 0.000000e+00 0.000000e+00           24
+ 4 3.063600e-04 7.998913e-06 6.199732e-05 1.118657e-05 2.187510e-04 7.040214e-05 0.000000e+00 0.000000e+00           40
+
+t = 129.875, t_n = 35, dt = 9.53962: solved in 4 Newton iterations and 107 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.347386, 1: 39.4731, 2: 41.0583, 3: 18.0392, 4: 1.07159, 5: 0.0104038)
+  - 4 (0: 0.347386, 1: 39.5495, 2: 41.3998, 3: 17.871, 4: 0.832306)
+  - 4 (0: 0.87039, 1: 43.4754, 2: 41.1312, 3: 14.1088, 4: 0.414175)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.946891e+01 ------------ 5.121417e+00 ------------ 2.922007e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.102963e+01 2.794510e-01 3.360410e-01 6.561485e-02 1.020315e+00 3.491829e-01 0.000000e+00 0.000000e+00           26
+ 2 6.861046e-01 1.738342e-02 2.873637e-02 5.611020e-03 4.511921e-02 1.544117e-02 0.000000e+00 0.000000e+00           21
+ 3 2.225770e-02 5.639298e-04 2.307072e-03 4.504753e-04 8.821857e-03 3.019109e-03 0.000000e+00 0.000000e+00           24
+ 4 3.526344e-04 8.934485e-06 6.006733e-05 1.172865e-05 1.827011e-04 6.252590e-05 0.000000e+00 0.000000e+00           36
+
+t = 139.414, t_n = 36, dt = 9.53962: solved in 4 Newton iterations and 107 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.35576, 1: 39.3176, 2: 40.9956, 3: 18.21, 4: 1.10839, 5: 0.0126876)
+  - 4 (0: 0.35576, 1: 39.3962, 2: 41.3428, 3: 18.0486, 4: 0.856666)
+  - 4 (0: 0.88746, 1: 43.3696, 2: 41.0416, 3: 14.2737, 4: 0.427691)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.038483e+01 ------------ 4.927145e+00 ------------ 2.802827e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.410517e+01 3.492691e-01 3.428648e-01 6.958691e-02 1.056162e+00 3.768203e-01 0.000000e+00 0.000000e+00           23
+ 2 1.445045e+00 3.578189e-02 6.914547e-02 1.403358e-02 4.900074e-02 1.748261e-02 0.000000e+00 0.000000e+00           21
+ 3 4.301779e-02 1.065197e-03 3.124403e-03 6.341204e-04 6.806282e-03 2.428363e-03 0.000000e+00 0.000000e+00           26
+ 4 5.985760e-04 1.482180e-05 1.018160e-04 2.066430e-05 2.446753e-04 8.729589e-05 0.000000e+00 0.000000e+00           31
+ 5 5.724637e-05 1.417522e-06 1.274679e-05 2.587054e-06 2.874006e-05 1.025395e-05 0.000000e+00 0.000000e+00           24
+
+t = 148.954, t_n = 37, dt = 9.53962: solved in 5 Newton iterations and 125 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.350939, 1: 39.3478, 2: 40.8599, 3: 18.3072, 4: 1.12285, 5: 0.0114188)
+  - 4 (0: 0.350939, 1: 39.4249, 2: 41.204, 3: 18.1374, 4: 0.882802)
+  - 4 (0: 0.891045, 1: 43.3487, 2: 40.9108, 3: 14.4078, 4: 0.441588)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.115883e+01 ------------ 4.646266e+00 ------------ 2.706935e+00 ------------ 0.000000e+00 ------------            0
+ 1 9.219505e+00 2.239982e-01 2.175373e-01 4.681981e-02 8.152560e-01 3.011731e-01 0.000000e+00 0.000000e+00           22
+ 2 4.952853e-01 1.203351e-02 3.553498e-02 7.648072e-03 4.111088e-02 1.518725e-02 0.000000e+00 0.000000e+00           18
+ 3 9.561878e-03 2.323166e-04 1.352368e-03 2.910655e-04 4.448785e-03 1.643477e-03 0.000000e+00 0.000000e+00           23
+ 4 3.855548e-04 9.367486e-06 9.440984e-05 2.031951e-05 1.263671e-04 4.668271e-05 0.000000e+00 0.000000e+00           25
+
+t = 158.494, t_n = 38, dt = 9.53962: solved in 4 Newton iterations and 88 linear iterations
+[32mIncreasing timestep, dt = 11.4475[0m
+Cut-off statistic: 
+  - 5 (0: 0.363626, 1: 39.2145, 2: 40.7903, 3: 18.4696, 4: 1.15076, 5: 0.0111651)
+  - 4 (0: 0.363626, 1: 39.2942, 2: 41.1342, 3: 18.3069, 4: 0.901072)
+  - 4 (0: 0.908813, 1: 43.2557, 2: 40.8317, 3: 14.5493, 4: 0.454438)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.182286e+01 ------------ 4.498194e+00 ------------ 2.658575e+00 ------------ 0.000000e+00 ------------            0
+ 1 9.874779e+00 2.361096e-01 1.752446e-01 3.895889e-02 8.729924e-01 3.283686e-01 0.000000e+00 0.000000e+00           20
+ 2 6.097645e-01 1.457969e-02 4.047241e-02 8.997481e-03 4.808894e-02 1.808824e-02 0.000000e+00 0.000000e+00           21
+ 3 1.822974e-02 4.358797e-04 2.133146e-03 4.742228e-04 1.013942e-02 3.813854e-03 0.000000e+00 0.000000e+00           21
+ 4 6.683663e-04 1.598088e-05 1.841859e-04 4.094663e-05 2.410666e-04 9.067512e-05 0.000000e+00 0.000000e+00           27
+ 5 1.077828e-04 2.577127e-06 2.782911e-05 6.186730e-06 7.672729e-05 2.886031e-05 0.000000e+00 0.000000e+00           18
+
+t = 168.033, t_n = 39, dt = 11.4475: solved in 5 Newton iterations and 107 linear iterations
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3120522 (min: 12995, max: 13009)
+  - n cell w hanging nodes:    1127903 (min: 3451, max: 5965)
+  - n cell wo hanging nodes:   1992619 (min: 7038, max: 9547)
+  - n cell fine batch:         2984224 (min: 12096, max: 12688)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3541332
+  - n components:              10
+
+Cut-off statistic: 
+  - 5 (0: 0.354462, 1: 39.3055, 2: 40.778, 3: 18.3856, 4: 1.16821, 5: 0.00820157)
+  - 4 (0: 0.354462, 1: 39.3745, 2: 41.1053, 3: 18.2336, 4: 0.93216)
+  - 4 (0: 0.83345, 1: 43.0955, 2: 40.9385, 3: 14.6538, 4: 0.478702)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 8.998807e+01 ------------ 4.044368e+00 ------------ 1.560895e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 389970784
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              97492696
+
+ 1 6.471537e+00 7.191550e-02 1.585208e-01 3.919544e-02 7.126348e-01 4.565554e-02 0.000000e+00 0.000000e+00           19
+ 2 1.739036e-01 1.932518e-03 1.424725e-02 3.522739e-03 5.087786e-02 3.259532e-03 0.000000e+00 0.000000e+00           22
+ 3 1.367486e-02 1.519630e-04 1.216264e-03 3.007303e-04 7.077020e-03 4.533951e-04 0.000000e+00 0.000000e+00           24
+ 4 2.011940e-04 2.235785e-06 1.703796e-05 4.212762e-06 1.218845e-04 7.808629e-06 0.000000e+00 0.000000e+00           43
+
+t = 179.481, t_n = 40, dt = 11.4475: solved in 4 Newton iterations and 108 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.34421, 1: 39.0339, 2: 40.6411, 3: 18.7455, 4: 1.22203, 5: 0.0133276)
+  - 4 (0: 0.34421, 1: 39.1023, 2: 41.0061, 3: 18.5771, 4: 0.970349)
+  - 4 (0: 0.81355, 1: 43.0288, 2: 40.8356, 3: 14.8275, 4: 0.494533)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.297547e+01 ------------ 3.925420e+00 ------------ 2.482363e+00 ------------ 0.000000e+00 ------------            0
+ 1 8.883788e+00 2.694060e-01 3.004836e-01 7.654812e-02 9.290590e-01 3.742640e-01 0.000000e+00 0.000000e+00           23
+ 2 6.477680e-01 1.964394e-02 3.027590e-02 7.712779e-03 5.502156e-02 2.216500e-02 0.000000e+00 0.000000e+00           20
+ 3 1.777255e-02 5.389629e-04 2.928938e-03 7.461462e-04 7.317828e-03 2.947929e-03 0.000000e+00 0.000000e+00           24
+ 4 4.444904e-04 1.347943e-05 4.442710e-05 1.131780e-05 1.217719e-04 4.905484e-05 0.000000e+00 0.000000e+00           34
+ 5 3.377051e-05 1.024110e-06 1.643108e-06 4.185815e-07 3.194743e-05 1.286977e-05 0.000000e+00 0.000000e+00           32
+
+t = 190.928, t_n = 41, dt = 11.4475: solved in 5 Newton iterations and 133 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.342416, 1: 39.1507, 2: 40.5706, 3: 18.6881, 4: 1.23767, 5: 0.0105083)
+  - 4 (0: 0.342416, 1: 39.2256, 2: 40.9002, 3: 18.543, 4: 0.988802)
+  - 4 (0: 0.824926, 1: 43.0798, 2: 40.7159, 3: 14.8713, 4: 0.508056)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.569764e+01 ------------ 3.773199e+00 ------------ 2.354576e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.036358e+01 2.903155e-01 1.458121e-01 3.864418e-02 8.501936e-01 3.610814e-01 0.000000e+00 0.000000e+00           22
+ 2 1.089678e+00 3.052522e-02 5.773445e-02 1.530120e-02 5.664730e-02 2.405839e-02 0.000000e+00 0.000000e+00           22
+ 3 3.588604e-02 1.005278e-03 2.517499e-03 6.672056e-04 6.108748e-03 2.594415e-03 0.000000e+00 0.000000e+00           32
+ 4 3.456016e-04 9.681359e-06 2.801209e-05 7.423965e-06 2.256455e-04 9.583277e-05 0.000000e+00 0.000000e+00           45
+
+t = 202.376, t_n = 42, dt = 11.4475: solved in 4 Newton iterations and 121 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.349848, 1: 38.9739, 2: 40.503, 3: 18.8872, 4: 1.27381, 5: 0.0123024)
+  - 4 (0: 0.349848, 1: 39.0464, 2: 40.8618, 3: 18.7293, 4: 1.01264)
+  - 4 (0: 0.840917, 1: 43.0037, 2: 40.6401, 3: 14.9939, 4: 0.521355)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.748341e+01 ------------ 3.606708e+00 ------------ 2.289668e+00 ------------ 0.000000e+00 ------------            0
+ 1 7.005426e+00 1.868940e-01 1.901994e-01 5.273492e-02 7.679672e-01 3.354055e-01 0.000000e+00 0.000000e+00           27
+ 2 2.420135e-01 6.456549e-03 1.585004e-02 4.394602e-03 2.963696e-02 1.294378e-02 0.000000e+00 0.000000e+00           30
+ 3 8.002729e-03 2.135005e-04 5.590057e-04 1.549906e-04 5.618441e-03 2.453824e-03 0.000000e+00 0.000000e+00           33
+ 4 2.313135e-04 6.171091e-06 4.899445e-05 1.358426e-05 1.303327e-04 5.692212e-05 0.000000e+00 0.000000e+00           42
+
+t = 213.824, t_n = 43, dt = 11.4475: solved in 4 Newton iterations and 132 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.350617, 1: 39.0298, 2: 40.423, 3: 18.8992, 4: 1.28611, 5: 0.0112772)
+  - 4 (0: 0.350617, 1: 39.1069, 2: 40.7616, 3: 18.7411, 4: 1.03981)
+  - 4 (0: 0.854985, 1: 42.9993, 2: 40.5353, 3: 15.0706, 4: 0.539781)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.878900e+01 ------------ 3.571893e+00 ------------ 2.256357e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.099966e+01 2.835769e-01 2.197968e-01 6.153510e-02 9.245711e-01 4.097627e-01 0.000000e+00 0.000000e+00           31
+ 2 1.140048e+00 2.939101e-02 4.914554e-02 1.375896e-02 4.767372e-02 2.112862e-02 0.000000e+00 0.000000e+00           25
+ 3 3.697630e-02 9.532676e-04 2.169573e-03 6.074012e-04 5.318232e-03 2.356999e-03 0.000000e+00 0.000000e+00           29
+ 4 3.312587e-04 8.540015e-06 6.162227e-05 1.725199e-05 2.217393e-04 9.827315e-05 0.000000e+00 0.000000e+00           37
+
+t = 225.271, t_n = 44, dt = 11.4475: solved in 4 Newton iterations and 122 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.352668, 1: 38.8939, 2: 40.3243, 3: 19.0974, 4: 1.3202, 5: 0.0115335)
+  - 4 (0: 0.352668, 1: 38.9652, 2: 40.6808, 3: 18.9467, 4: 1.05467)
+  - 4 (0: 0.873347, 1: 42.929, 2: 40.4449, 3: 15.2009, 4: 0.551831)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.989202e+01 ------------ 3.558681e+00 ------------ 2.249676e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.434436e+01 3.595796e-01 2.566488e-01 7.211909e-02 9.992262e-01 4.441645e-01 0.000000e+00 0.000000e+00           26
+ 2 1.972000e+00 4.943345e-02 6.551896e-02 1.841102e-02 6.494134e-02 2.886698e-02 0.000000e+00 0.000000e+00           24
+ 3 1.019742e-01 2.556256e-03 9.462867e-03 2.659094e-03 9.108381e-03 4.048753e-03 0.000000e+00 0.000000e+00           26
+ 4 7.899312e-04 1.980173e-05 1.174309e-04 3.299842e-05 5.300838e-04 2.356267e-04 0.000000e+00 0.000000e+00           38
+ 5 7.837483e-05 1.964674e-06 1.423710e-05 4.000667e-06 2.062969e-05 9.170073e-06 0.000000e+00 0.000000e+00           27
+
+t = 236.719, t_n = 45, dt = 11.4475: solved in 5 Newton iterations and 141 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.361126, 1: 38.937, 2: 40.2777, 3: 19.0817, 4: 1.33224, 5: 0.010252)
+  - 4 (0: 0.361126, 1: 39.0134, 2: 40.607, 3: 18.9321, 4: 1.08645)
+  - 4 (0: 0.885429, 1: 42.919, 2: 40.352, 3: 15.2739, 4: 0.569648)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.081548e+01 ------------ 3.526460e+00 ------------ 2.231305e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.768160e+01 4.332081e-01 4.122088e-01 1.168902e-01 1.167716e+00 5.233333e-01 0.000000e+00 0.000000e+00           26
+ 2 2.841097e+00 6.960833e-02 9.147886e-02 2.594071e-02 7.562884e-02 3.389444e-02 0.000000e+00 0.000000e+00           18
+ 3 1.796016e-01 4.400331e-03 2.915762e-02 8.268241e-03 1.380855e-02 6.188553e-03 0.000000e+00 0.000000e+00           22
+ 4 2.133268e-03 5.226616e-05 5.698835e-04 1.616022e-04 7.353886e-04 3.295778e-04 0.000000e+00 0.000000e+00           28
+ 5 9.014066e-05 2.208492e-06 1.968391e-05 5.581776e-06 5.235756e-05 2.346499e-05 0.000000e+00 0.000000e+00           28
+
+t = 248.166, t_n = 46, dt = 11.4475: solved in 5 Newton iterations and 122 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.361638, 1: 38.8119, 2: 40.1626, 3: 19.2896, 4: 1.36274, 5: 0.0112772, 6: 0.000256299)
+  - 4 (0: 0.361638, 1: 38.8814, 2: 40.5153, 3: 19.1376, 4: 1.10414)
+  - 4 (0: 0.90174, 1: 42.8391, 2: 40.2724, 3: 15.4067, 4: 0.580063)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.163995e+01 ------------ 3.387727e+00 ------------ 2.192801e+00 ------------ 0.000000e+00 ------------            0
+ 1 7.445752e+00 1.788127e-01 1.213661e-01 3.582522e-02 6.842582e-01 3.120475e-01 0.000000e+00 0.000000e+00           21
+ 2 3.908133e-01 9.385538e-03 2.726933e-02 8.049446e-03 3.008920e-02 1.372181e-02 0.000000e+00 0.000000e+00           25
+ 3 7.151372e-03 1.717431e-04 8.545235e-04 2.522409e-04 2.630204e-03 1.199472e-03 0.000000e+00 0.000000e+00           26
+ 4 4.526581e-04 1.087077e-05 9.907180e-05 2.924433e-05 1.849837e-04 8.435951e-05 0.000000e+00 0.000000e+00           24
+ 5 8.531243e-05 2.048812e-06 1.833781e-05 5.413013e-06 6.909966e-05 3.151204e-05 0.000000e+00 0.000000e+00           16
+
+t = 259.614, t_n = 47, dt = 11.4475: solved in 5 Newton iterations and 112 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.367277, 1: 38.8585, 2: 40.096, 3: 19.2873, 4: 1.38068, 5: 0.010252)
+  - 4 (0: 0.367277, 1: 38.9308, 2: 40.432, 3: 19.1361, 4: 1.13387)
+  - 4 (0: 0.914526, 1: 42.8234, 2: 40.1941, 3: 15.4692, 4: 0.598746)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.237207e+01 ------------ 3.210781e+00 ------------ 2.116317e+00 ------------ 0.000000e+00 ------------            0
+ 1 4.929618e+00 1.163412e-01 9.588747e-02 2.986422e-02 5.414593e-01 2.558498e-01 0.000000e+00 0.000000e+00           23
+ 2 1.298808e-01 3.065247e-03 9.932591e-03 3.093513e-03 2.692271e-02 1.272149e-02 0.000000e+00 0.000000e+00           29
+ 3 4.084870e-03 9.640478e-05 6.972601e-04 2.171622e-04 1.793153e-03 8.472989e-04 0.000000e+00 0.000000e+00           26
+ 4 4.813994e-04 1.136124e-05 1.131513e-04 3.524107e-05 2.334817e-04 1.103245e-04 0.000000e+00 0.000000e+00           23
+ 5 1.007841e-04 2.378551e-06 2.595301e-05 8.083084e-06 7.271796e-05 3.436062e-05 0.000000e+00 0.000000e+00           17
+
+t = 271.061, t_n = 48, dt = 11.4475: solved in 5 Newton iterations and 118 linear iterations
+Cut-off statistic: 
+  - 5 (0: 0.362151, 1: 38.7463, 2: 40.0173, 3: 19.45, 4: 1.41246, 5: 0.0117898)
+  - 4 (0: 0.362151, 1: 38.817, 2: 40.3669, 3: 19.2968, 4: 1.15719)
+  - 4 (0: 0.921993, 1: 42.7502, 2: 40.1353, 3: 15.581, 4: 0.611596)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.302437e+01 ------------ 3.153319e+00 ------------ 2.073818e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.158839e+01 2.693449e-01 3.150958e-01 9.992513e-02 8.686614e-01 4.188705e-01 0.000000e+00 0.000000e+00           26
+ 2 1.750988e+00 4.069759e-02 5.126253e-02 1.625669e-02 5.045550e-02 2.432976e-02 0.000000e+00 0.000000e+00           20
+ 3 1.090466e-01 2.534531e-03 1.503727e-02 4.768713e-03 7.539325e-03 3.635480e-03 0.000000e+00 0.000000e+00           25
+ 4 1.111471e-03 2.583353e-05 2.293473e-04 7.273204e-05 4.459322e-04 2.150296e-04 0.000000e+00 0.000000e+00           29
+ 5 1.069545e-04 2.485905e-06 3.938550e-05 1.249017e-05 6.592880e-05 3.179102e-05 0.000000e+00 0.000000e+00           21
+
+t = 282.509, t_n = 49, dt = 11.4475: solved in 5 Newton iterations and 121 linear iterations
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3095518 (min: 12891, max: 12905)
+  - n cell w hanging nodes:    1123977 (min: 3516, max: 5888)
+  - n cell wo hanging nodes:   1971541 (min: 7005, max: 9386)
+  - n cell fine batch:         2959248 (min: 11984, max: 12576)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3515247
+  - n components:              10
+
+Execute grain tracker:
+has_reassigned_grains = false | has_op_number_changed = false
+Grain tracker CPU time = 0.409796 sec
+Number of order parameters: 8
+Number of grains: 49
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 0
+    segment: center = 79.4506 60.1528 28.1168 | radius = 40.0668
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 1
+    segment: center = 58.0457 154.427 75.4658 | radius = 39.6997
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 2
+    segment: center = 134.245 111.202 124.929 | radius = 37.5168
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 3
+    segment: center = 192.564 78.2217 73.6301 | radius = 41.8662
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 4
+    segment: center = 130.992 210.26 30.6333 | radius = 41.3946
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 5
+    segment: center = 137.46 228.112 109.462 | radius = 39.8639
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 6
+    segment: center = 32.6494 32.0571 160.641 | radius = 43.3909
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 7
+    segment: center = 159.589 25.2222 194.615 | radius = 35.4153
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 8
+    segment: center = 89.2954 117.011 189.374 | radius = 42.581
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 9
+    segment: center = 30.6212 215.286 176.39 | radius = 41.904
+op_index_current = 0 | op_index_old = 0 | segments = 1 | grain_index = 10
+    segment: center = 191.633 177.276 170.206 | radius = 42.8252
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 11
+    segment: center = 31.2759 30.4707 42.778 | radius = 42.2068
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 12
+    segment: center = 133.833 33.0751 32.8347 | radius = 45.6356
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 13
+    segment: center = 81.3314 86.9841 113.296 | radius = 43.6286
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 14
+    segment: center = 184.181 139.697 83.6456 | radius = 45.3016
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 15
+    segment: center = 81.4787 179.865 28.9449 | radius = 39.1438
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 16
+    segment: center = 33.2358 196.269 114.102 | radius = 45.524
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 17
+    segment: center = 144.808 82.9217 179.708 | radius = 48.352
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 18
+    segment: center = 32.0317 99.6365 205.115 | radius = 42.8355
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 19
+    segment: center = 144.164 217.981 175.349 | radius = 43.4471
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 20
+    segment: center = 88.2625 32.6636 80.4039 | radius = 44.1299
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 21
+    segment: center = 83.073 119.677 32.5328 | radius = 43.936
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 22
+    segment: center = 192.645 28.0075 42.3289 | radius = 38.5651
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 23
+    segment: center = 187.095 32.2006 145.89 | radius = 43.9842
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 24
+    segment: center = 180.363 175.426 31.4553 | radius = 41.7585
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 25
+    segment: center = 87.2802 208.501 83.3393 | radius = 42.3563
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 26
+    segment: center = 26.8387 147.026 148.292 | radius = 38.0229
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 27
+    segment: center = 193.111 203.865 113.29 | radius = 43.3984
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 28
+    segment: center = 101.868 33.5367 204.324 | radius = 45.1851
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 29
+    segment: center = 137.539 152.605 184.21 | radius = 40.5189
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 30
+    segment: center = 29.8631 89.1751 30.7493 | radius = 41.3639
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 31
+    segment: center = 129.409 84.5109 72.0106 | radius = 45.2465
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 32
+    segment: center = 31.2177 47.9414 101.222 | radius = 41.4664
+op_index_current = 5 | op_index_old = 5 | segments = 1 | grain_index = 33
+    segment: center = 116.356 34.7618 139.645 | radius = 46.8947
+op_index_current = 5 | op_index_old = 5 | segments = 1 | grain_index = 34
+    segment: center = 86.9266 150.911 132.554 | radius = 47.9217
+op_index_current = 2 | op_index_old = 2 | segments = 1 | grain_index = 35
+    segment: center = 186.942 120.591 144.819 | radius = 42.2889
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 36
+    segment: center = 31.1492 201.489 49.6507 | radius = 42.3944
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 37
+    segment: center = 29.7229 161.018 202.73 | radius = 41.8575
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 38
+    segment: center = 174.433 71.8281 23.6319 | radius = 34.002
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 39
+    segment: center = 28.8201 146.908 28.0705 | radius = 39.6367
+op_index_current = 6 | op_index_old = 6 | segments = 1 | grain_index = 40
+    segment: center = 158.569 31.0627 90.3856 | radius = 42.5365
+op_index_current = 6 | op_index_old = 6 | segments = 1 | grain_index = 41
+    segment: center = 149.513 165.026 128.774 | radius = 40.3893
+op_index_current = 4 | op_index_old = 4 | segments = 1 | grain_index = 42
+    segment: center = 75.2459 68.3042 166.098 | radius = 34.9667
+op_index_current = 6 | op_index_old = 6 | segments = 1 | grain_index = 43
+    segment: center = 84.6256 176.069 191.329 | radius = 39.3881
+op_index_current = 5 | op_index_old = 5 | segments = 1 | grain_index = 44
+    segment: center = 155.52 121.38 29.4443 | radius = 41.1616
+op_index_current = 1 | op_index_old = 1 | segments = 1 | grain_index = 45
+    segment: center = 29.6581 105.508 87.0065 | radius = 39.4534
+op_index_current = 3 | op_index_old = 3 | segments = 1 | grain_index = 46
+    segment: center = 86.7236 219.093 145.784 | radius = 45.7981
+op_index_current = 7 | op_index_old = 7 | segments = 1 | grain_index = 47
+    segment: center = 121.216 156.104 71.7793 | radius = 46.9902
+op_index_current = 6 | op_index_old = 6 | segments = 1 | grain_index = 48
+    segment: center = 29.8529 90.5192 144.102 | radius = 41.748
+
+Cut-off statistic: 
+  - 5 (0: 0.36895, 1: 38.8444, 2: 40.012, 3: 19.3358, 4: 1.42619, 5: 0.0126601)
+  - 4 (0: 0.36895, 1: 38.9095, 2: 40.3122, 3: 19.2164, 4: 1.19289)
+  - 4 (0: 0.847354, 1: 42.6122, 2: 40.1978, 3: 15.6867, 4: 0.655851)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 9.070502e+01 ------------ 3.100720e+00 ------------ 1.555800e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 387087828
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              96771957
+
+ 1 7.839267e+00 8.642594e-02 1.498878e-01 4.833968e-02 7.200526e-01 4.628182e-02 0.000000e+00 0.000000e+00           23
+ 2 5.934851e-01 6.543024e-03 3.414240e-02 1.101112e-02 4.220104e-02 2.712497e-03 0.000000e+00 0.000000e+00           24
+ 3 1.364521e-02 1.504350e-04 1.019847e-03 3.289066e-04 2.421795e-03 1.556624e-04 0.000000e+00 0.000000e+00           28
+ 4 1.159004e-04 1.277773e-06 1.155374e-05 3.726146e-06 8.407614e-05 5.404045e-06 0.000000e+00 0.000000e+00           35
+
+t = 293.956, t_n = 50, dt = 11.4475: solved in 4 Newton iterations and 110 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.355257, 1: 38.6785, 2: 39.8986, 3: 19.5577, 4: 1.49776, 5: 0.011885, 6: 0.000258369)
+  - 4 (0: 0.355257, 1: 38.7421, 2: 40.2339, 3: 19.4249, 4: 1.24379)
+  - 4 (0: 0.830717, 1: 42.5925, 2: 40.1018, 3: 15.8004, 4: 0.674685)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.139795e+01 ------------ 3.142136e+00 ------------ 2.155184e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.179340e+01 3.756104e-01 2.583797e-01 8.223058e-02 8.281028e-01 3.842376e-01 0.000000e+00 0.000000e+00           24
+ 2 1.737194e+00 5.532825e-02 4.700791e-02 1.496050e-02 6.618019e-02 3.070744e-02 0.000000e+00 0.000000e+00           18
+ 3 9.462247e-02 3.013651e-03 9.142627e-03 2.909685e-03 1.141995e-02 5.298829e-03 0.000000e+00 0.000000e+00           23
+ 4 1.279951e-03 4.076543e-05 1.166791e-04 3.713369e-05 3.461263e-04 1.606017e-04 0.000000e+00 0.000000e+00           30
+ 5 3.222299e-05 1.026277e-06 9.326510e-07 2.968207e-07 3.163811e-05 1.468000e-05 0.000000e+00 0.000000e+00           36
+
+t = 305.404, t_n = 51, dt = 11.4475: solved in 5 Newton iterations and 131 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.358357, 1: 38.7636, 2: 39.82, 3: 19.5456, 4: 1.49931, 5: 0.0126601, 6: 0.000516737)
+  - 4 (0: 0.358357, 1: 38.83, 2: 40.1554, 3: 19.4045, 4: 1.2518)
+  - 4 (0: 0.843962, 1: 42.6352, 2: 40.0078, 3: 15.8283, 4: 0.6847)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.341768e+01 ------------ 2.990898e+00 ------------ 2.036921e+00 ------------ 0.000000e+00 ------------            0
+ 1 6.578631e+00 1.968608e-01 1.166902e-01 3.901511e-02 5.922496e-01 2.907573e-01 0.000000e+00 0.000000e+00           23
+ 2 5.443239e-01 1.628850e-02 2.406478e-02 8.046004e-03 3.448750e-02 1.693119e-02 0.000000e+00 0.000000e+00           25
+ 3 1.549807e-02 4.637686e-04 5.957632e-04 1.991921e-04 3.611525e-03 1.773031e-03 0.000000e+00 0.000000e+00           31
+ 4 2.115471e-04 6.330396e-06 1.774305e-05 5.932349e-06 8.984576e-05 4.410861e-05 0.000000e+00 0.000000e+00           34
+
+t = 316.851, t_n = 52, dt = 11.4475: solved in 4 Newton iterations and 113 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.358099, 1: 38.6375, 2: 39.7603, 3: 19.713, 4: 1.51895, 5: 0.011885, 6: 0.000258369)
+  - 4 (0: 0.358099, 1: 38.7008, 2: 40.1099, 3: 19.5611, 4: 1.27014)
+  - 4 (0: 0.852006, 1: 42.5981, 2: 39.9419, 3: 15.9118, 4: 0.696232)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.511413e+01 ------------ 2.885671e+00 ------------ 1.990189e+00 ------------ 0.000000e+00 ------------            0
+ 1 5.104770e+00 1.453765e-01 1.167023e-01 4.044200e-02 5.662867e-01 2.845392e-01 0.000000e+00 0.000000e+00           25
+ 2 1.165519e-01 3.319230e-03 1.033789e-02 3.582491e-03 1.976498e-02 9.931209e-03 0.000000e+00 0.000000e+00           25
+ 3 3.414806e-03 9.724878e-05 3.772373e-04 1.307278e-04 1.367563e-03 6.871523e-04 0.000000e+00 0.000000e+00           24
+ 4 1.066158e-04 3.036265e-06 1.988711e-05 6.891676e-06 4.315170e-05 2.168221e-05 0.000000e+00 0.000000e+00           27
+
+t = 328.299, t_n = 53, dt = 11.4475: solved in 4 Newton iterations and 101 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.363266, 1: 38.6922, 2: 39.7128, 3: 19.6848, 4: 1.5329, 5: 0.0134352, 6: 0.000516737)
+  - 5 (0: 0.363266, 1: 38.7545, 2: 40.0518, 3: 19.5487, 4: 1.28151, 5: 0.000258369)
+  - 5 (0: 0.869806, 1: 42.5983, 2: 39.8584, 3: 15.9645, 4: 0.708896, 5: 3.23048e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.646355e+01 ------------ 2.880432e+00 ------------ 1.970516e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.174768e+01 3.221759e-01 2.193006e-01 7.613462e-02 7.800935e-01 3.958828e-01 0.000000e+00 0.000000e+00           24
+ 2 1.793176e+00 4.917722e-02 5.011071e-02 1.739694e-02 6.038321e-02 3.064335e-02 0.000000e+00 0.000000e+00           20
+ 3 9.571413e-02 2.624926e-03 8.975145e-03 3.115903e-03 8.690724e-03 4.410379e-03 0.000000e+00 0.000000e+00           25
+ 4 8.983742e-04 2.463759e-05 1.240802e-04 4.307695e-05 3.280229e-04 1.664655e-04 0.000000e+00 0.000000e+00           30
+ 5 4.147256e-05 1.137370e-06 7.940213e-06 2.756605e-06 2.392990e-05 1.214398e-05 0.000000e+00 0.000000e+00           28
+
+t = 339.747, t_n = 54, dt = 11.4475: solved in 5 Newton iterations and 127 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.369209, 1: 38.539, 2: 39.6867, 3: 19.835, 4: 1.5559, 5: 0.0136935, 6: 0.000516737)
+  - 4 (0: 0.369209, 1: 38.6039, 2: 40.0461, 3: 19.6755, 4: 1.30528)
+  - 4 (0: 0.8899, 1: 42.5307, 2: 39.8168, 3: 16.0414, 4: 0.721269)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.752746e+01 ------------ 2.837149e+00 ------------ 1.959918e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.300708e+01 3.466017e-01 3.773460e-01 1.330018e-01 9.085753e-01 4.635783e-01 0.000000e+00 0.000000e+00           25
+ 2 2.227779e+00 5.936396e-02 1.149849e-01 4.052832e-02 5.188878e-02 2.647498e-02 0.000000e+00 0.000000e+00           21
+ 3 1.639452e-01 4.368672e-03 3.892155e-02 1.371855e-02 9.802066e-03 5.001264e-03 0.000000e+00 0.000000e+00           25
+ 4 1.814823e-03 4.835985e-05 6.365794e-04 2.243729e-04 6.475739e-04 3.304087e-04 0.000000e+00 0.000000e+00           36
+ 5 5.010181e-05 1.335071e-06 1.225260e-05 4.318631e-06 2.305900e-05 1.176529e-05 0.000000e+00 0.000000e+00           30
+
+t = 351.194, t_n = 55, dt = 11.4475: solved in 5 Newton iterations and 137 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.366367, 1: 38.6284, 2: 39.6107, 3: 19.8078, 4: 1.57243, 5: 0.0136935, 6: 0.000516737)
+  - 4 (0: 0.366367, 1: 38.6959, 2: 39.943, 3: 19.6758, 4: 1.31897)
+  - 4 (0: 0.895327, 1: 42.5447, 2: 39.7334, 3: 16.0931, 4: 0.733415)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.845867e+01 ------------ 2.797133e+00 ------------ 1.940731e+00 ------------ 0.000000e+00 ------------            0
+ 1 6.319489e+00 1.643190e-01 1.032390e-01 3.690887e-02 5.976740e-01 3.079632e-01 0.000000e+00 0.000000e+00           25
+ 2 3.188265e-01 8.290108e-03 2.900142e-02 1.036827e-02 2.709353e-02 1.396047e-02 0.000000e+00 0.000000e+00           27
+ 3 4.725712e-03 1.228777e-04 6.867185e-04 2.455080e-04 1.885432e-03 9.715060e-04 0.000000e+00 0.000000e+00           30
+ 4 3.786330e-04 9.845193e-06 7.887574e-05 2.819878e-05 1.446856e-04 7.455208e-05 0.000000e+00 0.000000e+00           25
+
+t = 362.642, t_n = 56, dt = 11.4475: solved in 4 Newton iterations and 107 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.364558, 1: 38.4649, 2: 39.597, 3: 19.9574, 4: 1.60189, 5: 0.0136935, 6: 0.000516737)
+  - 4 (0: 0.364558, 1: 38.529, 2: 39.9433, 3: 19.8207, 4: 1.34248)
+  - 4 (0: 0.907958, 1: 42.4628, 2: 39.7092, 3: 16.1751, 4: 0.744948)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.928544e+01 ------------ 2.784997e+00 ------------ 1.924304e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.173199e+01 2.986345e-01 2.928140e-01 1.051398e-01 8.470133e-01 4.401660e-01 0.000000e+00 0.000000e+00           24
+ 2 1.715298e+00 4.366245e-02 4.536588e-02 1.628938e-02 4.956633e-02 2.575805e-02 0.000000e+00 0.000000e+00           19
+ 3 9.377114e-02 2.386918e-03 9.852797e-03 3.537812e-03 7.723723e-03 4.013775e-03 0.000000e+00 0.000000e+00           24
+ 4 1.207460e-03 3.073556e-05 1.711995e-04 6.147206e-05 3.935846e-04 2.045335e-04 0.000000e+00 0.000000e+00           28
+ 5 1.104254e-04 2.810848e-06 2.682580e-05 9.632255e-06 5.671189e-05 2.947138e-05 0.000000e+00 0.000000e+00           21
+
+t = 374.089, t_n = 57, dt = 11.4475: solved in 5 Newton iterations and 116 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.372051, 1: 38.5496, 2: 39.5255, 3: 19.9344, 4: 1.60395, 5: 0.0139519, 6: 0.000516737)
+  - 4 (0: 0.372051, 1: 38.6176, 2: 39.8575, 3: 19.8063, 4: 1.34662)
+  - 4 (0: 0.918715, 1: 42.4682, 2: 39.6332, 3: 16.2251, 4: 0.754736)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.996922e+01 ------------ 2.705484e+00 ------------ 1.908772e+00 ------------ 0.000000e+00 ------------            0
+ 1 5.079608e+00 1.270880e-01 7.083275e-02 2.618117e-02 5.095325e-01 2.669425e-01 0.000000e+00 0.000000e+00           22
+ 2 2.043671e-01 5.113111e-03 1.871442e-02 6.917217e-03 1.911382e-02 1.001367e-02 0.000000e+00 0.000000e+00           24
+ 3 3.665489e-03 9.170778e-05 7.952951e-04 2.939566e-04 1.433925e-03 7.512292e-04 0.000000e+00 0.000000e+00           26
+ 4 4.263694e-04 1.066744e-05 1.578641e-04 5.834968e-05 2.661447e-04 1.394324e-04 0.000000e+00 0.000000e+00           20
+ 5 1.157185e-04 2.895189e-06 4.119243e-05 1.522553e-05 7.195783e-05 3.769849e-05 0.000000e+00 0.000000e+00           15
+
+t = 385.537, t_n = 58, dt = 11.4475: solved in 5 Newton iterations and 107 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.367917, 1: 38.4039, 2: 39.5203, 3: 20.0453, 4: 1.64736, 5: 0.014727, 6: 0.000516737)
+  - 4 (0: 0.367917, 1: 38.4726, 2: 39.8606, 3: 19.9143, 4: 1.3846)
+  - 4 (0: 0.925855, 1: 42.3964, 2: 39.608, 3: 16.3005, 4: 0.769306)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 4.068366e+01 ------------ 2.583131e+00 ------------ 1.866655e+00 ------------ 0.000000e+00 ------------            0
+ 1 3.150931e+00 7.744953e-02 6.349125e-02 2.457919e-02 3.897529e-01 2.087975e-01 0.000000e+00 0.000000e+00           22
+ 2 4.039098e-02 9.928060e-04 6.730316e-03 2.605488e-03 8.648077e-03 4.632928e-03 0.000000e+00 0.000000e+00           27
+ 3 2.784927e-03 6.845321e-05 8.072070e-04 3.124917e-04 1.473704e-03 7.894891e-04 0.000000e+00 0.000000e+00           22
+ 4 8.335629e-04 2.048889e-05 2.049699e-04 7.934942e-05 2.236440e-04 1.198100e-04 0.000000e+00 0.000000e+00           16
+ 5 1.545903e-04 3.799814e-06 5.468233e-05 2.116901e-05 8.975573e-05 4.808373e-05 0.000000e+00 0.000000e+00           14
+
+t = 396.984, t_n = 59, dt = 11.4475: solved in 5 Newton iterations and 101 linear iterations
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3075022 (min: 12805, max: 12820)
+  - n cell w hanging nodes:    1115983 (min: 3451, max: 5831)
+  - n cell wo hanging nodes:   1959039 (min: 6979, max: 9359)
+  - n cell fine batch:         2939440 (min: 11928, max: 12520)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3491928
+  - n components:              10
+
+Cut-off statistic: 
+  - 6 (0: 0.36829, 1: 38.4514, 2: 39.5682, 3: 19.9371, 4: 1.65808, 5: 0.0161257, 6: 0.000780275)
+  - 4 (0: 0.36829, 1: 38.5128, 2: 39.8835, 3: 19.8257, 4: 1.4097)
+  - 4 (0: 0.850075, 1: 42.1662, 2: 39.7532, 3: 16.4212, 4: 0.809263)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 8.202840e+01 ------------ 2.485536e+00 ------------ 1.435988e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 384533624
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              96133406
+
+ 1 2.708171e+00 3.301504e-02 7.866149e-02 3.164770e-02 3.895699e-01 2.712906e-02 0.000000e+00 0.000000e+00           21
+ 2 4.399303e-02 5.363146e-04 5.344919e-03 2.150409e-03 1.964089e-02 1.367762e-03 0.000000e+00 0.000000e+00           25
+ 3 2.586462e-03 3.153130e-05 2.459772e-04 9.896347e-05 7.967754e-04 5.548623e-05 0.000000e+00 0.000000e+00           27
+ 4 3.044763e-05 3.711840e-07 1.478641e-06 5.948985e-07 2.383097e-05 1.659552e-06 0.000000e+00 0.000000e+00           44
+
+t = 408.432, t_n = 60, dt = 11.4475: solved in 4 Newton iterations and 117 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.357886, 1: 38.2681, 2: 39.5053, 3: 20.1378, 4: 1.7127, 5: 0.0176862, 6: 0.000520183)
+  - 5 (0: 0.357886, 1: 38.3242, 2: 39.8382, 3: 20.0317, 4: 1.44741, 5: 0.000520183)
+  - 5 (0: 0.836124, 1: 42.1483, 2: 39.7012, 3: 16.4874, 4: 0.826888, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.991174e+01 ------------ 2.532301e+00 ------------ 1.922849e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.956880e+00 9.885348e-02 8.115160e-02 3.204658e-02 4.016679e-01 2.088921e-01 0.000000e+00 0.000000e+00           24
+ 2 8.525418e-02 2.850191e-03 5.552909e-03 2.192831e-03 2.393204e-02 1.244614e-02 0.000000e+00 0.000000e+00           26
+ 3 3.893054e-03 1.301514e-04 3.739210e-04 1.476606e-04 1.055135e-03 5.487351e-04 0.000000e+00 0.000000e+00           27
+ 4 5.312548e-05 1.776075e-06 4.007227e-06 1.582445e-06 2.940696e-05 1.529343e-05 0.000000e+00 0.000000e+00           45
+
+t = 419.879, t_n = 61, dt = 11.4475: solved in 4 Newton iterations and 122 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.360227, 1: 38.371, 2: 39.4533, 3: 20.0939, 4: 1.70516, 5: 0.0158656, 6: 0.000520183)
+  - 4 (0: 0.360227, 1: 38.4309, 2: 39.7774, 3: 19.9857, 4: 1.44585)
+  - 4 (0: 0.849522, 1: 42.1996, 2: 39.6318, 3: 16.488, 4: 0.831051)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.185449e+01 ------------ 2.531410e+00 ------------ 1.852870e+00 ------------ 0.000000e+00 ------------            0
+ 1 7.899818e+00 2.479970e-01 2.321568e-01 9.171047e-02 7.278176e-01 3.928056e-01 0.000000e+00 0.000000e+00           30
+ 2 8.712600e-01 2.735125e-02 2.098701e-02 8.290641e-03 3.925309e-02 2.118502e-02 0.000000e+00 0.000000e+00           23
+ 3 3.488298e-02 1.095073e-03 2.508405e-03 9.909124e-04 4.936641e-03 2.664321e-03 0.000000e+00 0.000000e+00           25
+ 4 2.853247e-04 8.957126e-06 4.923821e-05 1.945091e-05 1.531372e-04 8.264865e-05 0.000000e+00 0.000000e+00           36
+
+t = 431.327, t_n = 62, dt = 11.4475: solved in 4 Newton iterations and 114 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.364128, 1: 38.2337, 2: 39.4281, 3: 20.2081, 4: 1.74756, 5: 0.0179463, 6: 0.000520183)
+  - 5 (0: 0.364128, 1: 38.2904, 2: 39.7636, 3: 20.1035, 4: 1.47784, 5: 0.000520183)
+  - 5 (0: 0.858205, 1: 42.1548, 2: 39.5925, 3: 16.5495, 4: 0.844872, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.343825e+01 ------------ 2.640405e+00 ------------ 1.889354e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.225257e+01 3.664238e-01 2.922486e-01 1.106833e-01 9.476128e-01 5.015538e-01 0.000000e+00 0.000000e+00           30
+ 2 1.845054e+00 5.517795e-02 6.299416e-02 2.385776e-02 5.215752e-02 2.760600e-02 0.000000e+00 0.000000e+00           23
+ 3 1.146975e-01 3.430129e-03 1.722474e-02 6.523520e-03 6.071286e-03 3.213419e-03 0.000000e+00 0.000000e+00           28
+ 4 9.752507e-04 2.916572e-05 1.804954e-04 6.835896e-05 3.909632e-04 2.069295e-04 0.000000e+00 0.000000e+00           32
+ 5 3.470761e-05 1.037961e-06 1.594456e-06 6.038680e-07 3.291469e-05 1.742113e-05 0.000000e+00 0.000000e+00           35
+
+t = 442.774, t_n = 63, dt = 11.4475: solved in 5 Newton iterations and 148 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.362047, 1: 38.287, 2: 39.3568, 3: 20.2367, 4: 1.74131, 5: 0.0156055, 6: 0.000520183)
+  - 4 (0: 0.362047, 1: 38.3463, 2: 39.6835, 3: 20.1339, 4: 1.4742)
+  - 4 (0: 0.872774, 1: 42.1659, 2: 39.5133, 3: 16.5985, 4: 0.849555)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.473716e+01 ------------ 2.612186e+00 ------------ 1.904899e+00 ------------ 0.000000e+00 ------------            0
+ 1 8.456140e+00 2.434321e-01 2.385544e-01 9.132368e-02 7.837028e-01 4.114143e-01 0.000000e+00 0.000000e+00           28
+ 2 8.352032e-01 2.404351e-02 2.572658e-02 9.848679e-03 3.651412e-02 1.916853e-02 0.000000e+00 0.000000e+00           20
+ 3 3.247463e-02 9.348671e-04 3.186346e-03 1.219801e-03 3.866158e-03 2.029587e-03 0.000000e+00 0.000000e+00           26
+ 4 3.598929e-04 1.036046e-05 4.335490e-05 1.659717e-05 1.150093e-04 6.037555e-05 0.000000e+00 0.000000e+00           28
+ 5 2.337822e-05 6.730031e-07 3.128638e-06 1.197709e-06 1.657486e-05 8.701173e-06 0.000000e+00 0.000000e+00           24
+
+t = 454.222, t_n = 64, dt = 11.4475: solved in 5 Newton iterations and 126 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.37011, 1: 38.1393, 2: 39.3667, 3: 20.3316, 4: 1.77486, 5: 0.016906, 6: 0.000520183)
+  - 5 (0: 0.37011, 1: 38.1968, 2: 39.7032, 3: 20.2232, 4: 1.50619, 5: 0.000520183)
+  - 5 (0: 0.890693, 1: 42.109, 2: 39.4797, 3: 16.655, 4: 0.865522, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.582470e+01 ------------ 2.543647e+00 ------------ 1.880538e+00 ------------ 0.000000e+00 ------------            0
+ 1 6.365171e+00 1.776755e-01 8.070569e-02 3.172833e-02 5.509696e-01 2.929852e-01 0.000000e+00 0.000000e+00           23
+ 2 5.176156e-01 1.444857e-02 3.389240e-02 1.332433e-02 2.947751e-02 1.567504e-02 0.000000e+00 0.000000e+00           20
+ 3 1.064903e-02 2.972538e-04 1.187769e-03 4.669549e-04 2.440983e-03 1.298024e-03 0.000000e+00 0.000000e+00           23
+ 4 3.876008e-04 1.081937e-05 6.204898e-05 2.439370e-05 1.079096e-04 5.738232e-05 0.000000e+00 0.000000e+00           22
+ 5 5.178215e-05 1.445432e-06 8.033725e-06 3.158348e-06 3.785605e-05 2.013044e-05 0.000000e+00 0.000000e+00           14
+
+t = 465.67, t_n = 65, dt = 11.4475: solved in 5 Newton iterations and 102 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.365949, 1: 38.2283, 2: 39.291, 3: 20.3207, 4: 1.77695, 5: 0.0166459, 6: 0.000520183)
+  - 5 (0: 0.365949, 1: 38.2896, 2: 39.6109, 3: 20.2174, 4: 1.51555, 5: 0.000520183)
+  - 5 (0: 0.895083, 1: 42.1215, 2: 39.4104, 3: 16.6982, 4: 0.874725, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.674507e+01 ------------ 2.411574e+00 ------------ 1.831678e+00 ------------ 0.000000e+00 ------------            0
+ 1 3.153704e+00 8.582658e-02 5.459321e-02 2.263800e-02 3.894809e-01 2.126360e-01 0.000000e+00 0.000000e+00           22
+ 2 4.950814e-02 1.347341e-03 5.820255e-03 2.413467e-03 1.057544e-02 5.773631e-03 0.000000e+00 0.000000e+00           23
+ 3 3.003066e-03 8.172705e-05 4.523090e-04 1.875576e-04 1.571325e-03 8.578609e-04 0.000000e+00 0.000000e+00           20
+ 4 5.432832e-04 1.478520e-05 8.698544e-05 3.606998e-05 2.622694e-04 1.431853e-04 0.000000e+00 0.000000e+00           17
+ 5 1.150320e-04 3.130543e-06 1.638104e-05 6.792674e-06 6.577312e-05 3.590866e-05 0.000000e+00 0.000000e+00           16
+
+t = 477.117, t_n = 66, dt = 11.4475: solved in 5 Newton iterations and 98 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.36829, 1: 38.1159, 2: 39.2939, 3: 20.3951, 4: 1.8079, 5: 0.0182064, 6: 0.000780275)
+  - 5 (0: 0.36829, 1: 38.1744, 2: 39.6299, 3: 20.2778, 4: 1.54911, 5: 0.000520183)
+  - 5 (0: 0.911603, 1: 42.0564, 2: 39.3974, 3: 16.744, 4: 0.890563, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.746750e+01 ------------ 2.319549e+00 ------------ 1.789742e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.409858e+00 6.431863e-02 4.408976e-02 1.900790e-02 3.364224e-01 1.879726e-01 0.000000e+00 0.000000e+00           22
+ 2 2.758486e-02 7.362344e-04 4.325824e-03 1.864942e-03 7.749568e-03 4.329992e-03 0.000000e+00 0.000000e+00           23
+ 3 2.322380e-03 6.198384e-05 3.903823e-04 1.683009e-04 1.306699e-03 7.301050e-04 0.000000e+00 0.000000e+00           19
+ 4 4.016232e-04 1.071924e-05 7.910670e-05 3.410434e-05 1.640369e-04 9.165392e-05 0.000000e+00 0.000000e+00           18
+ 5 7.320164e-05 1.953737e-06 1.577171e-05 6.799474e-06 4.455925e-05 2.489703e-05 0.000000e+00 0.000000e+00           16
+
+t = 488.565, t_n = 67, dt = 11.4475: solved in 5 Newton iterations and 98 linear iterations
+Outputing data at t = 500.012 (./contour_solution.1.vtu)
+Cut-off statistic: 
+  - 6 (0: 0.365169, 1: 38.1757, 2: 39.2189, 3: 20.4193, 4: 1.80373, 5: 0.0163858, 6: 0.000780275)
+  - 5 (0: 0.365169, 1: 38.2366, 2: 39.5357, 3: 20.3184, 4: 1.54364, 5: 0.000520183)
+  - 5 (0: 0.916481, 1: 42.0554, 2: 39.3349, 3: 16.7967, 4: 0.896416, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.809120e+01 ------------ 2.251993e+00 ------------ 1.761185e+00 ------------ 0.000000e+00 ------------            0
+ 1 2.084797e+00 5.473173e-02 3.351671e-02 1.488313e-02 3.084084e-01 1.751141e-01 0.000000e+00 0.000000e+00           23
+ 2 2.337143e-02 6.135651e-04 3.355280e-03 1.489915e-03 5.485692e-03 3.114773e-03 0.000000e+00 0.000000e+00           24
+ 3 2.008623e-03 5.273196e-05 4.620384e-04 2.051686e-04 1.325225e-03 7.524621e-04 0.000000e+00 0.000000e+00           16
+ 4 3.927543e-04 1.031089e-05 1.052729e-04 4.674653e-05 1.644181e-04 9.335651e-05 0.000000e+00 0.000000e+00           16
+ 5 7.511241e-05 1.971910e-06 2.164092e-05 9.609673e-06 5.485878e-05 3.114879e-05 0.000000e+00 0.000000e+00           15
+
+t = 500.012, t_n = 68, dt = 11.4475: solved in 5 Newton iterations and 94 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.375572, 1: 38.0558, 2: 39.2377, 3: 20.4809, 4: 1.83104, 5: 0.0182064, 6: 0.000780275)
+  - 5 (0: 0.375572, 1: 38.1146, 2: 39.5742, 3: 20.3566, 4: 1.5785, 5: 0.000520183)
+  - 5 (0: 0.933945, 1: 41.991, 2: 39.333, 3: 16.8316, 4: 0.9104, 5: 6.50402e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.866705e+01 ------------ 2.199596e+00 ------------ 1.741111e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.915010e+00 4.952562e-02 3.010547e-02 1.368682e-02 2.916680e-01 1.675184e-01 0.000000e+00 0.000000e+00           24
+ 2 2.760781e-02 7.139880e-04 3.531705e-03 1.605615e-03 5.321647e-03 3.056467e-03 0.000000e+00 0.000000e+00           24
+ 3 2.033017e-03 5.257749e-05 5.243617e-04 2.383900e-04 1.230256e-03 7.065928e-04 0.000000e+00 0.000000e+00           17
+ 4 4.644852e-04 1.201243e-05 1.243518e-04 5.653391e-05 1.984951e-04 1.140049e-04 0.000000e+00 0.000000e+00           15
+ 5 9.428412e-05 2.438358e-06 3.035688e-05 1.380112e-05 7.214023e-05 4.143346e-05 0.000000e+00 0.000000e+00           15
+
+t = 511.46, t_n = 69, dt = 11.4475: solved in 5 Newton iterations and 95 linear iterations
+Execute refinement/coarsening:
+System statistics:
+  - n cell:                    3057655 (min: 12733, max: 12748)
+  - n cell w hanging nodes:    1111321 (min: 3463, max: 5817)
+  - n cell wo hanging nodes:   1946334 (min: 6920, max: 9280)
+  - n cell fine batch:         2922976 (min: 11864, max: 12456)
+  - n levels:                  7
+  - n coarse cells:            48
+  - n theoretical fine cells:  2239488
+  - n dofs:                    3472881
+  - n components:              10
+
+Cut-off statistic: 
+  - 6 (0: 0.361224, 1: 38.0742, 2: 39.2581, 3: 20.4483, 4: 1.83934, 5: 0.0185713, 6: 0.000261567)
+  - 5 (0: 0.361224, 1: 38.1318, 2: 39.5636, 3: 20.3444, 4: 1.59844, 5: 0.000523134)
+  - 5 (0: 0.849834, 1: 41.7665, 2: 39.4598, 3: 16.9731, 4: 0.950696, 5: 6.54096e-05)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 7.771470e+01 ------------ 2.139583e+00 ------------ 1.362635e+01 ------------ 0.000000e+00 ------------            0
+
+Create sparsity pattern (cahn_hilliard_op) with:
+ - NNZ: 382441628
+
+
+Create block sparsity pattern (allen_cahn_op) with:
+ - number of blocks: 1
+ - NNZ:              95610407
+
+ 1 1.860564e+00 2.394096e-02 5.697630e-02 2.662962e-02 3.314671e-01 2.432545e-02 0.000000e+00 0.000000e+00           21
+ 2 8.088328e-02 1.040772e-03 4.547116e-03 2.125234e-03 1.504617e-02 1.104197e-03 0.000000e+00 0.000000e+00           22
+ 3 2.061832e-03 2.653079e-05 2.380819e-04 1.112749e-04 5.746054e-04 4.216870e-05 0.000000e+00 0.000000e+00           27
+ 4 3.480605e-05 4.478696e-07 1.661708e-06 7.766505e-07 3.147908e-05 2.310163e-06 0.000000e+00 0.000000e+00           41
+
+t = 522.907, t_n = 70, dt = 11.4475: solved in 4 Newton iterations and 111 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.354162, 1: 37.945, 2: 39.2045, 3: 20.5691, 4: 1.90682, 5: 0.0201407, 6: 0.000261567)
+  - 4 (0: 0.354162, 1: 38.0015, 2: 39.533, 3: 20.4595, 4: 1.6518)
+  - 4 (0: 0.83672, 1: 41.7646, 2: 39.4256, 3: 16.9999, 4: 0.973197)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.928705e+01 ------------ 2.192471e+00 ------------ 1.821393e+00 ------------ 0.000000e+00 ------------            0
+ 1 1.825693e+00 6.233792e-02 4.927131e-02 2.247296e-02 3.116813e-01 1.711225e-01 0.000000e+00 0.000000e+00           24
+ 2 8.391369e-02 2.865215e-03 4.291704e-03 1.957474e-03 1.408847e-02 7.734999e-03 0.000000e+00 0.000000e+00           25
+ 3 4.911773e-03 1.677115e-04 3.222898e-04 1.469985e-04 8.416509e-04 4.620919e-04 0.000000e+00 0.000000e+00           27
+ 4 7.108652e-05 2.427234e-06 3.442398e-06 1.570100e-06 2.547585e-05 1.398702e-05 0.000000e+00 0.000000e+00           38
+
+t = 534.355, t_n = 71, dt = 11.4475: solved in 4 Newton iterations and 114 linear iterations
+Cut-off statistic: 
+  - 6 (0: 0.358609, 1: 38.0149, 2: 39.182, 3: 20.5419, 4: 1.88224, 5: 0.0201407, 6: 0.000261567)
+  - 4 (0: 0.358609, 1: 38.0737, 2: 39.4993, 3: 20.4331, 4: 1.63532)
+  - 4 (0: 0.846956, 1: 41.8146, 2: 39.3666, 3: 16.9992, 4: 0.972641)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 3.089929e+01 ------------ 1.838415e+00 ------------ 1.538288e+00 ------------ 0.000000e+00 ------------            0
+ 1 3.787742e-01 1.225834e-02 2.853680e-02 1.552250e-02 1.017996e-01 6.617722e-02 0.000000e+00 0.000000e+00           17
+ 2 1.098128e-02 3.553894e-04 5.967490e-04 3.245997e-04 1.001114e-03 6.507974e-04 0.000000e+00 0.000000e+00           23
+ 3 4.919818e-04 1.592210e-05 1.983471e-05 1.078903e-05 5.574016e-05 3.623520e-05 0.000000e+00 0.000000e+00           23
+ 4 4.330475e-05 1.401480e-06 8.450994e-07 4.596891e-07 3.853013e-05 2.504742e-05 0.000000e+00 0.000000e+00           20
+
+t = 545.802, t_n = 72, dt = 4.19767: solved in 4 Newton iterations and 83 linear iterations
+Outputing data at t = 550 (./contour_solution.2.vtu)
+Cut-off statistic: 
+  - 6 (0: 0.342391, 1: 37.9152, 2: 39.1903, 3: 20.6044, 4: 1.92723, 5: 0.0201407, 6: 0.000261567)
+  - 4 (0: 0.342391, 1: 37.9735, 2: 39.5314, 3: 20.4883, 4: 1.66435)
+  - 4 (0: 0.841462, 1: 41.7892, 2: 39.3754, 3: 17.0138, 4: 0.980065)
+
+it      res_abs      res_rel   ch_rel_abs   ch_res_rel   ac_rel_abs   ac_res_rel  mec_rel_abs  mec_res_rel  linear_iter
+ 0 2.181510e+01 ------------ 2.183635e+00 ------------ 1.749464e+00 ------------ 0.000000e+00 ------------            0
+ 1 7.077307e-01 3.244224e-02 3.920925e-02 1.795595e-02 1.072642e-01 6.131258e-02 0.000000e+00 0.000000e+00           16
+ 2 3.641228e-03 1.669132e-04 5.571787e-04 2.551610e-04 1.018026e-03 5.819074e-04 0.000000e+00 0.000000e+00           22
+ 3 1.959260e-04 8.981211e-06 1.447156e-05 6.627280e-06 7.462436e-05 4.265555e-05 0.000000e+00 0.000000e+00           18
+
+t = 550, t_n = 73, dt = 4.19767: solved in 3 Newton iterations and 56 linear iterations
+[32mIncreasing timestep, dt = 5.0372[0m
+
+Final statistics:
+  - n timesteps:               74
+  - n non-linear iterations:   315
+  - n linear iterations:       6749
+  - n residual evaluations:    389
+  - avg non-linear iterations: 4.25676
+  - avg linear iterations:     21.4254
+  - max dt:                    11.4475
+
+  - n failed tries:                   0
+  - n failed non-linear iterations:   0
+  - n failed linear iterations:       0
+  - n failed residual evaluations:    0
+
+
++----------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                 |     336.7s   190 |     336.7s |     336.7s    62 |
+|                                              |                  |                               |
+| Section                          | no. calls |   min time  rank |   avg time |   max time  rank |
++----------------------------------------------+------------------+------------+------------------+
+| sintering_op::nonlinear_residual |       389 |     2.969s   239 |     3.703s |     3.933s    38 |
+| sintering_op::vmult              |      7115 |     47.31s   238 |     61.34s |     64.72s     0 |
++----------------------------------------------+------------------+------------+------------------+
+
++--------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed         |     336.7s   178 |     336.7s |     336.7s    75 |
+|                                      |                  |                               |
+| Section                  | no. calls |   min time  rank |   avg time |   max time  rank |
++--------------------------------------+------------------+------------+------------------+
+| precon::update           |        74 |     60.97s   239 |     61.03s |     61.17s     0 |
+| precon::update::precon_0 |        74 |      47.6s   239 |     47.65s |     47.79s     0 |
+| precon::update::precon_1 |        74 |     13.38s    57 |     13.38s |     13.38s    41 |
+| precon::vmult            |      7115 |      77.1s   225 |     84.62s |     100.6s     0 |
+| precon::vmult::precon_0  |      7115 |     28.75s   201 |     31.87s |     37.28s     0 |
+| precon::vmult::precon_1  |      7115 |     47.78s   155 |     52.66s |     63.26s     0 |
++--------------------------------------+------------------+------------+------------------+
+
++----------------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                       |     336.7s   178 |     336.7s |     336.7s    75 |
+|                                                    |                  |                               |
+| Section                                | no. calls |   min time  rank |   avg time |   max time  rank |
++----------------------------------------------------+------------------+------------+------------------+
+| cahn_hilliard_op::matrix::compute      |        74 |     19.33s   239 |     19.73s |     23.16s     3 |
+| cahn_hilliard_op::matrix::post_compute |        74 | 7.997e-05s   178 | 0.0001628s | 0.0008914s    94 |
+| cahn_hilliard_op::matrix::sp           |         9 |     3.434s   181 |     3.442s |     3.465s     0 |
++----------------------------------------------------+------------------+------------+------------------+
+
++--------------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                     |     336.7s   199 |     336.7s |     336.7s    75 |
+|                                                  |                  |                               |
+| Section                              | no. calls |   min time  rank |   avg time |   max time  rank |
++--------------------------------------------------+------------------+------------+------------------+
+| allen_cahn_op::block_matrix::compute |        74 |     4.968s    90 |     5.331s |      6.19s     7 |
+| allen_cahn_op::block_matrix::sp      |         9 |    0.9265s    11 |    0.9266s |    0.9272s     0 |
++--------------------------------------------------+------------------+------------+------------------+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     336.7s   164 |     336.7s |     336.7s    75 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| ilu::setup       |        74 |     47.59s   239 |     47.65s |     47.79s     0 |
+| ilu::vmult       |      7115 |     28.62s   201 |     31.73s |     37.15s     0 |
++------------------------------+------------------+------------+------------------+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     336.7s   164 |     336.7s |     336.7s    75 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| block_ilu::setup |        74 |     13.38s    57 |     13.38s |     13.38s    41 |
+| block_ilu::vmult |      7115 |      47.6s   155 |     52.49s |     63.11s     0 |
++------------------------------+------------------+------------+------------------+
+
++------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed |     336.7s   164 |     336.7s |     336.7s    75 |
+|                              |                  |                               |
+| Section          | no. calls |   min time  rank |   avg time |   max time  rank |
++------------------------------+------------------+------------+------------------+
+| gmres::solve     |       315 |     214.2s   239 |     214.7s |     215.3s     0 |
++------------------------------+------------------+------------+------------------+
+
++----------------------------------------------------------+------------------+------------+------------------+
+| Total wallclock time elapsed                             |     336.7s   161 |     336.7s |     336.7s    75 |
+|                                                          |                  |                               |
+| Section                                      | no. calls |   min time  rank |   avg time |   max time  rank |
++----------------------------------------------------------+------------------+------------+------------------+
+| execute_coarsening_and_refinement            |         6 |     1.454s     0 |     1.455s |     1.455s   181 |
+| grain_tracker                                |         1 |     1.763s   112 |     1.764s |     1.764s   154 |
+| grain_tracker::initial_setup                 |         1 |    0.3383s   139 |    0.3388s |    0.3431s     0 |
+| grain_tracker::remap                         |         1 |     1.338s    71 |     1.362s |     1.418s     0 |
+| initialize_solution                          |         7 |    0.3526s    28 |    0.3531s |    0.3535s   172 |
+| output_result                                |         1 |    0.5515s    51 |    0.5657s |     1.007s     0 |
+| time_loop                                    |        74 |     332.2s     0 |     332.6s |     332.6s    51 |
+| time_loop::execute_coarsening_and_refinement |         7 |      18.3s     0 |      18.3s |      18.3s    30 |
+| time_loop::grain_tracker                     |         2 |      1.33s   121 |     1.331s |     1.331s    60 |
+| time_loop::grain_tracker::remap              |         1 |    0.5432s    66 |    0.5565s |    0.5861s     0 |
+| time_loop::grain_tracker::track              |         2 |     0.729s   201 |    0.7294s |    0.7343s     0 |
+| time_loop::newton                            |        74 |     295.7s   178 |     295.7s |     295.7s     0 |
+| time_loop::newton::residual                  |       389 |     2.975s   239 |     3.709s |     3.939s    38 |
+| time_loop::newton::setup_jacobian            |       315 |      6.38s     0 |     6.926s |      7.29s   239 |
+| time_loop::newton::setup_preconditioner      |        74 |     60.98s   239 |     61.03s |     61.17s     0 |
+| time_loop::newton::solve_with_jacobian       |       315 |     219.6s   239 |     219.8s |     220.3s     0 |
+| time_loop::output_result                     |         2 |     1.208s   121 |      1.24s |     2.135s     0 |
+| time_loop::restart                           |         1 |     14.37s     0 |     14.82s |     14.85s   125 |
++----------------------------------------------------------+------------------+------------+------------------+
+WARNING! There are options you set that were not used!
+WARNING! could be spelling mistake, etc!
+There is one unused database option. It is:
+Option left: name:--cloud value: ../applications/sintering/sintering_cloud_examples/49particles.cloud
