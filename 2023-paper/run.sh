@@ -2,7 +2,7 @@ mkdir -p fig-05
 cp ../../dealii-sintering/data/distribution/*.out fig-05
 
 mkdir -p fig-06-fig-21-tab-01-tab-08
-cp ../../dealii-sintering/data/throughput/*.out fig-06-tab-01
+cp ../../dealii-sintering/data/throughput/*.out fig-06-fig-21-tab-01-tab-08
 
 mkdir -p fig-08
 cp ../../dealii-sintering/data/amd/*.out fig-08
