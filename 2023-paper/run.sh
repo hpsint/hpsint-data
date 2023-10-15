@@ -7,12 +7,6 @@ cp ../../dealii-sintering/data/throughput/*.out fig-06-fig-21-tab-01-tab-08
 mkdir -p fig-08
 cp ../../dealii-sintering/data/amd/*.out fig-08
 
-mkdir -p fig-10-fig-11
-# TODO
-
-mkdir -p fig-12-fig-13-fig-14
-# TODO
-
 mkdir -p tab-5
 cp ../../dealii-sintering/data/comparison-config/*.out tab-5
 
