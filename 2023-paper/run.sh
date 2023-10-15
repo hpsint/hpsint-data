@@ -31,3 +31,4 @@ mkdir -p fig-19/2
 cp ../../dealii-sintering/data/scaling/2/*.out fig-19/2
 
 
+# TODO: table 3, figure 11-14
