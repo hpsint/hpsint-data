@@ -29,6 +29,11 @@ mkdir -p tab-7
 cp ../../dealii-sintering/data/comparison-precon-long/*.out tab-7
 
 mkdir -p fig-18
-cp ../../dealii-sintering/data/scaling/*.out fig-18
+mkdir -p fig-18/0
+cp ../../dealii-sintering/data/scaling/0/*.out fig-18/0
+mkdir -p fig-18/1
+cp ../../dealii-sintering/data/scaling/1/*.out fig-18/1
+mkdir -p fig-18/2
+cp ../../dealii-sintering/data/scaling/2/*.out fig-18/2
 
 
